@@ -28,3 +28,10 @@ commonmark/*
 !commonmark/tests/
 !commonmark/tests/**
 !commonmark/source.json
+!openjson/
+openjson/*
+!openjson/fedora/
+!openjson/fedora/**
+!openjson/tests/
+!openjson/tests/**
+!openjson/source.json
