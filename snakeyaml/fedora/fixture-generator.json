@@ -1,0 +1,14 @@
+{
+  "url": "https://repo.maven.apache.org/maven2/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar",
+  "sha256": "14151b47582d570b4de16a147ece3bdbd19ace4aee5bde3a5578c87db9ecb998",
+  "purpose": "Expand upstream test fixtures into reviewable Java sources; not an RPM build input or shipped binary",
+  "java": "OpenJDK 21",
+  "arguments": [
+    "delombok",
+    "-f",
+    "pretty",
+    "-f",
+    "constructorProperties:skip"
+  ],
+  "postprocessing": "Remove generated builder return-value documentation; preserve upstream license headers"
+}

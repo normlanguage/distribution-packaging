@@ -1,0 +1,408 @@
+--- a/src/test/java/org/yaml/snakeyaml/env/ApplicationProperties.java
++++ b/src/test/java/org/yaml/snakeyaml/env/ApplicationProperties.java
+@@ -13,19 +13,140 @@
+  */
+ package org.yaml.snakeyaml.env;
+ 
+-import lombok.AllArgsConstructor;
+-import lombok.Builder;
+-import lombok.Data;
+-import lombok.NoArgsConstructor;
+-
+-@Builder
+-@Data
+-@NoArgsConstructor
+-@AllArgsConstructor
+ public class ApplicationProperties {
+-
+   private String kafkaBrokers;
+   private String kafkaTopicName;
+   private String kafkaGroupIdConfig;
+   private Integer workers;
++
++
++  public static class ApplicationPropertiesBuilder {
++    private String kafkaBrokers;
++    private String kafkaTopicName;
++    private String kafkaGroupIdConfig;
++    private Integer workers;
++
++    ApplicationPropertiesBuilder() {
++    }
++
++    public ApplicationProperties.ApplicationPropertiesBuilder kafkaBrokers(final String kafkaBrokers) {
++      this.kafkaBrokers = kafkaBrokers;
++      return this;
++    }
++
++    public ApplicationProperties.ApplicationPropertiesBuilder kafkaTopicName(final String kafkaTopicName) {
++      this.kafkaTopicName = kafkaTopicName;
++      return this;
++    }
++
++    public ApplicationProperties.ApplicationPropertiesBuilder kafkaGroupIdConfig(final String kafkaGroupIdConfig) {
++      this.kafkaGroupIdConfig = kafkaGroupIdConfig;
++      return this;
++    }
++
++    public ApplicationProperties.ApplicationPropertiesBuilder workers(final Integer workers) {
++      this.workers = workers;
++      return this;
++    }
++
++    public ApplicationProperties build() {
++      return new ApplicationProperties(this.kafkaBrokers, this.kafkaTopicName, this.kafkaGroupIdConfig, this.workers);
++    }
++
++    @Override
++    public String toString() {
++      return "ApplicationProperties.ApplicationPropertiesBuilder(kafkaBrokers=" + this.kafkaBrokers + ", kafkaTopicName=" + this.kafkaTopicName + ", kafkaGroupIdConfig=" + this.kafkaGroupIdConfig + ", workers=" + this.workers + ")";
++    }
++  }
++
++  public static ApplicationProperties.ApplicationPropertiesBuilder builder() {
++    return new ApplicationProperties.ApplicationPropertiesBuilder();
++  }
++
++  public String getKafkaBrokers() {
++    return this.kafkaBrokers;
++  }
++
++  public String getKafkaTopicName() {
++    return this.kafkaTopicName;
++  }
++
++  public String getKafkaGroupIdConfig() {
++    return this.kafkaGroupIdConfig;
++  }
++
++  public Integer getWorkers() {
++    return this.workers;
++  }
++
++  public void setKafkaBrokers(final String kafkaBrokers) {
++    this.kafkaBrokers = kafkaBrokers;
++  }
++
++  public void setKafkaTopicName(final String kafkaTopicName) {
++    this.kafkaTopicName = kafkaTopicName;
++  }
++
++  public void setKafkaGroupIdConfig(final String kafkaGroupIdConfig) {
++    this.kafkaGroupIdConfig = kafkaGroupIdConfig;
++  }
++
++  public void setWorkers(final Integer workers) {
++    this.workers = workers;
++  }
++
++  @Override
++  public boolean equals(final Object o) {
++    if (o == this) return true;
++    if (!(o instanceof ApplicationProperties)) return false;
++    final ApplicationProperties other = (ApplicationProperties) o;
++    if (!other.canEqual((Object) this)) return false;
++    final Object this$workers = this.getWorkers();
++    final Object other$workers = other.getWorkers();
++    if (this$workers == null ? other$workers != null : !this$workers.equals(other$workers)) return false;
++    final Object this$kafkaBrokers = this.getKafkaBrokers();
++    final Object other$kafkaBrokers = other.getKafkaBrokers();
++    if (this$kafkaBrokers == null ? other$kafkaBrokers != null : !this$kafkaBrokers.equals(other$kafkaBrokers)) return false;
++    final Object this$kafkaTopicName = this.getKafkaTopicName();
++    final Object other$kafkaTopicName = other.getKafkaTopicName();
++    if (this$kafkaTopicName == null ? other$kafkaTopicName != null : !this$kafkaTopicName.equals(other$kafkaTopicName)) return false;
++    final Object this$kafkaGroupIdConfig = this.getKafkaGroupIdConfig();
++    final Object other$kafkaGroupIdConfig = other.getKafkaGroupIdConfig();
++    if (this$kafkaGroupIdConfig == null ? other$kafkaGroupIdConfig != null : !this$kafkaGroupIdConfig.equals(other$kafkaGroupIdConfig)) return false;
++    return true;
++  }
++
++  protected boolean canEqual(final Object other) {
++    return other instanceof ApplicationProperties;
++  }
++
++  @Override
++  public int hashCode() {
++    final int PRIME = 59;
++    int result = 1;
++    final Object $workers = this.getWorkers();
++    result = result * PRIME + ($workers == null ? 43 : $workers.hashCode());
++    final Object $kafkaBrokers = this.getKafkaBrokers();
++    result = result * PRIME + ($kafkaBrokers == null ? 43 : $kafkaBrokers.hashCode());
++    final Object $kafkaTopicName = this.getKafkaTopicName();
++    result = result * PRIME + ($kafkaTopicName == null ? 43 : $kafkaTopicName.hashCode());
++    final Object $kafkaGroupIdConfig = this.getKafkaGroupIdConfig();
++    result = result * PRIME + ($kafkaGroupIdConfig == null ? 43 : $kafkaGroupIdConfig.hashCode());
++    return result;
++  }
++
++  @Override
++  public String toString() {
++    return "ApplicationProperties(kafkaBrokers=" + this.getKafkaBrokers() + ", kafkaTopicName=" + this.getKafkaTopicName() + ", kafkaGroupIdConfig=" + this.getKafkaGroupIdConfig() + ", workers=" + this.getWorkers() + ")";
++  }
++
++  public ApplicationProperties() {
++  }
++
++  public ApplicationProperties(final String kafkaBrokers, final String kafkaTopicName, final String kafkaGroupIdConfig, final Integer workers) {
++    this.kafkaBrokers = kafkaBrokers;
++    this.kafkaTopicName = kafkaTopicName;
++    this.kafkaGroupIdConfig = kafkaGroupIdConfig;
++    this.workers = workers;
++  }
+ }
+--- a/src/test/java/org/yaml/snakeyaml/issues/issue387/YamlExecuteProcessContextTest.java
++++ b/src/test/java/org/yaml/snakeyaml/issues/issue387/YamlExecuteProcessContextTest.java
+@@ -16,12 +16,8 @@
+ import static org.hamcrest.CoreMatchers.instanceOf;
+ import static org.hamcrest.MatcherAssert.assertThat;
+ import static org.junit.Assert.assertEquals;
+-
+ import java.util.Collection;
+ import java.util.Set;
+-import lombok.AllArgsConstructor;
+-import lombok.Data;
+-import lombok.NoArgsConstructor;
+ import org.junit.Test;
+ import org.yaml.snakeyaml.LoaderOptions;
+ import org.yaml.snakeyaml.Yaml;
+@@ -30,14 +26,11 @@
+ public class YamlExecuteProcessContextTest {
+ 
+   public enum ExecuteProcessConstants {
+-    EXECUTE_ID, EXECUTE_STATUS_START, EXECUTE_STATUS_DONE
+-  }
+-
+-  @NoArgsConstructor
+-  @AllArgsConstructor
+-  @Data
++    EXECUTE_ID, EXECUTE_STATUS_START, EXECUTE_STATUS_DONE;
++  }
++
++
+   public static class YamlExecuteProcessContext {
+-
+     private String executionID;
+     private String schemaName;
+     private String username;
+@@ -45,27 +38,208 @@
+     private String sql;
+     private Collection<YamlExecuteProcessUnit> unitStatuses;
+     private Long startTimeMillis;
+-  }
+-
+-  @NoArgsConstructor
+-  @AllArgsConstructor
+-  @Data
++
++    public YamlExecuteProcessContext() {
++    }
++
++    public YamlExecuteProcessContext(final String executionID, final String schemaName, final String username, final String hostname, final String sql, final Collection<YamlExecuteProcessUnit> unitStatuses, final Long startTimeMillis) {
++      this.executionID = executionID;
++      this.schemaName = schemaName;
++      this.username = username;
++      this.hostname = hostname;
++      this.sql = sql;
++      this.unitStatuses = unitStatuses;
++      this.startTimeMillis = startTimeMillis;
++    }
++
++    public String getExecutionID() {
++      return this.executionID;
++    }
++
++    public String getSchemaName() {
++      return this.schemaName;
++    }
++
++    public String getUsername() {
++      return this.username;
++    }
++
++    public String getHostname() {
++      return this.hostname;
++    }
++
++    public String getSql() {
++      return this.sql;
++    }
++
++    public Collection<YamlExecuteProcessUnit> getUnitStatuses() {
++      return this.unitStatuses;
++    }
++
++    public Long getStartTimeMillis() {
++      return this.startTimeMillis;
++    }
++
++    public void setExecutionID(final String executionID) {
++      this.executionID = executionID;
++    }
++
++    public void setSchemaName(final String schemaName) {
++      this.schemaName = schemaName;
++    }
++
++    public void setUsername(final String username) {
++      this.username = username;
++    }
++
++    public void setHostname(final String hostname) {
++      this.hostname = hostname;
++    }
++
++    public void setSql(final String sql) {
++      this.sql = sql;
++    }
++
++    public void setUnitStatuses(final Collection<YamlExecuteProcessUnit> unitStatuses) {
++      this.unitStatuses = unitStatuses;
++    }
++
++    public void setStartTimeMillis(final Long startTimeMillis) {
++      this.startTimeMillis = startTimeMillis;
++    }
++
++    @Override
++    public boolean equals(final Object o) {
++      if (o == this) return true;
++      if (!(o instanceof YamlExecuteProcessContextTest.YamlExecuteProcessContext)) return false;
++      final YamlExecuteProcessContextTest.YamlExecuteProcessContext other = (YamlExecuteProcessContextTest.YamlExecuteProcessContext) o;
++      if (!other.canEqual((Object) this)) return false;
++      final Object this$startTimeMillis = this.getStartTimeMillis();
++      final Object other$startTimeMillis = other.getStartTimeMillis();
++      if (this$startTimeMillis == null ? other$startTimeMillis != null : !this$startTimeMillis.equals(other$startTimeMillis)) return false;
++      final Object this$executionID = this.getExecutionID();
++      final Object other$executionID = other.getExecutionID();
++      if (this$executionID == null ? other$executionID != null : !this$executionID.equals(other$executionID)) return false;
++      final Object this$schemaName = this.getSchemaName();
++      final Object other$schemaName = other.getSchemaName();
++      if (this$schemaName == null ? other$schemaName != null : !this$schemaName.equals(other$schemaName)) return false;
++      final Object this$username = this.getUsername();
++      final Object other$username = other.getUsername();
++      if (this$username == null ? other$username != null : !this$username.equals(other$username)) return false;
++      final Object this$hostname = this.getHostname();
++      final Object other$hostname = other.getHostname();
++      if (this$hostname == null ? other$hostname != null : !this$hostname.equals(other$hostname)) return false;
++      final Object this$sql = this.getSql();
++      final Object other$sql = other.getSql();
++      if (this$sql == null ? other$sql != null : !this$sql.equals(other$sql)) return false;
++      final Object this$unitStatuses = this.getUnitStatuses();
++      final Object other$unitStatuses = other.getUnitStatuses();
++      if (this$unitStatuses == null ? other$unitStatuses != null : !this$unitStatuses.equals(other$unitStatuses)) return false;
++      return true;
++    }
++
++    protected boolean canEqual(final Object other) {
++      return other instanceof YamlExecuteProcessContextTest.YamlExecuteProcessContext;
++    }
++
++    @Override
++    public int hashCode() {
++      final int PRIME = 59;
++      int result = 1;
++      final Object $startTimeMillis = this.getStartTimeMillis();
++      result = result * PRIME + ($startTimeMillis == null ? 43 : $startTimeMillis.hashCode());
++      final Object $executionID = this.getExecutionID();
++      result = result * PRIME + ($executionID == null ? 43 : $executionID.hashCode());
++      final Object $schemaName = this.getSchemaName();
++      result = result * PRIME + ($schemaName == null ? 43 : $schemaName.hashCode());
++      final Object $username = this.getUsername();
++      result = result * PRIME + ($username == null ? 43 : $username.hashCode());
++      final Object $hostname = this.getHostname();
++      result = result * PRIME + ($hostname == null ? 43 : $hostname.hashCode());
++      final Object $sql = this.getSql();
++      result = result * PRIME + ($sql == null ? 43 : $sql.hashCode());
++      final Object $unitStatuses = this.getUnitStatuses();
++      result = result * PRIME + ($unitStatuses == null ? 43 : $unitStatuses.hashCode());
++      return result;
++    }
++
++    @Override
++    public String toString() {
++      return "YamlExecuteProcessContextTest.YamlExecuteProcessContext(executionID=" + this.getExecutionID() + ", schemaName=" + this.getSchemaName() + ", username=" + this.getUsername() + ", hostname=" + this.getHostname() + ", sql=" + this.getSql() + ", unitStatuses=" + this.getUnitStatuses() + ", startTimeMillis=" + this.getStartTimeMillis() + ")";
++    }
++  }
++
++
+   public static class YamlExecuteProcessUnit {
+-
+     private String unitID;
+     private ExecuteProcessConstants status;
++
++    public YamlExecuteProcessUnit() {
++    }
++
++    public YamlExecuteProcessUnit(final String unitID, final ExecuteProcessConstants status) {
++      this.unitID = unitID;
++      this.status = status;
++    }
++
++    public String getUnitID() {
++      return this.unitID;
++    }
++
++    public ExecuteProcessConstants getStatus() {
++      return this.status;
++    }
++
++    public void setUnitID(final String unitID) {
++      this.unitID = unitID;
++    }
++
++    public void setStatus(final ExecuteProcessConstants status) {
++      this.status = status;
++    }
++
++    @Override
++    public boolean equals(final Object o) {
++      if (o == this) return true;
++      if (!(o instanceof YamlExecuteProcessContextTest.YamlExecuteProcessUnit)) return false;
++      final YamlExecuteProcessContextTest.YamlExecuteProcessUnit other = (YamlExecuteProcessContextTest.YamlExecuteProcessUnit) o;
++      if (!other.canEqual((Object) this)) return false;
++      final Object this$unitID = this.getUnitID();
++      final Object other$unitID = other.getUnitID();
++      if (this$unitID == null ? other$unitID != null : !this$unitID.equals(other$unitID)) return false;
++      final Object this$status = this.getStatus();
++      final Object other$status = other.getStatus();
++      if (this$status == null ? other$status != null : !this$status.equals(other$status)) return false;
++      return true;
++    }
++
++    protected boolean canEqual(final Object other) {
++      return other instanceof YamlExecuteProcessContextTest.YamlExecuteProcessUnit;
++    }
++
++    @Override
++    public int hashCode() {
++      final int PRIME = 59;
++      int result = 1;
++      final Object $unitID = this.getUnitID();
++      result = result * PRIME + ($unitID == null ? 43 : $unitID.hashCode());
++      final Object $status = this.getStatus();
++      result = result * PRIME + ($status == null ? 43 : $status.hashCode());
++      return result;
++    }
++
++    @Override
++    public String toString() {
++      return "YamlExecuteProcessContextTest.YamlExecuteProcessUnit(unitID=" + this.getUnitID() + ", status=" + this.getStatus() + ")";
++    }
+   }
+ 
+   @Test
+   public void parameterizedCollectionTest() {
+-    String marshal = "unitStatuses: !!set\n" + "  ? status: EXECUTE_STATUS_DONE\n"
+-        + "    unitID: '159917166'\n" + "  : null\n";
++    String marshal = "unitStatuses: !!set\n" + "  ? status: EXECUTE_STATUS_DONE\n" + "    unitID: \'159917166\'\n" + "  : null\n";
+     Constructor constructor = new Constructor(YamlExecuteProcessContext.class, new LoaderOptions());
+-    YamlExecuteProcessContext unmarshal =
+-        new Yaml(constructor).loadAs(marshal, YamlExecuteProcessContext.class);
+-
++    YamlExecuteProcessContext unmarshal = new Yaml(constructor).loadAs(marshal, YamlExecuteProcessContext.class);
+     assertThat(unmarshal.getUnitStatuses(), instanceOf(Set.class));
+-
+     for (YamlExecuteProcessUnit unit : unmarshal.getUnitStatuses()) {
+       assertEquals(unit.getStatus(), ExecuteProcessConstants.EXECUTE_STATUS_DONE);
+     }

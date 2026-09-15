@@ -4,6 +4,8 @@ Distribution-native packaging for dependencies required by [Norm](https://github
 
 | Component | Packaging | Upstream provenance |
 | --- | --- | --- |
+| SnakeYAML | [Fedora](snakeyaml/fedora/) | [Source](snakeyaml/source.json) |
+| Jackson YAML | [Fedora](jackson-dataformats-text/fedora/) | [Source](jackson-dataformats-text/source.json) |
 | Jackson Core | [Fedora 44 backport](jackson-core/fedora/) | [Source](jackson-core/source.json) |
 | FasterXML OSS Parent | [Fedora](fasterxml-oss-parent/fedora/) | [Source](fasterxml-oss-parent/source.json) |
 | Jackson Parent | [Fedora](jackson-parent/fedora/) | [Source](jackson-parent/source.json) |

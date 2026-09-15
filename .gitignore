@@ -90,3 +90,17 @@ jackson-core/*
 !jackson-core/tests/
 !jackson-core/tests/**
 !jackson-core/source.json
+
+!snakeyaml/
+snakeyaml/*
+!snakeyaml/fedora/
+!snakeyaml/fedora/**
+!snakeyaml/source.json
+
+!jackson-dataformats-text/
+jackson-dataformats-text/*
+!jackson-dataformats-text/fedora/
+!jackson-dataformats-text/fedora/**
+!jackson-dataformats-text/source.json
+!jackson-dataformats-text/tests/
+!jackson-dataformats-text/tests/**
