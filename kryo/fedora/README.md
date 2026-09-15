@@ -4,4 +4,4 @@
 
 Fedora 44 validation: SRPM, library RPM and Javadoc RPM built; 304 Java tests passed with no failures, errors or skips. The installed-package round trip uses [the shared test](../debian/tests/KryoRoundTrip.java) with the installed Kryo and dependency jars.
 
-Rawhide mock validation is pending. Rpmlint reports a generated JDK documentation license address finding, a documentation size warning, and a missing check section warning; Maven runs tests during the build section. These findings have not been filtered or treated as resolved.
+Rawhide x86_64 (fc46) mock chain validation passed with MinLog and ReflectASM built from their SRPMs and supplied by the chain repository. All 304 Java tests passed again without failures, errors or skips. Rpmlint reports a generated JDK documentation license address finding, a documentation size warning, and a missing check section warning; Maven runs tests during the build section. These findings have not been filtered or treated as resolved.
