@@ -5,6 +5,8 @@
 !LICENSE
 !kryo/
 kryo/*
+!kryo/fedora/
+!kryo/fedora/**
 !kryo/debian/
 !kryo/debian/**
 !kryo/source.json
