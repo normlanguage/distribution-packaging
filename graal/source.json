@@ -1,0 +1,20 @@
+[
+  {
+    "name": "graal",
+    "repository": "https://github.com/oracle/graal",
+    "tag": "vm-25.1.3",
+    "commit": "d9de8206fff02d7a99bf82043b5ba8b392aa09ee",
+    "url": "https://api.github.com/repos/oracle/graal/tarball/d9de8206fff02d7a99bf82043b5ba8b392aa09ee",
+    "archiveRoot": "oracle-graal-d9de820",
+    "sha256": "ce6d665485b9d86c3b8f6c30a72819dd0f7f79fbb302bceefb722ce70af77f11"
+  },
+  {
+    "name": "mx",
+    "repository": "https://github.com/graalvm/mx",
+    "tag": "7.83.0",
+    "commit": "22381992c7322f661498cd6101144f0f49c72ae1",
+    "url": "https://api.github.com/repos/graalvm/mx/tarball/22381992c7322f661498cd6101144f0f49c72ae1",
+    "archiveRoot": "graalvm-mx-2238199",
+    "sha256": "749069879c8ea6a9174408c5c10caf087c98458d0ee804427b747cba83923064"
+  }
+]

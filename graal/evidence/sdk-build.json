@@ -1,0 +1,46 @@
+{
+  "scope": "Source-built SDK artifacts, not RPMs; no upstream unit tests executed",
+  "jdk": "Fedora java-25-openjdk-devel and java-25-openjdk-jmods 25.0.4.1.1-1.1.fc44",
+  "buildTool": "mx 7.83.0 from source",
+  "targets": [
+    "COLLECTIONS",
+    "WORD",
+    "NATIVEIMAGE",
+    "JNIUTILS",
+    "POLYGLOT"
+  ],
+  "buildArguments": [
+    "build",
+    "--dependencies",
+    "COLLECTIONS,WORD,NATIVEIMAGE,JNIUTILS,POLYGLOT",
+    "--force-javac",
+    "--no-daemon",
+    "--serial"
+  ],
+  "networkIsolation": "unshare --user --map-root-user --net",
+  "buildExitCode": 0,
+  "moduleValidationExitCode": 0,
+  "polyglotVersionResource": "25.1.3",
+  "artifacts": [
+    {
+      "artifact": "collections.jar",
+      "sha256": "29f6dfdad4fbaafeb2c1baceaaf005fab81d063b13cdf88426ad6cf6a2b98d82"
+    },
+    {
+      "artifact": "word.jar",
+      "sha256": "c7d7a95a9e76b391240172d3aaef70166f00140391ab2eee55d0f4ecc425cf6b"
+    },
+    {
+      "artifact": "nativeimage.jar",
+      "sha256": "a3581dfe0c2220ea0daba6ab2abff1bf004a996af5899d68b6984749f6611d47"
+    },
+    {
+      "artifact": "jniutils.jar",
+      "sha256": "014c8a29cf08c3b95d77e5ae36de37562ca481bc3be1b4068958093531c45725"
+    },
+    {
+      "artifact": "polyglot.jar",
+      "sha256": "75f7d2c23e4b2ba8272b7a84d9b00f94ec28f723b4bb692ca2b0c2a30625491b"
+    }
+  ]
+}

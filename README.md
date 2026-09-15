@@ -30,3 +30,5 @@ For Fedora, each component directory identifies its spec, source provenance, add
 Norm's own compiler and release definitions remain in the [upstream repository](https://github.com/normlanguage/Norm). These recipes do not introduce a separate Norm compiler build.
 
 Build-tool prerequisites are tracked separately in the [Gradle source-build investigation](gradle/).
+
+The [GraalVM SDK/Truffle source-build preparation](graal/) records the runtime toolchain investigation and remaining packaging work.

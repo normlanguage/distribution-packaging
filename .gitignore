@@ -130,3 +130,11 @@ gradle/*
 gradle/evidence/*
 !gradle/evidence/offline-configuration.log
 !gradle/evidence/rawhide-providers.json
+
+!graal/
+graal/*
+!graal/README.md
+!graal/source.json
+!graal/evidence/
+graal/evidence/*
+!graal/evidence/sdk-build.json
