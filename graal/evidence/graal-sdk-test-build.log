@@ -1,0 +1,33 @@
+Downloading HAMCREST from ['file:///usr/share/java/hamcrest/hamcrest.jar']
+Downloading JUNIT from ['file:///usr/share/java/junit.jar']
+Compiling org.graalvm.word.test with javac(JDK 25)...
+Compiling org.graalvm.collections.test with javac(JDK 25)...
+Compiling org.graalvm.nativeimage.test with javac(JDK 25)...
+Downloading JLINE_READER from ['https://repo1.maven.org/maven2/org/jline/jline-reader/3.28.0/jline-reader-3.28.0.jar', 'https://search.maven.org/remotecontent?filepath=org/jline/jline-reader/3.28.0/jline-reader-3.28.0.jar']
+Error downloading from https://repo1.maven.org/maven2/org/jline/jline-reader/3.28.0/jline-reader-3.28.0.jar to /home/w0fv1/graal-candidate-cache/JLINE_READER_dafd45af79a9874d7b41d146d37386da605e19ec2bf9c8989f121f9403902ce60ca9708fb016afed785186935d2dddd4b5b3304aca234c926b0e4368607b11ed/jline-reader.jar: <urlopen error [Errno 101] Network is unreachable>
+WARNING: ** If behind a firewall without direct internet access, use the http_proxy environment variable (e.g. "env http_proxy=proxy.company.com:80 mx ...") or download manually with a web browser.
+WARNING: Retry 1 to download from https://repo1.maven.org/maven2/org/jline/jline-reader/3.28.0/jline-reader-3.28.0.jar
+Error downloading from https://repo1.maven.org/maven2/org/jline/jline-reader/3.28.0/jline-reader-3.28.0.jar to /home/w0fv1/graal-candidate-cache/JLINE_READER_dafd45af79a9874d7b41d146d37386da605e19ec2bf9c8989f121f9403902ce60ca9708fb016afed785186935d2dddd4b5b3304aca234c926b0e4368607b11ed/jline-reader.jar: <urlopen error [Errno 101] Network is unreachable>
+WARNING: ** If behind a firewall without direct internet access, use the http_proxy environment variable (e.g. "env http_proxy=proxy.company.com:80 mx ...") or download manually with a web browser.
+WARNING: Retry 2 to download from https://repo1.maven.org/maven2/org/jline/jline-reader/3.28.0/jline-reader-3.28.0.jar
+Error downloading from https://repo1.maven.org/maven2/org/jline/jline-reader/3.28.0/jline-reader-3.28.0.jar to /home/w0fv1/graal-candidate-cache/JLINE_READER_dafd45af79a9874d7b41d146d37386da605e19ec2bf9c8989f121f9403902ce60ca9708fb016afed785186935d2dddd4b5b3304aca234c926b0e4368607b11ed/jline-reader.jar: <urlopen error [Errno 101] Network is unreachable>
+WARNING: ** If behind a firewall without direct internet access, use the http_proxy environment variable (e.g. "env http_proxy=proxy.company.com:80 mx ...") or download manually with a web browser.
+WARNING: Retry 3 to download from https://repo1.maven.org/maven2/org/jline/jline-reader/3.28.0/jline-reader-3.28.0.jar
+Error downloading from https://repo1.maven.org/maven2/org/jline/jline-reader/3.28.0/jline-reader-3.28.0.jar to /home/w0fv1/graal-candidate-cache/JLINE_READER_dafd45af79a9874d7b41d146d37386da605e19ec2bf9c8989f121f9403902ce60ca9708fb016afed785186935d2dddd4b5b3304aca234c926b0e4368607b11ed/jline-reader.jar: <urlopen error [Errno 101] Network is unreachable>
+WARNING: ** If behind a firewall without direct internet access, use the http_proxy environment variable (e.g. "env http_proxy=proxy.company.com:80 mx ...") or download manually with a web browser.
+Error downloading from https://search.maven.org/remotecontent?filepath=org/jline/jline-reader/3.28.0/jline-reader-3.28.0.jar to /home/w0fv1/graal-candidate-cache/JLINE_READER_dafd45af79a9874d7b41d146d37386da605e19ec2bf9c8989f121f9403902ce60ca9708fb016afed785186935d2dddd4b5b3304aca234c926b0e4368607b11ed/jline-reader.jar: <urlopen error [Errno 101] Network is unreachable>
+WARNING: ** If behind a firewall without direct internet access, use the http_proxy environment variable (e.g. "env http_proxy=proxy.company.com:80 mx ...") or download manually with a web browser.
+WARNING: Retry 1 to download from https://search.maven.org/remotecontent?filepath=org/jline/jline-reader/3.28.0/jline-reader-3.28.0.jar
+Error downloading from https://search.maven.org/remotecontent?filepath=org/jline/jline-reader/3.28.0/jline-reader-3.28.0.jar to /home/w0fv1/graal-candidate-cache/JLINE_READER_dafd45af79a9874d7b41d146d37386da605e19ec2bf9c8989f121f9403902ce60ca9708fb016afed785186935d2dddd4b5b3304aca234c926b0e4368607b11ed/jline-reader.jar: <urlopen error [Errno 101] Network is unreachable>
+WARNING: ** If behind a firewall without direct internet access, use the http_proxy environment variable (e.g. "env http_proxy=proxy.company.com:80 mx ...") or download manually with a web browser.
+WARNING: Retry 2 to download from https://search.maven.org/remotecontent?filepath=org/jline/jline-reader/3.28.0/jline-reader-3.28.0.jar
+Error downloading from https://search.maven.org/remotecontent?filepath=org/jline/jline-reader/3.28.0/jline-reader-3.28.0.jar to /home/w0fv1/graal-candidate-cache/JLINE_READER_dafd45af79a9874d7b41d146d37386da605e19ec2bf9c8989f121f9403902ce60ca9708fb016afed785186935d2dddd4b5b3304aca234c926b0e4368607b11ed/jline-reader.jar: <urlopen error [Errno 101] Network is unreachable>
+WARNING: ** If behind a firewall without direct internet access, use the http_proxy environment variable (e.g. "env http_proxy=proxy.company.com:80 mx ...") or download manually with a web browser.
+WARNING: Retry 3 to download from https://search.maven.org/remotecontent?filepath=org/jline/jline-reader/3.28.0/jline-reader-3.28.0.jar
+Error downloading from https://search.maven.org/remotecontent?filepath=org/jline/jline-reader/3.28.0/jline-reader-3.28.0.jar to /home/w0fv1/graal-candidate-cache/JLINE_READER_dafd45af79a9874d7b41d146d37386da605e19ec2bf9c8989f121f9403902ce60ca9708fb016afed785186935d2dddd4b5b3304aca234c926b0e4368607b11ed/jline-reader.jar: <urlopen error [Errno 101] Network is unreachable>
+WARNING: ** If behind a firewall without direct internet access, use the http_proxy environment variable (e.g. "env http_proxy=proxy.company.com:80 mx ...") or download manually with a web browser.
+Could not download to /home/w0fv1/graal-candidate-cache/JLINE_READER_dafd45af79a9874d7b41d146d37386da605e19ec2bf9c8989f121f9403902ce60ca9708fb016afed785186935d2dddd4b5b3304aca234c926b0e4368607b11ed/jline-reader.jar from any of the following URLs: https://repo1.maven.org/maven2/org/jline/jline-reader/3.28.0/jline-reader-3.28.0.jar, https://search.maven.org/remotecontent?filepath=org/jline/jline-reader/3.28.0/jline-reader-3.28.0.jar
+  https://repo1.maven.org/maven2/org/jline/jline-reader/3.28.0/jline-reader-3.28.0.jar
+  https://search.maven.org/remotecontent?filepath=org/jline/jline-reader/3.28.0/jline-reader-3.28.0.jar
+Downloading JLINE_READER: Failed due to error: 1
+mx build log written to /home/w0fv1/graal-source-candidate/oracle-graal-d9de820/sdk/mxbuild/buildlog-20260915-115848.html

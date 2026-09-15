@@ -143,6 +143,7 @@ graal/evidence/*
 !graal/evidence/graal-candidate-functional-check.log
 !graal/evidence/graal-candidate-jvmci-check.log
 !graal/evidence/graal-compiler-source-build.log
+!graal/evidence/graal-sdk-test-build.log
 !graal/fedora/
 !graal/fedora/**
 !graal/tests/

@@ -1,5 +1,13 @@
 {
   "libraries": {
+    "JUNIT": {
+      "path": "/usr/share/java/junit.jar",
+      "version": "4.13.2"
+    },
+    "HAMCREST": {
+      "path": "/usr/share/java/hamcrest/hamcrest.jar",
+      "version": "3.0"
+    },
     "ASM_9.8": {
       "path": "/usr/share/java/objectweb-asm/asm.jar",
       "version": "9.10.1"
@@ -22,6 +30,10 @@
     }
   },
   "profiles": {
+    "mx-tests": [
+      "JUNIT",
+      "HAMCREST"
+    ],
     "mx": [
       "ASM_9.8",
       "ASM_TREE_9.8",
