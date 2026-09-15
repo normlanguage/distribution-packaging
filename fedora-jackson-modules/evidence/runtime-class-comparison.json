@@ -1,0 +1,32 @@
+[
+  {
+    "component": "jackson-core",
+    "originalClasses": 174,
+    "restoredClasses": 175,
+    "added": [
+      "META-INF/versions/9/module-info.class"
+    ],
+    "removed": [],
+    "changed": []
+  },
+  {
+    "component": "jackson-databind",
+    "originalClasses": 810,
+    "restoredClasses": 811,
+    "added": [
+      "META-INF/versions/9/module-info.class"
+    ],
+    "removed": [],
+    "changed": []
+  },
+  {
+    "component": "jackson-annotations",
+    "originalClasses": 75,
+    "restoredClasses": 76,
+    "added": [
+      "module-info.class"
+    ],
+    "removed": [],
+    "changed": []
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "name": "jackson-core",
+    "sourceRpm": "jackson-core-2.21.5-2.fc45.src.rpm",
+    "url": "https://dl.fedoraproject.org/pub/fedora/linux/development/rawhide/Everything/source/tree/Packages/j/jackson-core-2.21.5-2.fc45.src.rpm",
+    "sha256": "3c240c48eb79d33905c1089a1d3f3e785cd8d25caf23d6e91e1ac8eb83a57a29",
+    "patch": "jackson-core/restore-module-descriptor.patch"
+  },
+  {
+    "name": "jackson-databind",
+    "sourceRpm": "jackson-databind-2.21.5-2.fc45.src.rpm",
+    "url": "https://dl.fedoraproject.org/pub/fedora/linux/development/rawhide/Everything/source/tree/Packages/j/jackson-databind-2.21.5-2.fc45.src.rpm",
+    "sha256": "e674ef574e9d0ca8cebe49ac7370625217c8e38463b63589637bcc4796033b8f",
+    "patch": "jackson-databind/restore-module-descriptor.patch"
+  },
+  {
+    "name": "jackson-annotations",
+    "sourceRpm": "jackson-annotations-2.21-7.fc45.src.rpm",
+    "url": "https://dl.fedoraproject.org/pub/fedora/linux/development/rawhide/Everything/source/tree/Packages/j/jackson-annotations-2.21-7.fc45.src.rpm",
+    "sha256": "acfa8d0cc97bd1ffec6209afb57e84e934ade8cda216b073e54108c22e6108c7",
+    "patch": "jackson-annotations/restore-module-descriptor.patch"
+  }
+]

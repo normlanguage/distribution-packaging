@@ -1,0 +1,36 @@
+--- a/jackson-annotations.spec
++++ b/jackson-annotations.spec
+@@ -1,6 +1,6 @@
+ Name:           jackson-annotations
+ Version:        2.21
+-Release:        7%{?dist}
++Release:        8%{?dist}
+ Summary:        Core annotations for Jackson data processor
+ License:        Apache-2.0
+ 
+@@ -16,6 +16,7 @@
+ BuildRequires:  mvn(com.fasterxml.jackson:jackson-parent:pom:) >= 2.21
+ BuildRequires:  mvn(org.junit.jupiter:junit-jupiter)
+ BuildRequires:  mvn(org.apache.felix:maven-bundle-plugin)
++BuildRequires:  mvn(org.moditect:moditect-maven-plugin)
+ 
+ BuildArch:      noarch
+ %if 0%{?fedora} || 0%{?rhel} >= 10
+@@ -35,7 +36,6 @@
+ %prep
+ %setup -q -n %{name}-%{name}-%{version}
+ 
+-%pom_remove_plugin "org.moditect:moditect-maven-plugin"
+ %pom_remove_plugin "org.sonatype.central:central-publishing-maven-plugin"
+ %pom_remove_plugin "org.gradlex:gradle-module-metadata-maven-plugin"
+ %pom_remove_plugin "org.codehaus.mojo:build-helper-maven-plugin"
+@@ -59,6 +59,9 @@
+ %license LICENSE
+ 
+ %changelog
++* Tue Sep 15 2026 w0fv1 <wofbi1@outlook.com> - 2.21-8
++- Retain upstream Java module descriptor
++
+ * Thu Jul 16 2026 Fedora Release Engineering <releng@fedoraproject.org> - 2.21-7
+ - Rebuilt for https://fedoraproject.org/wiki/Fedora_45_Mass_Rebuild
+ 

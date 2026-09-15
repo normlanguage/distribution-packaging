@@ -1,0 +1,36 @@
+--- a/jackson-databind.spec
++++ b/jackson-databind.spec
+@@ -1,6 +1,6 @@
+ Name:           jackson-databind
+ Version:        2.21.5
+-Release:        2%{?dist}
++Release:        3%{?dist}
+ Summary:        General data-binding package for Jackson (2.x)
+ License:        Apache-2.0 and LGPL-2.0-or-later
+ 
+@@ -20,6 +20,7 @@
+ BuildRequires:  mvn(com.google.code.maven-replacer-plugin:replacer)
+ Buildrequires:  mvn(junit:junit)
+ BuildRequires:  mvn(org.apache.felix:maven-bundle-plugin)
++BuildRequires:  mvn(org.moditect:moditect-maven-plugin)
+ BuildRequires:  mvn(org.mockito:mockito-core)
+ 
+ BuildArch:      noarch
+@@ -38,7 +39,6 @@
+ # Remove plugins unnecessary for RPM builds
+ %pom_remove_plugin ":maven-enforcer-plugin"
+ %pom_remove_plugin "org.jacoco:jacoco-maven-plugin"
+-%pom_remove_plugin "org.moditect:moditect-maven-plugin"
+ %pom_remove_plugin "org.codehaus.mojo:animal-sniffer-maven-plugin"
+ %pom_remove_plugin "org.gradlex:gradle-module-metadata-maven-plugin"
+ %pom_remove_plugin "org.cyclonedx:cyclonedx-maven-plugin"
+@@ -73,6 +73,9 @@
+ %license LICENSE NOTICE
+ 
+ %changelog
++* Tue Sep 15 2026 w0fv1 <wofbi1@outlook.com> - 2.21.5-3
++- Retain upstream Java module descriptors
++
+ * Thu Jul 16 2026 Fedora Release Engineering <releng@fedoraproject.org> - 2.21.5-2
+ - Rebuilt for https://fedoraproject.org/wiki/Fedora_45_Mass_Rebuild
+ 

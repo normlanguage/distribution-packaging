@@ -23,6 +23,8 @@ Distribution-native packaging for dependencies required by [Norm](https://github
 
 Debian source and binary artifacts are published as prerelease assets for review. The `.dsc` and its referenced archives are sufficient to extract the source with `dpkg-source -x`; use `sbuild` for an isolated build. Installed-package tests are defined in [debian/tests](kryo/debian/tests/).
 
+[Corrections to official Fedora Jackson module metadata](fedora-jackson-modules/) are maintained as patches against identified source RPMs.
+
 For Fedora, each component directory identifies its spec, source provenance, additional source inputs and validation scope. Build the spec with RPM tooling and validate the resulting SRPM with `mock`.
 
 Norm's own compiler and release definitions remain in the [upstream repository](https://github.com/normlanguage/Norm). These recipes do not introduce a separate Norm compiler build.
