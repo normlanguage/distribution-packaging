@@ -27,3 +27,7 @@ Upstream `mx unittest --suite sdk --verbose -Xmx4g` passes [127 tests across 16 
 ## Optimizing compiler
 
 The upstream compiler suite's `GRAAL` target builds its processor and options module with the same offline mx command, then fails because system OpenJDK 25 does not provide `jdk.vm.ci.meta.annotation`. [Compiler build evidence](evidence/graal-compiler-source-build.log) records the failure. The pinned compiler source uses this package in its annotation support, snippet metadata and replay proxies; its `JVMCIVersionCheck.java` specifies Labs JDK 25.0.3+9, release 25.1, JVMCI build 19 as the minimum for JDK 25. Removing a suite export would not supply the missing API. A distribution-supported JVMCI implementation compatible with this compiler remains unresolved.
+
+## mx packaging prerequisites
+
+The upstream `gate --strict-task-filter MxTests` runs without network access and with a private Maven home. It reaches the local-file Maven deployment integration test, which requires `maven-deploy-plugin:3.1.1`; [the gate fails at plugin resolution](evidence/mx-upstream-tests-home.log). Fedora 44 cannot [install the plugin by package name](evidence/mx-maven-deploy-install.log), and a [Rawhide capability query](evidence/mx-deploy-plugin-rawhide-query.log) for `mvn(org.apache.maven.plugins:maven-deploy-plugin)` returns no provider. The gate remains incomplete; its integration test has not been removed or skipped.

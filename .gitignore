@@ -148,6 +148,9 @@ graal/evidence/*
 !graal/evidence/graal-sdk-upstream-tests.log
 !graal/evidence/graal-sdk-upstream-tests-4g.log
 !graal/evidence/launcher-artifact.json
+!graal/evidence/mx-upstream-tests-home.log
+!graal/evidence/mx-deploy-plugin-rawhide-query.log
+!graal/evidence/mx-maven-deploy-install.log
 !graal/fedora/
 !graal/fedora/**
 !graal/tests/

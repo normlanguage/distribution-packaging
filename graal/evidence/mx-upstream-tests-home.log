@@ -1,0 +1,147 @@
+gate: 15 Sep 2026 12:13:43(+00:00) BEGIN: Gate
+gate: 15 Sep 2026 12:13:43(+00:00) BEGIN: MxTests
+test_owners_of('smoke test')
+test_owners_of('default in root')
+test_owners_of('no top-level fallback')
+test_owners_of('basic inheritance and overwriting')
+test_owners_of('nested overwrite')
+test_owners_of('disabled overwrite')
+test_owners_of('overwriting/inheritance with nesting and multiple rules')
+test_owners_of('multiple OWNERS lines')
+test_owners_of('multiple patterns')
+test_owners_of('any, all and at_least_one_mandatory_approver modifiers')
+test_owners_of('whitespace split and explicit lists')
+test_codeowners_json_output('smoke test')
+test_codeowners_json_output('do not suggest author as reviewer')
+test_codeowners_json_output('do not suggest author as reviewer: author is only owner')
+test_codeowners_json_output('multiple files')
+test_codeowners_json_output('with mandatory approver')
+test_parse_git_diff_output('additions only')
+test_parse_git_diff_output('modifications only')
+test_parse_git_diff_output('deletions only')
+test_parse_git_diff_output('single rename')
+test_parse_git_diff_output('mixed changes')
+test_parse_git_diff_output('with branch argument')
+test_parsing('smoke test')
+test_parsing('full-line comments are ignored')
+test_parsing('comment at line end is ignored')
+test_parsing('string with comment is accepted')
+test_parsing('windows line endings')
+test_parsing('mac line endings')
+test_parsing('indentation is ignored')
+test_parsing('properties are recognized')
+test_parsing('generic parsing')
+test_parsing('arrays')
+test_maven_projects('test_pom_helper')
+test_maven_projects('wrong artifact ID')
+test_maven_projects('basic project')
+test_maven_projects('project with plugin dependency')
+Roots:
+  root (root): depends on: leaf
+
+Others:
+  leaf (leaf/leaf)
+
+DOT graph written to /tmp/tmpqou8siun/suites.dot
+Selected suites: compiler, sdk, tools, truffle
+Running `custom-command` for suite `compiler`
+Running `custom-command` for suite `sdk`
+Running `custom-command` for suite `tools`
+Running `custom-command` for suite `truffle`
+4 commands executed successfully
+Running: mx -- help maven-deploy
+Running: mx --all-suites suites --locations
+test_keep_current_excludes_entries_referenced_by_dependencies (tests.test_gc_cache.GcCacheTest.test_keep_current_excludes_entries_referenced_by_dependencies) ... ok
+test_keep_current_excludes_fetch_jdk_cache_entries (tests.test_gc_cache.GcCacheTest.test_keep_current_excludes_fetch_jdk_cache_entries) ... ok
+test_missing_cache_dir_has_no_candidates (tests.test_gc_cache.GcCacheTest.test_missing_cache_dir_has_no_candidates) ... ok
+test_no_keep_current_collects_referenced_entries (tests.test_gc_cache.GcCacheTest.test_no_keep_current_collects_referenced_entries) ... ok
+test_older_than_accepts_absolute_time (tests.test_gc_cache.GcCacheTest.test_older_than_accepts_absolute_time) ... ok
+test_older_than_accepts_relative_unit_short_forms (tests.test_gc_cache.GcCacheTest.test_older_than_accepts_relative_unit_short_forms) ... ok
+test_older_than_accepts_relative_units (tests.test_gc_cache.GcCacheTest.test_older_than_accepts_relative_units) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.012s
+
+OK
+test_parent_cache_invalidated_after_checkout_branch_update (tests.test_git_parent_cache.GitParentCacheInvalidationTest.test_parent_cache_invalidated_after_checkout_branch_update) ... ok
+test_parent_cache_invalidated_after_commit (tests.test_git_parent_cache.GitParentCacheInvalidationTest.test_parent_cache_invalidated_after_commit) ... ok
+test_parent_cache_invalidated_after_detached_checkout_update (tests.test_git_parent_cache.GitParentCacheInvalidationTest.test_parent_cache_invalidated_after_detached_checkout_update) ... ok
+test_parent_cache_invalidated_after_hard_reset (tests.test_git_parent_cache.GitParentCacheInvalidationTest.test_parent_cache_invalidated_after_hard_reset) ... ok
+test_parent_cache_invalidated_after_pull_with_update (tests.test_git_parent_cache.GitParentCacheInvalidationTest.test_parent_cache_invalidated_after_pull_with_update) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.410s
+
+OK
+test_run_batched_maven_deploy_deploys_multiple_artifacts_to_file_repository (tests.test_maven_deploy.BatchedMavenDeployIntegrationTest.test_run_batched_maven_deploy_deploys_multiple_artifacts_to_file_repository) ... WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::staticFieldBase has been called by com.google.inject.internal.aop.HiddenClassDefiner (file:/usr/share/maven/lib/guice-5.1.0-classes.jar)
+WARNING: Please consider reporting this to the maintainers of class com.google.inject.internal.aop.HiddenClassDefiner
+WARNING: sun.misc.Unsafe::staticFieldBase will be removed in a future release
+[ERROR] Plugin org.apache.maven.plugins:maven-deploy-plugin:3.1.1 or one of its dependencies could not be resolved:
+[ERROR] 	The following artifacts could not be resolved: org.apache.maven.plugins:maven-deploy-plugin:pom:3.1.1 (absent): Could not transfer artifact org.apache.maven.plugins:maven-deploy-plugin:pom:3.1.1 from/to central (https://repo.maven.apache.org/maven2): Network is unreachable
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginResolutionException
+Command 'mvn --batch-mode --quiet -f /tmp/tmp2pasacxx.pom validate' returned non-zero exit status 1.
+ERROR
+test_deploy_false_excludes_all_maven_deploy_distributions (tests.test_maven_deploy.DeployDistributionMatcherTest.test_deploy_false_excludes_all_maven_deploy_distributions) ... ok
+test_deploy_false_excludes_custom_artifact_deploy_distribution (tests.test_maven_deploy.DeployDistributionMatcherTest.test_deploy_false_excludes_custom_artifact_deploy_distribution) ... ok
+test_deploy_false_excludes_maven_deploy_distribution (tests.test_maven_deploy.DeployDistributionMatcherTest.test_deploy_false_excludes_maven_deploy_distribution) ... ok
+test_suite_loader_applies_deploy_to_custom_distribution (tests.test_maven_deploy.DeployDistributionMatcherTest.test_suite_loader_applies_deploy_to_custom_distribution) ... ok
+test_gen_pom_marks_mx_optional_dependencies_optional (tests.test_maven_deploy.MavenOptionalDependencyPomTest.test_gen_pom_marks_mx_optional_dependencies_optional) ... ok
+
+======================================================================
+ERROR: test_run_batched_maven_deploy_deploys_multiple_artifacts_to_file_repository (tests.test_maven_deploy.BatchedMavenDeployIntegrationTest.test_run_batched_maven_deploy_deploys_multiple_artifacts_to_file_repository)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/w0fv1/graal-source-candidate/graalvm-mx-2238199/tests/test_maven_deploy.py", line 336, in test_run_batched_maven_deploy_deploys_multiple_artifacts_to_file_repository
+    orig_mx_maven._run_batched_maven_deploy(specs, repo, settingsXml=None, dryRun=False)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/w0fv1/graal-source-candidate/graalvm-mx-2238199/src/mx/_impl/mx_maven.py", line 689, in _run_batched_maven_deploy
+    mx.run_maven(cmd)
+    ~~~~~~~~~~~~^^^^^
+  File "/home/w0fv1/graal-source-candidate/graalvm-mx-2238199/src/mx/_impl/mx.py", line 12475, in run_maven
+    return run([mavenCommand] + extra_args + args, nonZeroIsFatal=nonZeroIsFatal, out=out, err=err, timeout=timeout, env=env, cwd=cwd)
+  File "/home/w0fv1/graal-source-candidate/graalvm-mx-2238199/src/mx/_impl/mx.py", line 12764, in run
+    abort(retcode, context=context)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/w0fv1/graal-source-candidate/graalvm-mx-2238199/src/mx/_impl/support/logging.py", line 313, in abort
+    raise SystemExit(error_code)
+SystemExit: 1
+
+----------------------------------------------------------------------
+Ran 6 tests in 2.704s
+
+FAILED (errors=1)
+gate: 15 Sep 2026 12:13:48(+00:05) END:   MxTests [0:00:05.180189] [disk (free/total): 70.2GB/79.9GB]
+Traceback (most recent call last):
+  File "/home/w0fv1/graal-source-candidate/graalvm-mx-2238199/src/mx/_impl/mx_gate.py", line 532, in gate
+    _run_gate(cleanArgs, args, tasks)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/w0fv1/graal-source-candidate/graalvm-mx-2238199/src/mx/_impl/mx_gate.py", line 756, in _run_gate
+    _run_mx_suite_tests()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "/home/w0fv1/graal-source-candidate/graalvm-mx-2238199/src/mx/_impl/mx_gate.py", line 652, in _run_mx_suite_tests
+    _run_unittest_module(test_maven_deploy)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/home/w0fv1/graal-source-candidate/graalvm-mx-2238199/src/mx/_impl/mx_gate.py", line 620, in _run_unittest_module
+    assert result.wasSuccessful(), f"{module.__name__} failed"
+           ~~~~~~~~~~~~~~~~~~~~^^
+AssertionError: tests.test_maven_deploy failed
+
+The sequence of mx commands that were executed until the failure follows:
+
+mx -- help maven-deploy
+mx --all-suites suites --locations
+mx --all-suites fetch-jdk --list-cache-paths
+
+If the previous sequence is incomplete or some commands were executed programmatically use:
+
+mx --all-suites suites --locations
+
+gate: 15 Sep 2026 12:13:48(+00:05) ABORT: Gate [0:00:05.181345] [disk (free/total): 70.2GB/79.9GB]
+tests.test_maven_deploy failed
