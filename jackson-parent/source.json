@@ -1,0 +1,8 @@
+{
+  "repository": "https://github.com/FasterXML/jackson-parent",
+  "tag": "jackson-parent-2.20",
+  "commit": "e51bbfa5b0f9b7e11da972a2c48385b330309fa8",
+  "url": "https://api.github.com/repos/FasterXML/jackson-parent/tarball/e51bbfa5b0f9b7e11da972a2c48385b330309fa8",
+  "archiveRoot": "FasterXML-jackson-parent-e51bbfa",
+  "sha256": "e93531a697f702145dfa9a2d81a541b01af53a84f7250efa5294349873035991"
+}

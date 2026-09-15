@@ -4,6 +4,9 @@ Distribution-native packaging for dependencies required by [Norm](https://github
 
 | Component | Packaging | Upstream provenance |
 | --- | --- | --- |
+| FasterXML OSS Parent | [Fedora](fasterxml-oss-parent/fedora/) | [Source](fasterxml-oss-parent/source.json) |
+| Jackson Parent | [Fedora](jackson-parent/fedora/) | [Source](jackson-parent/source.json) |
+| Jackson BOM and Base | [Fedora](jackson-bom/fedora/) | [Source](jackson-bom/source.json) |
 | FastDoubleParser | [Fedora](fastdoubleparser/fedora/) | [Source](fastdoubleparser/source.json) |
 | Joda-Time | [Fedora](joda-time/fedora/) | [Source](joda-time/source.json) |
 | Joda-Convert | [Fedora](joda-convert/fedora/) | [Source](joda-convert/source.json) |
@@ -17,6 +20,6 @@ Distribution-native packaging for dependencies required by [Norm](https://github
 
 Debian source and binary artifacts are published as prerelease assets for review. The `.dsc` and its referenced archives are sufficient to extract the source with `dpkg-source -x`; use `sbuild` for an isolated build. Installed-package tests are defined in [debian/tests](kryo/debian/tests/).
 
-For Fedora, fetch the archive recorded in the provenance file, place it and [MinlogCheck.java](minlog/fedora/MinlogCheck.java) in the RPM SOURCES directory, and build the [spec](minlog/fedora/minlog.spec). Validate the resulting SRPM with `mock`.
+For Fedora, each component directory identifies its spec, source provenance, additional source inputs and validation scope. Build the spec with RPM tooling and validate the resulting SRPM with `mock`.
 
 Norm's own compiler and release definitions remain in the [upstream repository](https://github.com/normlanguage/Norm). These recipes do not introduce a separate Norm compiler build.

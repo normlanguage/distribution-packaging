@@ -1,0 +1,8 @@
+{
+  "repository": "https://github.com/FasterXML/jackson-bom",
+  "tag": "jackson-bom-2.20.2",
+  "commit": "2a26844ad13cf49562009867d55b30a084230f2b",
+  "url": "https://api.github.com/repos/FasterXML/jackson-bom/tarball/2a26844ad13cf49562009867d55b30a084230f2b",
+  "archiveRoot": "FasterXML-jackson-bom-2a26844",
+  "sha256": "dce9e62b26e5b40584ddf6a1f4320315fdfba3aa2a5513aed41bc48d060617d9"
+}
