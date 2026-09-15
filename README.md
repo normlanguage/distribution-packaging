@@ -4,6 +4,7 @@ Distribution-native packaging for dependencies required by [Norm](https://github
 
 | Component | Packaging | Upstream provenance |
 | --- | --- | --- |
+| Joda-Convert | [Fedora](joda-convert/fedora/) | [Source](joda-convert/source.json) |
 | ThreeTen Backport | [Fedora](threetenbp/fedora/) | [Source](threetenbp/source.json) |
 | JSpecify | [Fedora](jspecify/fedora/) | [Source](jspecify/source.json) |
 | OpenJSON | [Fedora](openjson/fedora/) | [Source](openjson/source.json) |

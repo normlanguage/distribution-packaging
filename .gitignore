@@ -47,3 +47,10 @@ threetenbp/*
 !threetenbp/tests/
 !threetenbp/tests/**
 !threetenbp/source.json
+!joda-convert/
+joda-convert/*
+!joda-convert/fedora/
+!joda-convert/fedora/**
+!joda-convert/tests/
+!joda-convert/tests/**
+!joda-convert/source.json
