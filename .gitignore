@@ -40,3 +40,10 @@ jspecify/*
 !jspecify/fedora/
 !jspecify/fedora/**
 !jspecify/source.json
+!threetenbp/
+threetenbp/*
+!threetenbp/fedora/
+!threetenbp/fedora/**
+!threetenbp/tests/
+!threetenbp/tests/**
+!threetenbp/source.json

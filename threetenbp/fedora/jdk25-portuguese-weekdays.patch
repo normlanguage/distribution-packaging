@@ -1,0 +1,23 @@
+--- a/src/test/java/org/threeten/bp/format/TestSimpleDateTimeTextProvider.java
++++ b/src/test/java/org/threeten/bp/format/TestSimpleDateTimeTextProvider.java
+@@ -69,13 +69,13 @@
+             {DAY_OF_WEEK, 6, TextStyle.SHORT, enUS, "Sat"},
+             {DAY_OF_WEEK, 7, TextStyle.SHORT, enUS, "Sun"},
+ 
+-            {DAY_OF_WEEK, 1, TextStyle.SHORT, ptBR, "Seg"},
+-            {DAY_OF_WEEK, 2, TextStyle.SHORT, ptBR, "Ter"},
+-            {DAY_OF_WEEK, 3, TextStyle.SHORT, ptBR, "Qua"},
+-            {DAY_OF_WEEK, 4, TextStyle.SHORT, ptBR, "Qui"},
+-            {DAY_OF_WEEK, 5, TextStyle.SHORT, ptBR, "Sex"},
+-            {DAY_OF_WEEK, 6, TextStyle.SHORT, ptBR, "S\u00E1b"},
+-            {DAY_OF_WEEK, 7, TextStyle.SHORT, ptBR, "Dom"},
++            {DAY_OF_WEEK, 1, TextStyle.SHORT, ptBR, "seg."},
++            {DAY_OF_WEEK, 2, TextStyle.SHORT, ptBR, "ter."},
++            {DAY_OF_WEEK, 3, TextStyle.SHORT, ptBR, "qua."},
++            {DAY_OF_WEEK, 4, TextStyle.SHORT, ptBR, "qui."},
++            {DAY_OF_WEEK, 5, TextStyle.SHORT, ptBR, "sex."},
++            {DAY_OF_WEEK, 6, TextStyle.SHORT, ptBR, "s\u00E1b."},
++            {DAY_OF_WEEK, 7, TextStyle.SHORT, ptBR, "dom."},
+ 
+             {DAY_OF_WEEK, 1, TextStyle.FULL, enUS, "Monday"},
+             {DAY_OF_WEEK, 2, TextStyle.FULL, enUS, "Tuesday"},

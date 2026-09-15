@@ -1,0 +1,12 @@
+{
+  "repository": "https://github.com/ThreeTen/threetenbp",
+  "tag": "v1.7.4",
+  "commit": "4032d4137bcce776f72839c208ad4a8947e9f891",
+  "url": "https://api.github.com/repos/ThreeTen/threetenbp/tarball/4032d4137bcce776f72839c208ad4a8947e9f891",
+  "archiveRoot": "ThreeTen-threetenbp-4032d41",
+  "sha256": "00f409f418d969767155a076134004e99011c632bb10324b599d44bb07e4089f",
+  "timeZoneSource": {
+    "url": "https://github.com/JodaOrg/global-tz/releases/download/2026cgtz/tzdata2026cgtz-rearguard.tar.gz",
+    "sha256": "d3e6a92511ff30a1e28a5bc0a99c33d6afc2f509917bce0192c9e77a5d90e174"
+  }
+}
