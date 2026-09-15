@@ -21,3 +21,10 @@ reflectasm/*
 !reflectasm/fedora/
 !reflectasm/fedora/**
 !reflectasm/source.json
+!commonmark/
+commonmark/*
+!commonmark/fedora/
+!commonmark/fedora/**
+!commonmark/tests/
+!commonmark/tests/**
+!commonmark/source.json
