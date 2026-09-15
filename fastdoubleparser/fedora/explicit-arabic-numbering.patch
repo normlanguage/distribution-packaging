@@ -1,0 +1,20 @@
+--- a/fastdoubleparser-dev/src/test/java/ch.randelshofer.fastdoubleparser/ch/randelshofer/fastdoubleparser/ConfigurableDoubleParserTestDataFactory.java
++++ b/fastdoubleparser-dev/src/test/java/ch.randelshofer.fastdoubleparser/ch/randelshofer/fastdoubleparser/ConfigurableDoubleParserTestDataFactory.java
+@@ -165,7 +165,7 @@
+ 
+     public static List<NumberTestData> createArabianNumberFormatSymbolsTestData() {
+         List<NumberTestData> list = new ArrayList<>();
+-        Locale locale = new Locale("ar");
++        Locale locale = Locale.forLanguageTag("ar-u-nu-arab");
+         DecimalFormatSymbols dfs = DecimalFormatSymbols.getInstance(
+                 locale
+         );
+@@ -182,7 +182,7 @@
+ 
+     public static List<NumberTestData> createCustomArabianNumberFormatSymbolsTestData() {
+         List<NumberTestData> list = new ArrayList<>();
+-        Locale locale = new Locale("ar");
++        Locale locale = Locale.forLanguageTag("ar-u-nu-arab");
+         DecimalFormatSymbols dfs = DecimalFormatSymbols.getInstance(
+                 locale
+         );

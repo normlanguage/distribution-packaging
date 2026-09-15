@@ -4,6 +4,7 @@ Distribution-native packaging for dependencies required by [Norm](https://github
 
 | Component | Packaging | Upstream provenance |
 | --- | --- | --- |
+| FastDoubleParser | [Fedora](fastdoubleparser/fedora/) | [Source](fastdoubleparser/source.json) |
 | Joda-Time | [Fedora](joda-time/fedora/) | [Source](joda-time/source.json) |
 | Joda-Convert | [Fedora](joda-convert/fedora/) | [Source](joda-convert/source.json) |
 | ThreeTen Backport | [Fedora](threetenbp/fedora/) | [Source](threetenbp/source.json) |

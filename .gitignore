@@ -61,3 +61,10 @@ joda-time/*
 !joda-time/tests/
 !joda-time/tests/**
 !joda-time/source.json
+!fastdoubleparser/
+fastdoubleparser/*
+!fastdoubleparser/fedora/
+!fastdoubleparser/fedora/**
+!fastdoubleparser/tests/
+!fastdoubleparser/tests/**
+!fastdoubleparser/source.json

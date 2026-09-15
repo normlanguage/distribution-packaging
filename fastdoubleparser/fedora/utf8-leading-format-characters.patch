@@ -1,0 +1,23 @@
+--- a/fastdoubleparser-dev/src/main/java/ch.randelshofer.fastdoubleparser/ch/randelshofer/fastdoubleparser/ConfigurableDoubleParser.java
++++ b/fastdoubleparser-dev/src/main/java/ch.randelshofer.fastdoubleparser/ch/randelshofer/fastdoubleparser/ConfigurableDoubleParser.java
+@@ -309,10 +309,18 @@
+      * @throws NumberFormatException if the provided char array could not be parsed
+      */
+     public double parseDouble(byte[] str, int offset, int length) {
++        int endIndex = AbstractNumberParser.checkBounds(str.length, offset, length);
++        boolean inputIsAscii = true;
++        for (int index = offset; index < endIndex; index++) {
++            if (str[index] < 0) {
++                inputIsAscii = false;
++                break;
++            }
++        }
+         long bitPattern;
+-        if (isAscii || !ignoreCase && isAllSingleCharSymbolsAscii) {
++        if (inputIsAscii && (isAscii || !ignoreCase && isAllSingleCharSymbolsAscii)) {
+             bitPattern = getByteArrayAsciiParser().parseFloatingPointLiteral(str, offset, length);
+-        } else if (isDigitsAscii) {
++        } else if (inputIsAscii && isDigitsAscii) {
+             bitPattern = getByteArrayUtf8Parser().parseFloatingPointLiteral(str, offset, length);
+         } else {
+             Utf8Decoder.Result result = Utf8Decoder.decode(str, offset, length);
