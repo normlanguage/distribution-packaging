@@ -1,0 +1,38 @@
+{
+  "libraries": {
+    "ASM_9.8": {
+      "path": "/usr/share/java/objectweb-asm/asm.jar",
+      "version": "9.10.1"
+    },
+    "ASM_TREE_9.8": {
+      "path": "/usr/share/java/objectweb-asm/asm-tree.jar",
+      "version": "9.10.1"
+    },
+    "ASM_COMMONS_9.8": {
+      "path": "/usr/share/java/objectweb-asm/asm-commons.jar",
+      "version": "9.10.1"
+    },
+    "ASM_ANALYSIS_9.8": {
+      "path": "/usr/share/java/objectweb-asm/asm-analysis.jar",
+      "version": "9.10.1"
+    },
+    "ANTLR4": {
+      "path": "/usr/share/java/antlr4/antlr4-runtime.jar",
+      "version": "4.13.2"
+    }
+  },
+  "profiles": {
+    "mx": [
+      "ASM_9.8",
+      "ASM_TREE_9.8",
+      "ASM_COMMONS_9.8",
+      "ASM_ANALYSIS_9.8"
+    ],
+    "truffle": [
+      "ANTLR4",
+      "ASM_9.8",
+      "ASM_TREE_9.8",
+      "ASM_COMMONS_9.8"
+    ]
+  }
+}

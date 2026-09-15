@@ -1,0 +1,93 @@
+[
+  {
+    "name": "collections",
+    "sha256": "8040d83b15084965f77970b75fcc767fff03f85dd8ba81457d0e19d19b1a7f1f",
+    "bundled_external_classes": [],
+    "native_resources": [],
+    "module_descriptors": [
+      "module-info.class"
+    ]
+  },
+  {
+    "name": "word",
+    "sha256": "09d628081201ee10d20f002babfba61473f568576f6736f581fcee7bc8d544bf",
+    "bundled_external_classes": [],
+    "native_resources": [],
+    "module_descriptors": [
+      "module-info.class"
+    ]
+  },
+  {
+    "name": "nativeimage",
+    "sha256": "792f0526c2372fc6974758dbfa7416151c1c6f069a1fbe6af5a635dce11045b4",
+    "bundled_external_classes": [],
+    "native_resources": [],
+    "module_descriptors": [
+      "module-info.class"
+    ]
+  },
+  {
+    "name": "jniutils",
+    "sha256": "9130458508370064c876465c0703262a0966868b952345e5176ae812774ab855",
+    "bundled_external_classes": [],
+    "native_resources": [],
+    "module_descriptors": [
+      "module-info.class"
+    ]
+  },
+  {
+    "name": "nativebridge",
+    "sha256": "2f22f50586302a0f6dc36d167e3106a72823174d9d85161d482c06f0a359ba33",
+    "bundled_external_classes": [],
+    "native_resources": [],
+    "module_descriptors": [
+      "module-info.class"
+    ]
+  },
+  {
+    "name": "polyglot",
+    "sha256": "d7bdace28a6dc3f82fc6cb683751858510c7a52b823050085dde23e41fa06486",
+    "bundled_external_classes": [],
+    "native_resources": [],
+    "module_descriptors": [
+      "module-info.class"
+    ]
+  },
+  {
+    "name": "truffle-api",
+    "sha256": "327b78aabc2506054bd83ba2165f084794f99d9f6acd69c3200ddef355751826",
+    "bundled_external_classes": [],
+    "native_resources": [
+      "META-INF/resources/engine/libtruffleattach/linux/amd64/bin/libtruffleattach.so"
+    ],
+    "module_descriptors": [
+      "META-INF/versions/9/module-info.class",
+      "META-INF/versions/21/module-info.class"
+    ]
+  },
+  {
+    "name": "truffle-compiler",
+    "sha256": "f605845eda99a589f619a7a75f99f7fbd433fb70404a1c5cf1d2aa2aae1f1155",
+    "bundled_external_classes": [],
+    "native_resources": [],
+    "module_descriptors": [
+      "module-info.class"
+    ]
+  },
+  {
+    "name": "truffle-runtime",
+    "sha256": "8949fd7833ed397360a0c2b6ea0bc3ff237d385d11c31347810cbee539b00e88",
+    "bundled_external_classes": [],
+    "native_resources": [],
+    "module_descriptors": [
+      "module-info.class"
+    ]
+  },
+  {
+    "name": "truffle-dsl-processor",
+    "sha256": "204eb2b4b436ce2fa3673639f95d738ed51f6461a8da478134defb9954b75e92",
+    "bundled_external_classes": [],
+    "native_resources": [],
+    "module_descriptors": []
+  }
+]

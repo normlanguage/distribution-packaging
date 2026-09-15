@@ -10,6 +10,10 @@ The five resulting JARs pass `java --validate-modules` together, and the Polyglo
 
 ## Truffle
 
-The same network-isolated build of `TRUFFLE_DSL_PROCESSOR`, `TRUFFLE_API`, `TRUFFLE_COMPILER` and `TRUFFLE_RUNTIME` stops at the requested ANTLR 4.13.2 runtime download. Fedora 44 provides `antlr4-runtime-4.13.2-18.fc44`; its installed JAR exposes the expected automatic module name `org.antlr.antlr4.runtime`.
+The network-isolated build of `TRUFFLE_DSL_PROCESSOR`, `TRUFFLE_API`, `TRUFFLE_COMPILER` and `TRUFFLE_RUNTIME` succeeds from freshly extracted source with system ANTLR and ASM. The [source patch](fedora/unbundle-truffle-libraries.patch) removes embedded dependency classes. [System bindings](fedora/system-libraries.json) are applied to both mx and Truffle by [bind-system-libraries.py](fedora/bind-system-libraries.py), which obtains module names from the JDK and computes digests from installed JARs.
 
-The next integration step is to use the system ANTLR artifact through the upstream mx dependency model, preserve its actual content identity, and ensure the processor package does not bundle ANTLR classes. Later dependencies are not yet validated. mx packaging, SDK unit tests and distribution-native package generation also remain required.
+The [functional check](tests/run-check.sh) verifies DSL annotation processing, a Truffle call target and an ASM-generated host adapter. It requires native attachment failures to throw. [Artifact inspection](evidence/truffle-artifacts.json) records hashes, module descriptors and native resources; none of the ten inspected JARs contains ANTLR or ASM classes. `truffle-api.jar` includes the source-built Linux amd64 attachment library and needs architecture-aware packaging.
+
+Evidence: [fresh build](evidence/graal-truffle-candidate-build.log), [functional check](evidence/graal-candidate-functional-check.log), [explicit JVMCI/compiler diagnostic](evidence/graal-candidate-jvmci-check.log). The default JVM uses interpreter fallback. Explicitly enabling JVMCI and resolving the system `jdk.graal.compiler` module fails because that module lacks the Truffle compiler package. Optimizing compilation remains unverified; these checks do not establish upstream unit-test coverage or full Norm compatibility.
+
+mx packaging, upstream tests, a compatible optimizing compiler and distribution-native package generation remain required.

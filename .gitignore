@@ -138,3 +138,11 @@ graal/*
 !graal/evidence/
 graal/evidence/*
 !graal/evidence/sdk-build.json
+!graal/evidence/truffle-artifacts.json
+!graal/evidence/graal-truffle-candidate-build.log
+!graal/evidence/graal-candidate-functional-check.log
+!graal/evidence/graal-candidate-jvmci-check.log
+!graal/fedora/
+!graal/fedora/**
+!graal/tests/
+!graal/tests/**
