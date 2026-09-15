@@ -4,6 +4,7 @@ Distribution-native packaging for dependencies required by [Norm](https://github
 
 | Component | Packaging | Upstream provenance |
 | --- | --- | --- |
+| JSpecify | [Fedora](jspecify/fedora/) | [Source](jspecify/source.json) |
 | OpenJSON | [Fedora](openjson/fedora/) | [Source](openjson/source.json) |
 | CommonMark | [Fedora](commonmark/fedora/) | [Source](commonmark/source.json) |
 | Kryo 5 | [Debian](kryo/debian/), [Fedora](kryo/fedora/) | [Source](kryo/source.json), [repacked archive](kryo/repack.json) |

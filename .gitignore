@@ -35,3 +35,8 @@ openjson/*
 !openjson/tests/
 !openjson/tests/**
 !openjson/source.json
+!jspecify/
+jspecify/*
+!jspecify/fedora/
+!jspecify/fedora/**
+!jspecify/source.json
