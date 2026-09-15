@@ -1,0 +1,213 @@
+Compiling com.oracle.mxtool.junit.jdk9 with javac(JDK 25)...
+Compiling com.oracle.mxtool.junit with javac(JDK 25)...
+Archiving JUNIT_TOOL...
+mx build log written to /home/w0fv1/graal-source-candidate/oracle-graal-d9de820/sdk/mxbuild/buildlog-20260915-120536.html
+MxJUnitCore
+JUnit version 4.13.2
+class org.graalvm.word.test.WordTests: Cannot find module(s) matching org.graalvm.word: org.graalvm.word/org.graalvm.word.impl
+org.graalvm.collections.test.EconomicMapImplTest started (1 of 16)
+  testValueIteratorNext: Passed 20 ms
+  testKeyIteratorNext: Passed 4 ms
+  testInitFromHashSet: Passed 1 ms
+  testMapPutNull: Passed 2 ms
+  testNewEquivalence: Passed 2 ms
+  testCopyHash: Passed 0 ms
+  testRemoveNull: Passed 0 ms
+  testInvalidIteratorRemove: Passed 5 ms
+org.graalvm.collections.test.EconomicMapImplTest finished 47.3 ms, [disk (free/total): 72.0GB/79.9GB]
+org.graalvm.collections.test.EconomicMapLargeTest started (2 of 16)
+  testVeryLarge[EconomicMap]: Passed 369 ms
+  testAddRemove[EconomicMap]: Passed 199 ms
+  testVeryLarge[EconomicMap(IDENTITY)]: Passed 289 ms
+  testAddRemove[EconomicMap(IDENTITY)]: Passed 297 ms
+  testVeryLarge[EconomicMap(IDENTITY_WITH_SYSTEM_HASHCODE)]: Passed 325 ms
+  testAddRemove[EconomicMap(IDENTITY_WITH_SYSTEM_HASHCODE)]: Passed 111 ms
+  testVeryLarge[EconomicMap<->wrapMap]: Passed 428 ms
+  testAddRemove[EconomicMap<->wrapMap]: Passed 502 ms
+  testVeryLarge[wrapMap]: Passed 215 ms
+  testAddRemove[wrapMap]: Passed 446 ms
+org.graalvm.collections.test.EconomicMapLargeTest finished 3212.5 ms, [disk (free/total): 72.0GB/79.9GB]
+org.graalvm.collections.test.EconomicMapTest started (3 of 16)
+  testContainsNullKey: Passed 8 ms
+  testReplaceAll: Passed 13 ms
+  testGetNullKey: Passed 1 ms
+  testOfTwoElements: Passed 0 ms
+  testClear: Passed 0 ms
+  testToString: Passed 3 ms
+  testOf: Passed 0 ms
+  testComputeIfAbsent: Passed 1 ms
+  testPutIfAbsent: Passed 0 ms
+  testCreateWithEquivalence: Passed 0 ms
+  testEmptyCursor: Passed 3 ms
+  testMapGetDefault: Passed 0 ms
+  testRemoveNullKey: Passed 0 ms
+  testWrapMap: Passed 0 ms
+  testCreateWithInitialCapacity: Passed 0 ms
+  testMapPutAll: Passed 0 ms
+  testEmptyMap: Passed 3 ms
+  testRemoveKey: Passed 0 ms
+  testPutNullKey: Passed 0 ms
+org.graalvm.collections.test.EconomicMapTest finished 49.1 ms, [disk (free/total): 72.0GB/79.9GB]
+org.graalvm.collections.test.EconomicMapUtilTest started (4 of 16)
+  differentStrategiesNotEqual: Passed 1 ms
+  differentSizesNotEqual: Passed 0 ms
+  lexicographicalComparison: Passed 19 ms
+  simpleEquality: Passed 1 ms
+  differentKeysNotEqual: Passed 0 ms
+org.graalvm.collections.test.EconomicMapUtilTest finished 25.3 ms, [disk (free/total): 72.0GB/79.9GB]
+org.graalvm.collections.test.EconomicSetTest started (5 of 16)
+  testEmptySetContainsNull: Passed 4 ms
+  testToArray: Passed 4 ms
+  testAddNull: Passed 1 ms
+  testContainsNull: Passed 0 ms
+  testToString: Passed 0 ms
+  testCreateFromIterable: Passed 0 ms
+  testSetRemoval: Passed 0 ms
+  testRetainAll: Passed 0 ms
+  testCreateWithEquivalenceAndUnmodifiableSet: Passed 0 ms
+  testIdentityEquivalenceContains: Passed 0 ms
+  testEmptySetClear: Passed 0 ms
+  testRemoveNull: Passed 0 ms
+  testEmptySetAdd: Passed 0 ms
+  testEmptySetBasics: Passed 0 ms
+  testAddAllIterator: Passed 0 ms
+  testToUnalignedArray: Passed 1 ms
+  testRemoveAllIterator: Passed 0 ms
+  testEmptySetRemove: Passed 2 ms
+  testAddAll: Passed 1 ms
+  testCreateWithEquivalenceAndCapacity: Passed 0 ms
+  testUtilities: Passed 0 ms
+  testRemoveAll: Passed 0 ms
+org.graalvm.collections.test.EconomicSetTest finished 26.3 ms, [disk (free/total): 72.0GB/79.9GB]
+org.graalvm.collections.test.EmptyEconomicMapTest started (6 of 16)
+  testContainsNullKey: Passed 1 ms
+  testPut: Passed 0 ms
+  testClear: Passed 0 ms
+  testContainsKey: Passed 0 ms
+  testCursorAlwaysEmpty: Passed 1 ms
+  testSizeZero: Passed 0 ms
+  testIsEmpty: Passed 0 ms
+  testRemoveKey: Passed 0 ms
+org.graalvm.collections.test.EmptyEconomicMapTest finished 7.0 ms, [disk (free/total): 72.0GB/79.9GB]
+org.graalvm.collections.test.EmptyEconomicSetTest started (7 of 16)
+  testAddNull: Passed 2 ms
+  testAdd: Passed 0 ms
+  testClear: Passed 0 ms
+  testContainsNull: Passed 0 ms
+  testContains: Passed 0 ms
+  testRemoveNull: Passed 0 ms
+  testSizeZero: Passed 0 ms
+  testIsEmpty: Passed 0 ms
+  testRemove: Passed 0 ms
+  testIteratorAlwaysEmpty: Passed 0 ms
+  testIteratorThrowsException: Passed 0 ms
+org.graalvm.collections.test.EmptyEconomicSetTest finished 11.3 ms, [disk (free/total): 72.0GB/79.9GB]
+org.graalvm.collections.test.EquivalenceTest started (8 of 16)
+  testDEFAULT: Passed 1 ms
+  testIDENTITY: Passed 0 ms
+  testIDENTITYWITHSYSTEMHASHCODE: Passed 0 ms
+org.graalvm.collections.test.EquivalenceTest finished 2.9 ms, [disk (free/total): 72.0GB/79.9GB]
+org.graalvm.collections.test.LockFreePoolTest started (9 of 16)
+  concurrentAddGet: Passed 204 ms
+  addGet: Passed 1 ms
+org.graalvm.collections.test.LockFreePoolTest finished 207.4 ms, [disk (free/total): 72.0GB/79.9GB]
+org.graalvm.collections.test.LockFreePrefixTreeTest started (10 of 16)
+  largeAlphabetHeap: Passed 48 ms
+  largeAlphabetPool: Passed 88 ms
+  hashFlatMultithreadedHeap: Passed 65 ms
+  hashFlatMultithreadedPool: Passed 147 ms
+  linearFlatMultithreadedHeap: Passed 15 ms
+  linearFlatMultithreadedPool: Passed 23 ms
+  manyMultiThreaded: Passed 67459 ms
+  deepHashMultiThreadedV2: Passed 352 ms
+  deepHashMultiThreadedHeap: Passed 1384 ms
+  deepHashMultiThreadedPool: Passed 5544 ms
+  smallAlphabetHeap: Passed 10 ms
+  smallAlphabetPool: Passed 11 ms
+  largeMultiThreadedHeap: 
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "Thread-372"
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "Thread-368"
+FAILED
+largeMultiThreadedHeap(org.graalvm.collections.test.LockFreePrefixTreeTest)
+java.lang.OutOfMemoryError: Java heap space
+ 22069 ms
+  largeMultiThreadedPool: 
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "Thread-376"
+FAILED
+largeMultiThreadedPool(org.graalvm.collections.test.LockFreePrefixTreeTest)
+java.lang.OutOfMemoryError: Java heap space
+ 30838 ms
+  deepLinearMultiThreadedHeap: Passed 486 ms
+  deepLinearMultiThreadedPool: Passed 2020 ms
+org.graalvm.collections.test.LockFreePrefixTreeTest finished 130624.3 ms, [disk (free/total): 72.0GB/79.9GB]
+org.graalvm.collections.test.PairTest started (11 of 16)
+  testCreate: Passed 23 ms
+  testUtilities: Passed 24 ms
+org.graalvm.collections.test.PairTest finished 50.3 ms, [disk (free/total): 72.0GB/79.9GB]
+org.graalvm.collections.test.SeqLockPrefixTreeTest started (12 of 16)
+  deepMultiThreaded: Passed 2999 ms
+  smallAlphabet: Passed 13 ms
+  largeAlphabet: Passed 9 ms
+  manyMultiThreaded: Passed 5852 ms
+  largeMultithreaded: Ignored (GR-41705) null ms
+org.graalvm.collections.test.SeqLockPrefixTreeTest finished 8911.3 ms, [disk (free/total): 72.0GB/79.9GB]
+org.graalvm.home.test.VersionTest started (13 of 16)
+  testParsing: Passed 20 ms
+  testDevSuffix: Passed 2 ms
+  testCompare: Passed 25 ms
+  testCurrent: Passed 62 ms
+  testSnapshot: Passed 1 ms
+  testGetComponents: Passed 5 ms
+  testCreate: Passed 6 ms
+  testEquals: Passed 1 ms
+  testFormat: Passed 0 ms
+org.graalvm.home.test.VersionTest finished 129.7 ms, [disk (free/total): 72.0GB/79.9GB]
+org.graalvm.launcher.test.LauncherTest started (14 of 16)
+  testLogFileNames: Passed 164 ms
+org.graalvm.launcher.test.LauncherTest finished 165.6 ms, [disk (free/total): 72.0GB/79.9GB]
+org.graalvm.nativeimage.test.ImageSingletonsTest started (15 of 16)
+  checkAndUseWorksOnRegularJDK: Passed 3 ms
+  containsCanBeUsedInRegularJDK: Passed 0 ms
+  lookupCannotBeUsedInRegularJDK: Passed 0 ms
+org.graalvm.nativeimage.test.ImageSingletonsTest finished 8.1 ms, [disk (free/total): 72.0GB/79.9GB]
+org.graalvm.word.test.WordTests started (16 of 16)
+  testWords: Passed 13 ms
+  testPointer: Passed 3 ms
+  testUnsigned: Passed 1 ms
+  testSigned: Passed 1 ms
+org.graalvm.word.test.WordTests finished 25.3 ms, [disk (free/total): 72.0GB/79.9GB]
+Time: 143.529
+There were 2 failures:
+1) org.graalvm.collections.test.LockFreePrefixTreeTest#largeMultiThreadedHeap
+java.lang.OutOfMemoryError: Java heap space
+2) org.graalvm.collections.test.LockFreePrefixTreeTest#largeMultiThreadedPool
+java.lang.OutOfMemoryError: Java heap space
+
+FAILURES!!!
+Tests run: 127,  Failures: 2
+
+
+10 longest running test classes after running 16 of 16 classes:
+    130,624 ms    org.graalvm.collections.test.LockFreePrefixTreeTest
+      8,911 ms    org.graalvm.collections.test.SeqLockPrefixTreeTest
+      3,212 ms    org.graalvm.collections.test.EconomicMapLargeTest
+        207 ms    org.graalvm.collections.test.LockFreePoolTest
+        165 ms    org.graalvm.launcher.test.LauncherTest
+        129 ms    org.graalvm.home.test.VersionTest
+         50 ms    org.graalvm.collections.test.PairTest
+         49 ms    org.graalvm.collections.test.EconomicMapTest
+         47 ms    org.graalvm.collections.test.EconomicMapImplTest
+         26 ms    org.graalvm.collections.test.EconomicSetTest
+10 longest running tests:
+     67,459 ms    manyMultiThreaded(org.graalvm.collections.test.LockFreePrefixTreeTest)
+     30,838 ms    largeMultiThreadedPool(org.graalvm.collections.test.LockFreePrefixTreeTest)
+     22,069 ms    largeMultiThreadedHeap(org.graalvm.collections.test.LockFreePrefixTreeTest)
+      5,852 ms    manyMultiThreaded(org.graalvm.collections.test.SeqLockPrefixTreeTest)
+      5,544 ms    deepHashMultiThreadedPool(org.graalvm.collections.test.LockFreePrefixTreeTest)
+      2,999 ms    deepMultiThreaded(org.graalvm.collections.test.SeqLockPrefixTreeTest)
+      2,020 ms    deepLinearMultiThreadedPool(org.graalvm.collections.test.LockFreePrefixTreeTest)
+      1,384 ms    deepHashMultiThreadedHeap(org.graalvm.collections.test.LockFreePrefixTreeTest)
+        502 ms    testAddRemove[EconomicMap<->wrapMap](org.graalvm.collections.test.EconomicMapLargeTest)
+        486 ms    deepLinearMultiThreadedHeap(org.graalvm.collections.test.LockFreePrefixTreeTest)
+

@@ -1,0 +1,8 @@
+{
+  "artifact": "launcher-common.jar",
+  "sha256": "9bfd2c6463c2184eba24654e3bbe08b1ed0023134fc3b07dd79a52e885c96081",
+  "bundled_jline_entries": [],
+  "module_descriptors": [
+    "module-info.class"
+  ]
+}

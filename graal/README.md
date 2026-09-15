@@ -6,7 +6,7 @@ The GraalVM 25.1.3 and mx 7.83.0 source inputs are pinned in [source.json](sourc
 
 Fedora 44 builds `COLLECTIONS`, `WORD`, `NATIVEIMAGE`, `JNIUTILS` and `POLYGLOT` through the upstream mx SDK suite using system OpenJDK 25 and its separate JMOD package. The build runs in a network namespace without network access, uses a separate mx dependency cache, and selects javac with `--force-javac --no-daemon --serial`. mx generates the module descriptors and version resource from upstream definitions; no second handwritten compilation pipeline is used.
 
-The five resulting JARs pass `java --validate-modules` together, and the Polyglot version resource is 25.1.3. [Build evidence](evidence/sdk-build.json) records arguments, toolchain, scope and artifact hashes. Upstream unit tests, RPM installation and full Norm integration have not been run for these artifacts.
+The five resulting JARs pass `java --validate-modules` together, and the Polyglot version resource is 25.1.3. [Build evidence](evidence/sdk-build.json) records arguments, toolchain, scope and artifact hashes. Current upstream test coverage is recorded below; RPM installation and full Norm integration remain unverified.
 
 ## Truffle
 
@@ -20,7 +20,9 @@ mx packaging, upstream tests, a compatible optimizing compiler and distribution-
 
 ## SDK test dependencies
 
-The `mx-tests` binding profile uses Fedora JUnit 4.13.2 and Hamcrest 3.0. The network-isolated `SDK_TEST` build compiles the Word, Collections and Native Image test projects, then stops at the Launcher dependency on shaded JLine 3.28.0. [Test build evidence](evidence/graal-sdk-test-build.log) records this boundary. Fedora provides JLine 3.30.4, but the upstream Launcher uses relocated JLine packages; replacing its download URL alone would retain bundled dependency classes. No SDK test execution result is claimed by this build check.
+The `mx-tests` binding profile uses Fedora JUnit 4.13.2 and Hamcrest 3.0. The `sdk` profile binds JLine 3.30.4; the [Launcher patch](fedora/unbundle-launcher-jline.patch) replaces shaded JLine with external Reader and Terminal modules. The full `SDK_TEST` target then [builds without network access](evidence/graal-sdk-system-jline-build.log). [Launcher artifact inspection](evidence/launcher-artifact.json) confirms no bundled JLine entries.
+
+Upstream `mx unittest --suite sdk --verbose -Xmx4g` passes [127 tests across 16 classes](evidence/graal-sdk-upstream-tests-4g.log), covering Word, Collections, Native Image, Launcher and Home. The [default-heap run](evidence/graal-sdk-upstream-tests.log) failed two large tree tests with heap exhaustion; the passing run changes only the heap limit. These results do not verify a native-image Launcher build, interactive terminal providers, Native Bridge processor tests or Truffle's full test suite.
 
 ## Optimizing compiler
 

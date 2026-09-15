@@ -1,0 +1,328 @@
+--- a/sdk/mx.sdk/suite.py
++++ b/sdk/mx.sdk/suite.py
+@@ -507,24 +507,7 @@
+       "testProject" : True,
+       "jacoco" : "exclude",
+     },
+-    "org.graalvm.launcher" : {
+-      "subDir" : "src",
+-      "sourceDirs" : ["src"],
+-      "dependencies" : [
+-        "sdk:POLYGLOT",
+-        "JLINE3",
+-      ],
+-      "requires" : [
+-        "java.logging",
+-      ],
+-      "requiresConcealed" : {
+-        "java.base" : ["jdk.internal.module"],
+-      },
+-      "javaCompliance" : "17+",
+-      "workingSets" : "Truffle,Tools",
+-      "checkstyle" : "org.graalvm.word",
+-      "graalCompilerSourceEdition": "ignore",
+-    },
++    "org.graalvm.launcher" : {'subDir': 'src', 'sourceDirs': ['src'], 'dependencies': ['sdk:POLYGLOT', 'sdk:JLINE_READER', 'sdk:JLINE_TERMINAL'], 'requires': ['java.logging'], 'requiresConcealed': {'java.base': ['jdk.internal.module']}, 'javaCompliance': '17+', 'workingSets': 'Truffle,Tools', 'checkstyle': 'org.graalvm.word', 'graalCompilerSourceEdition': 'ignore'},
+     "org.graalvm.launcher.test" : {
+       "subDir" : "src",
+       "sourceDirs" : ["src"],
+@@ -704,159 +687,6 @@
+       "class" : "ToolchainTestProject",
+       "subDir" : "src",
+       "buildDependencies" : ["LLVM_TOOLCHAIN"],
+-      "graalCompilerSourceEdition": "ignore",
+-    },
+-    "org.graalvm.shadowed.org.jline": {
+-      # shaded custom JLine bundle
+-      "subDir": "src",
+-      "sourceDirs": ["src"],
+-      "javaCompliance": "17+",
+-      "spotbugs": "false",
+-      "requires": [
+-        "java.logging",
+-      ],
+-      "dependencies": [
+-        "sdk:NATIVEIMAGE",
+-      ],
+-      "shadedDependencies": [
+-        "sdk:JLINE_READER",
+-        "sdk:JLINE_TERMINAL",
+-        "sdk:JLINE_BUILTINS",
+-      ],
+-      "class": "ShadedLibraryProject",
+-      "shade": {
+-        "packages": {
+-          "org.jline": "org.graalvm.shadowed.org.jline",
+-        },
+-        "include": [
+-          "org/jline/utils/*.caps",
+-          "org/jline/utils/*.txt",
+-          "org/jline/builtins/*.txt",
+-        ],
+-        "exclude": [
+-          "META-INF/MANIFEST.MF",
+-          # TTop.java would require java.lang.management (uses MXBean)
+-          "org/jline/builtins/TTop.java",
+-          # we patch the JLine's service loading mechanism with
+-          # hard-coded set of supported services, see one of the patches below
+-          "META-INF/services/**",
+-          "META-INF/maven/**",
+-          # We have our own native-image configuration
+-          "META-INF/native-image/**",
+-        ],
+-        "patch": {
+-          "org/jline/builtins/Nano.java": {
+-            # Remove dependency on UniversalDetector (doesn't work on native image)
+-            "import org.mozilla.universalchardet.UniversalDetector;": "",
+-            "\\Z":
+-              """
+-                // Stub for the removed class, we put it at the end of the file
+-                class UniversalDetector {
+-                    UniversalDetector(Object dummy) {}
+-                    void handleData(byte[] a, int b, int c) {}
+-                    void dataEnd() {}
+-                    String getDetectedCharset() { return null; }
+-                }""",
+-          },
+-          # Adds calls to initialize logging. This is a convenient way to enable JLine logging
+-          # in order to verify which terminal provider is used at runtime.
+-          "org/jline/terminal/TerminalBuilder.java": {
+-            "private TerminalBuilder\\(\\) {}": "private TerminalBuilder() { org.graalvm.shadowed.org.jline.terminal.JLineLoggingSupport.init(); }"
+-          },
+-          # Remove dependency on JLine's native library (would require shading and deployment of the library)
+-          # The native library is a fallback for functionality that is otherwise done via accessing
+-          # JDK internals via reflection.
+-          "org/jline/terminal/impl/AbstractPty.java": {
+-            "import org.graalvm.shadowed.org.jline.nativ.JLineLibrary;": "",
+-            "import org.graalvm.shadowed.org.jline.nativ.JLineNativeLoader;": "",
+-            "JLineNativeLoader.initialize\\(\\);": "",
+-            "return JLineLibrary.newFileDescriptor\\(fd\\);": "throw new RuntimeException(\"not implemented\");",
+-          },
+-          "org/jline/terminal/impl/exec/ExecTerminalProvider.java": {
+-            "import org.graalvm.shadowed.org.jline.nativ.JLineLibrary;": "",
+-            "import org.graalvm.shadowed.org.jline.nativ.JLineNativeLoader;": "",
+-            "JLineNativeLoader.initialize\\(\\);": "",
+-            "return JLineLibrary.newRedirectPipe\\(fd\\);": "throw new RuntimeException(\"not implemented\");",
+-          },
+-          # Hard-coded list of terminal providers replaces a generic reflection based mechanism that
+-          # looks up the provider class names in the resources
+-          "org/jline/terminal/spi/TerminalProvider.java": {
+-            "import org.graalvm.shadowed.org.jline.terminal.Terminal;":
+-              """
+-                import org.graalvm.shadowed.org.jline.terminal.Terminal;
+-                import org.graalvm.shadowed.org.jline.terminal.impl.exec.ExecTerminalProvider;
+-              """,
+-            # \\x7b is to avoid the opening curly brace, which confuses the suite.py parser.
+-            # The commented out closing curly brace at the end is to match the opening
+-            # brace, again, to make the suite.py parser happy.
+-            "static TerminalProvider load\\(String name\\) throws IOException \\x7b":
+-              """
+-              static TerminalProvider load(String name) throws IOException {
+-                  switch (name) {
+-                      case \"exec\":
+-                          return new ExecTerminalProvider();
+-                      case \"ffm\":
+-                          TerminalProvider p = org.graalvm.shadowed.org.jline.terminal.impl.ffm.FFMTerminalProviderLoader.load();
+-                          if (p != null) {
+-                              return p;
+-                          }
+-                      default:
+-                          if (Boolean.TRUE) { // to avoid unreachable code below the switch
+-                              throw new IOException(\"Unable to find terminal provider \" + name);
+-                          }
+-                  }
+-                  // }
+-              """,
+-          },
+-        },
+-      },
+-      "description": "JLINE shaded library.",
+-      "allowsJavadocWarnings": True,
+-      "noMavenJavadoc": True,
+-      "javac.lint.overrides": 'none',
+-      "jacoco": "exclude",
+-      "graalCompilerSourceEdition": "ignore",
+-    },
+-    "org.graalvm.shadowed.org.jline.jdk22": {
+-      # Shaded JLINE_TERMINAL_FFM as jdk22 overlay for the shaded JLine bundle
+-      # Needs --enable-native-access=org.graalvm.shadowed.jline
+-      "subDir": "src",
+-      "sourceDirs": ["src"],
+-      "javaCompliance": "22+",
+-      "spotbugs": "false",
+-      "requires": [
+-        "java.logging",
+-      ],
+-      "dependencies": [
+-        "org.graalvm.shadowed.org.jline",
+-        "sdk:NATIVEIMAGE",
+-      ],
+-      "shadedDependencies": [
+-        "sdk:JLINE_TERMINAL_FFM",
+-      ],
+-      "class": "ShadedLibraryProject",
+-      "shade": {
+-        "packages": {
+-          "org.jline": "org.graalvm.shadowed.org.jline",
+-        },
+-        "exclude": [
+-          "META-INF/MANIFEST.MF",
+-          # we patch the JLine's service loading mechanism with
+-          # hard-coded set of supported services, see one of the patches below
+-          "META-INF/services/**",
+-          "META-INF/maven/**",
+-          # We have our own native-image configuration (in the overlaid project)
+-          "META-INF/native-image/**",
+-        ],
+-      },
+-      "description": "JLINE FFM based Terminal service provider.",
+-      "overlayTarget" : "org.graalvm.shadowed.org.jline",
+-      "multiReleaseJarVersion" : "22",
+-      "ignoreSrcGenForOverlayMap": "true",
+-      "allowsJavadocWarnings": True,
+-      "noMavenJavadoc": True,
+-      "javac.lint.overrides": 'none',
+-      "jacoco": "exclude",
+       "graalCompilerSourceEdition": "ignore",
+     },
+     "org.graalvm.maven.downloader" : {
+@@ -1242,80 +1072,7 @@
+       "maven" : False,
+       "graalCompilerSourceEdition": "ignore",
+     },
+-    "JLINE3": {
+-      # Custom shaded JLine bundle (with FFM terminal provider on JDK22+)
+-      # One must pass --enable-native-access=org.graalvm.shadowed.jline, otherwise
+-      # JLine silently falls back to exec provider on POSIX, and with a warning
+-      # to "Dumb" provider on Windows
+-      # If desired, the FFM terminal on JDK22+ can be disabled at built time using system property:
+-      # org.graalvm.shadowed.org.jline.terminal.ffm.disable=true
+-      "moduleInfo": {
+-        "name": "org.graalvm.shadowed.jline",
+-        "requires": [
+-        ],
+-        "exports": [
+-          "org.graalvm.shadowed.org.jline.builtins",
+-          "org.graalvm.shadowed.org.jline.keymap",
+-          "org.graalvm.shadowed.org.jline.reader",
+-          "org.graalvm.shadowed.org.jline.reader.impl",
+-          "org.graalvm.shadowed.org.jline.reader.impl.completer",
+-          "org.graalvm.shadowed.org.jline.reader.impl.history",
+-          "org.graalvm.shadowed.org.jline.terminal",
+-          "org.graalvm.shadowed.org.jline.terminal.impl",
+-          "org.graalvm.shadowed.org.jline.terminal.impl.exec",
+-          "org.graalvm.shadowed.org.jline.terminal.spi",
+-          "org.graalvm.shadowed.org.jline.utils",
+-        ],
+-      },
+-      "subDir": "src",
+-      "sourceDirs": ["src"],
+-      "javaCompliance": "17+",
+-      "spotbugs": "false",
+-      "dependencies": [
+-        "org.graalvm.shadowed.org.jline",
+-      ],
+-      "distDependencies": [
+-         "sdk:NATIVEIMAGE",
+-         "sdk:POLYGLOT",
+-      ],
+-      "description": "JLINE3 shaded module.",
+-      "allowsJavadocWarnings": True,
+-      "license": "BSD-new",
+-      "maven": {
+-        "groupId": "org.graalvm.shadowed",
+-        "artifactId": "jline",
+-        "tag": ["default", "public"],
+-      },
+-      "graalCompilerSourceEdition": "ignore",
+-    },
+-    "LAUNCHER_COMMON" : {
+-      "subDir" : "src",
+-      "moduleInfo" : {
+-        "name" : "org.graalvm.launcher",
+-        "exports" : [
+-          "org.graalvm.launcher",
+-        ],
+-        "requires" : [
+-          "org.graalvm.collections",
+-          "org.graalvm.nativeimage",
+-        ],
+-      },
+-      "dependencies" : [
+-        "org.graalvm.launcher",
+-      ],
+-      "distDependencies" : [
+-        "sdk:COLLECTIONS",
+-        "sdk:NATIVEIMAGE",
+-        "sdk:POLYGLOT",
+-        "JLINE3",
+-      ],
+-      "description" : "Common infrastructure to create language launchers using the Polyglot API.",
+-      "allowsJavadocWarnings": True,
+-      "maven": {
+-          "tag": ["default", "public"],
+-      },
+-      "graalCompilerSourceEdition": "ignore",
+-    },
++    "LAUNCHER_COMMON" : {'subDir': 'src', 'moduleInfo': {'name': 'org.graalvm.launcher', 'exports': ['org.graalvm.launcher'], 'requires': ['org.graalvm.collections', 'org.graalvm.nativeimage', 'org.jline.reader', 'org.jline.terminal']}, 'dependencies': ['org.graalvm.launcher'], 'distDependencies': ['sdk:COLLECTIONS', 'sdk:NATIVEIMAGE', 'sdk:POLYGLOT'], 'description': 'Common infrastructure to create language launchers using the Polyglot API.', 'allowsJavadocWarnings': True, 'maven': {'tag': ['default', 'public']}, 'graalCompilerSourceEdition': 'ignore', 'exclude': ['JLINE_READER', 'JLINE_TERMINAL']},
+     "POLYGLOT_TCK" : {
+       "subDir" : "src",
+       "moduleInfo" : {
+--- a/sdk/src/org.graalvm.launcher/src/META-INF/native-image/org.graalvm.sdk/launcher-common/native-image.properties
++++ b/sdk/src/org.graalvm.launcher/src/META-INF/native-image/org.graalvm.sdk/launcher-common/native-image.properties
+@@ -1,3 +1,3 @@
+ Args = --add-exports=java.base/jdk.internal.module=ALL-UNNAMED \
+        --features=org.graalvm.launcher.JLine3FeatureModuleAccessFeature \
+-       --initialize-at-build-time=org.graalvm.launcher,org.graalvm.shadowed.org.jline
++       --initialize-at-build-time=org.graalvm.launcher,org.jline
+--- a/sdk/src/org.graalvm.launcher/src/org/graalvm/launcher/Launcher.java
++++ b/sdk/src/org.graalvm.launcher/src/org/graalvm/launcher/Launcher.java
+@@ -86,8 +86,8 @@
+ import org.graalvm.options.OptionCategory;
+ import org.graalvm.options.OptionDescriptor;
+ import org.graalvm.options.OptionStability;
+-import org.graalvm.shadowed.org.jline.terminal.Terminal;
+-import org.graalvm.shadowed.org.jline.terminal.TerminalBuilder;
++import org.jline.terminal.Terminal;
++import org.jline.terminal.TerminalBuilder;
+ 
+ public abstract class Launcher {
+     private static final boolean STATIC_VERBOSE = Boolean.getBoolean("org.graalvm.launcher.verbose");
+--- a/sdk/src/org.graalvm.launcher/src/org/graalvm/launcher/MultiLanguageShell.java
++++ b/sdk/src/org.graalvm.launcher/src/org/graalvm/launcher/MultiLanguageShell.java
+@@ -55,15 +55,15 @@
+ import org.graalvm.polyglot.PolyglotException;
+ import org.graalvm.polyglot.PolyglotException.StackFrame;
+ import org.graalvm.polyglot.Source;
+-import org.graalvm.shadowed.org.jline.keymap.KeyMap;
+-import org.graalvm.shadowed.org.jline.reader.EndOfFileException;
+-import org.graalvm.shadowed.org.jline.reader.History;
+-import org.graalvm.shadowed.org.jline.reader.LineReader;
+-import org.graalvm.shadowed.org.jline.reader.LineReaderBuilder;
+-import org.graalvm.shadowed.org.jline.reader.Reference;
+-import org.graalvm.shadowed.org.jline.reader.UserInterruptException;
+-import org.graalvm.shadowed.org.jline.reader.impl.history.DefaultHistory;
+-import org.graalvm.shadowed.org.jline.terminal.Terminal;
++import org.jline.keymap.KeyMap;
++import org.jline.reader.EndOfFileException;
++import org.jline.reader.History;
++import org.jline.reader.LineReader;
++import org.jline.reader.LineReaderBuilder;
++import org.jline.reader.Reference;
++import org.jline.reader.UserInterruptException;
++import org.jline.reader.impl.history.DefaultHistory;
++import org.jline.terminal.Terminal;
+ 
+ class MultiLanguageShell implements Closeable {
+     private static final String WIDGET_NAME = "CHANGE_LANGUAGE_WIDGET";
+--- a/sdk/mx.sdk/mx_sdk.py
++++ b/sdk/mx.sdk/mx_sdk.py
+@@ -176,7 +176,7 @@
+     license_files=[],
+     third_party_license_files=[],
+     dependencies=['Graal SDK'],
+-    jar_distributions=['sdk:LAUNCHER_COMMON', 'sdk:JLINE3'],
++    jar_distributions=['sdk:LAUNCHER_COMMON'],
+     boot_jars=[],
+     stability="supported",
+ )

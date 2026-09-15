@@ -27,6 +27,14 @@
     "ANTLR4": {
       "path": "/usr/share/java/antlr4/antlr4-runtime.jar",
       "version": "4.13.2"
+    },
+    "JLINE_READER": {
+      "path": "/usr/share/java/jline/jline-reader.jar",
+      "version": "3.30.4"
+    },
+    "JLINE_TERMINAL": {
+      "path": "/usr/share/java/jline/jline-terminal.jar",
+      "version": "3.30.4"
     }
   },
   "profiles": {
@@ -45,6 +53,10 @@
       "ASM_9.8",
       "ASM_TREE_9.8",
       "ASM_COMMONS_9.8"
+    ],
+    "sdk": [
+      "JLINE_READER",
+      "JLINE_TERMINAL"
     ]
   }
 }
