@@ -54,3 +54,10 @@ joda-convert/*
 !joda-convert/tests/
 !joda-convert/tests/**
 !joda-convert/source.json
+!joda-time/
+joda-time/*
+!joda-time/fedora/
+!joda-time/fedora/**
+!joda-time/tests/
+!joda-time/tests/**
+!joda-time/source.json
