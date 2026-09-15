@@ -5,6 +5,7 @@ Distribution-native packaging for dependencies required by [Norm](https://github
 | Component | Packaging | Upstream provenance |
 | --- | --- | --- |
 | Kryo 5 | [Debian](kryo/debian/) | [Source](kryo/source.json), [repacked archive](kryo/repack.json) |
+| ReflectASM | [Fedora](reflectasm/fedora/reflectasm.spec) | [Source](reflectasm/source.json), [patch notes](reflectasm/fedora/README.md) |
 | MinLog | [Fedora](minlog/fedora/minlog.spec) | [Source](minlog/source.json) |
 
 Debian source and binary artifacts are published as prerelease assets for review. The `.dsc` and its referenced archives are sufficient to extract the source with `dpkg-source -x`; use `sbuild` for an isolated build. Installed-package tests are defined in [debian/tests](kryo/debian/tests/).

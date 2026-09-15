@@ -14,3 +14,8 @@ minlog/*
 !minlog/fedora/
 !minlog/fedora/**
 !minlog/source.json
+!reflectasm/
+reflectasm/*
+!reflectasm/fedora/
+!reflectasm/fedora/**
+!reflectasm/source.json

@@ -1,0 +1,45 @@
+--- a/test/com/esotericsoftware/reflectasm/ClassLoaderTest.java
++++ b/test/com/esotericsoftware/reflectasm/ClassLoaderTest.java
+@@ -17,6 +17,7 @@
+ import java.io.ByteArrayOutputStream;
+ import java.io.IOException;
+ import java.io.InputStream;
++import java.lang.ref.WeakReference;
+ import static junit.framework.Assert.assertEquals;
+ import static junit.framework.Assert.assertFalse;
+ import static junit.framework.Assert.assertTrue;
+@@ -39,7 +40,6 @@
+ 
+ 	public void testAutoUnloadClassloaders () throws Exception {
+ 		reclaimLoaders();
+-		int initialCount = AccessClassLoader.activeAccessClassLoaders();
+ 
+ 		ClassLoader testClassLoader1 = new TestClassLoader1();
+ 		Class testClass1 = testClassLoader1.loadClass("com.esotericsoftware.reflectasm.ClassLoaderTest$Test");
+@@ -60,7 +60,10 @@
+ 		assertEquals(access1.getClass().toString(), access2.getClass().toString()); // Same class names
+ 		assertFalse(access1.getClass().equals(access2.getClass())); // But different classes
+ 
+-		assertEquals(initialCount + 2, AccessClassLoader.activeAccessClassLoaders());
++		WeakReference<ClassLoader> loader1 = new WeakReference<ClassLoader>(access1.getClass().getClassLoader());
++		WeakReference<ClassLoader> loader2 = new WeakReference<ClassLoader>(access2.getClass().getClassLoader());
++		assertNotNull(loader1.get());
++		assertNotNull(loader2.get());
+ 
+ 		testClassLoader1 = null;
+ 		testClass1 = null;
+@@ -73,8 +76,12 @@
+ 
+ 		reclaimLoaders();
+ 
+-		// Yeah, reclaimed!
+-		assertEquals(initialCount, AccessClassLoader.activeAccessClassLoaders());
++		for (int attempt = 0; attempt < 50 && (loader1.get() != null || loader2.get() != null); attempt++) {
++			System.gc();
++			Thread.sleep(100);
++		}
++		assertNull(loader1.get());
++		assertNull(loader2.get());
+ 	}
+ 
+ 	private void reclaimLoaders () throws Exception {

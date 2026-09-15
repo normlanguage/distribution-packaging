@@ -1,0 +1,40 @@
+Description: creating V1_6 classes to follow asm new visitFrame() method
+Author: Pierre Gruet <pgt@debian.org>
+Origin: upstream, https://github.com/EsotericSoftware/reflectasm/commit/e3a88f6362f45476a5530b90a6b06635ca657ef1
+Forwarded: not-needed
+Applied-Upstream: > 1.11.9
+Last-Update: 2021-05-18
+
+--- a/src/com/esotericsoftware/reflectasm/ConstructorAccess.java
++++ b/src/com/esotericsoftware/reflectasm/ConstructorAccess.java
+@@ -89,7 +89,7 @@
+ 					: "com/esotericsoftware/reflectasm/ConstructorAccess";
+ 
+ 				ClassWriter cw = new ClassWriter(0);
+-				cw.visit(V1_1, ACC_PUBLIC + ACC_SUPER, accessClassNameInternal, null, superclassNameInternal, null);
++				cw.visit(V1_6, ACC_PUBLIC + ACC_SUPER, accessClassNameInternal, null, superclassNameInternal, null);
+ 
+ 				insertConstructor(cw, superclassNameInternal);
+ 				insertNewInstance(cw, classNameInternal);
+--- a/src/com/esotericsoftware/reflectasm/FieldAccess.java
++++ b/src/com/esotericsoftware/reflectasm/FieldAccess.java
+@@ -147,7 +147,7 @@
+ 				String classNameInternal = className.replace('.', '/');
+ 
+ 				ClassWriter cw = new ClassWriter(0);
+-				cw.visit(V1_1, ACC_PUBLIC + ACC_SUPER, accessClassNameInternal, null, "com/esotericsoftware/reflectasm/FieldAccess",
++				cw.visit(V1_6, ACC_PUBLIC + ACC_SUPER, accessClassNameInternal, null, "com/esotericsoftware/reflectasm/FieldAccess",
+ 					null);
+ 				insertConstructor(cw);
+ 				insertGetObject(cw, classNameInternal, fields);
+--- a/src/com/esotericsoftware/reflectasm/MethodAccess.java
++++ b/src/com/esotericsoftware/reflectasm/MethodAccess.java
+@@ -120,7 +120,7 @@
+ 
+ 				ClassWriter cw = new ClassWriter(ClassWriter.COMPUTE_MAXS);
+ 				MethodVisitor mv;
+-				cw.visit(V1_1, ACC_PUBLIC + ACC_SUPER, accessClassNameInternal, null, "com/esotericsoftware/reflectasm/MethodAccess",
++				cw.visit(V1_6, ACC_PUBLIC + ACC_SUPER, accessClassNameInternal, null, "com/esotericsoftware/reflectasm/MethodAccess",
+ 					null);
+ 				{
+ 					mv = cw.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
