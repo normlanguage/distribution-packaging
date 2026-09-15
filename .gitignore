@@ -83,3 +83,10 @@ jackson-bom/*
 !jackson-bom/fedora/
 !jackson-bom/fedora/**
 !jackson-bom/source.json
+!jackson-core/
+jackson-core/*
+!jackson-core/fedora/
+!jackson-core/fedora/**
+!jackson-core/tests/
+!jackson-core/tests/**
+!jackson-core/source.json

@@ -1,0 +1,9 @@
+--- a/src/moditect/module-info.java
++++ b/src/moditect/module-info.java
+@@ -1,5 +1,6 @@
+ // Generated 08-Mar-2019 using Moditect maven plugin
+ module com.fasterxml.jackson.core {
++    requires ch.randelshofer.fastdoubleparser;
+     // 08-Mar-2019, tatu: Ugh. Cannot use wildcards, stupid ass JDK 9+ module system...
+     //    So, for 2.x core need to make sure we manually include everything.
+     //    Worse, there is only syntactic validation, not contents, so we can both miss

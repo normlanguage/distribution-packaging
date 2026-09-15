@@ -4,6 +4,7 @@ Distribution-native packaging for dependencies required by [Norm](https://github
 
 | Component | Packaging | Upstream provenance |
 | --- | --- | --- |
+| Jackson Core | [Fedora 44 backport](jackson-core/fedora/) | [Source](jackson-core/source.json) |
 | FasterXML OSS Parent | [Fedora](fasterxml-oss-parent/fedora/) | [Source](fasterxml-oss-parent/source.json) |
 | Jackson Parent | [Fedora](jackson-parent/fedora/) | [Source](jackson-parent/source.json) |
 | Jackson BOM and Base | [Fedora](jackson-bom/fedora/) | [Source](jackson-bom/source.json) |

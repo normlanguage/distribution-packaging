@@ -1,0 +1,8 @@
+{
+  "repository": "https://github.com/FasterXML/jackson-core",
+  "tag": "jackson-core-2.20.2",
+  "commit": "7d66273aefcdfc1a77127ddad18937cef735d57e",
+  "url": "https://api.github.com/repos/FasterXML/jackson-core/tarball/7d66273aefcdfc1a77127ddad18937cef735d57e",
+  "archiveRoot": "FasterXML-jackson-core-7d66273",
+  "sha256": "2b90a4cc8ceecdb16dda97c6161031d484fafdd62160e7673c1bb038ababe46b"
+}
