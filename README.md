@@ -28,3 +28,5 @@ Debian source and binary artifacts are published as prerelease assets for review
 For Fedora, each component directory identifies its spec, source provenance, additional source inputs and validation scope. Build the spec with RPM tooling and validate the resulting SRPM with `mock`.
 
 Norm's own compiler and release definitions remain in the [upstream repository](https://github.com/normlanguage/Norm). These recipes do not introduce a separate Norm compiler build.
+
+Build-tool prerequisites are tracked separately in the [Gradle source-build investigation](gradle/).

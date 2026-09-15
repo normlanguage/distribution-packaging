@@ -121,3 +121,12 @@ fedora-jackson-modules/jackson-annotations/*
 !fedora-jackson-modules/evidence/
 fedora-jackson-modules/evidence/*
 !fedora-jackson-modules/evidence/runtime-class-comparison.json
+
+!gradle/
+gradle/*
+!gradle/README.md
+!gradle/source.json
+!gradle/evidence/
+gradle/evidence/*
+!gradle/evidence/offline-configuration.log
+!gradle/evidence/rawhide-providers.json

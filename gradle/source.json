@@ -1,0 +1,8 @@
+{
+  "repository": "https://github.com/gradle/gradle",
+  "tag": "v9.7.1",
+  "commit": "92f0512e7f06d84621afba191f75e265363890cf",
+  "archiveRoot": "gradle-gradle-92f0512",
+  "sha256": "a96caeac8a8ca461b24511c68c4e83d4b307437df7bfe9eb84409b3dc1add72b",
+  "url": "https://api.github.com/repos/gradle/gradle/tarball/92f0512e7f06d84621afba191f75e265363890cf"
+}

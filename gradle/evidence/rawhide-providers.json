@@ -1,0 +1,42 @@
+{
+  "checkedAt": "2026-09-15T11:02:21.575991+00:00",
+  "repository": "https://dl.fedoraproject.org/pub/fedora/linux/development/rawhide/Everything/x86_64/os/",
+  "queries": [
+    {
+      "capability": "gradle",
+      "exitCode": 0,
+      "providers": [],
+      "stderr": ""
+    },
+    {
+      "capability": "kotlin",
+      "exitCode": 0,
+      "providers": [],
+      "stderr": ""
+    },
+    {
+      "capability": "mvn(org.jetbrains.kotlin:kotlin-compiler-embeddable)",
+      "exitCode": 0,
+      "providers": [],
+      "stderr": ""
+    },
+    {
+      "capability": "mvn(org.jetbrains.kotlin:kotlin-gradle-plugin)",
+      "exitCode": 0,
+      "providers": [],
+      "stderr": ""
+    },
+    {
+      "capability": "mvn(org.gradle.kotlin.kotlin-dsl:org.gradle.kotlin.kotlin-dsl.gradle.plugin)",
+      "exitCode": 0,
+      "providers": [],
+      "stderr": ""
+    },
+    {
+      "capability": "mvn(org.gradle.kotlin:gradle-kotlin-dsl-plugins)",
+      "exitCode": 0,
+      "providers": [],
+      "stderr": ""
+    }
+  ]
+}
