@@ -1,0 +1,547 @@
+Mock Version: 6.8
+Using nspawn with args ['--capability=cap_ipc_lock', '--bind=/dev/btrfs-control', '--bind=/dev/mapper/control', '--bind=/dev/fuse', '--bind=/dev/loop-control', '--bind=/dev/loop0', '--bind=/dev/loop1', '--bind=/dev/loop2', '--bind=/dev/loop3', '--bind=/dev/loop4', '--bind=/dev/loop5', '--bind=/dev/loop6', '--bind=/dev/loop7', '--bind=/dev/loop8', '--bind=/dev/loop9', '--bind=/dev/loop10', '--bind=/dev/loop11', '--resolv-conf=off']
+Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '48f475e6d5fc4a1da64d553f3f90818d', '-D', '/var/lib/mock/fedora-rawhide-x86_64/root', '-a', '-u', 'mockbuild', '--capability=cap_ipc_lock', '--bind=/dev/btrfs-control', '--bind=/dev/mapper/control', '--bind=/dev/fuse', '--bind=/dev/loop-control', '--bind=/dev/loop0', '--bind=/dev/loop1', '--bind=/dev/loop2', '--bind=/dev/loop3', '--bind=/dev/loop4', '--bind=/dev/loop5', '--bind=/dev/loop6', '--bind=/dev/loop7', '--bind=/dev/loop8', '--bind=/dev/loop9', '--bind=/dev/loop10', '--bind=/dev/loop11', '--resolv-conf=off', '--console=pipe', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=C.UTF-8', 'bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/plexus-testing.spec'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
+Building target platforms: x86_64
+Building for target x86_64
+setting SOURCE_DATE_EPOCH=1789430400
+Wrote: /builddir/build/SRPMS/plexus-testing-2.2.0-1.fc46.src.rpm
+Child return code was: 0
+Using nspawn with args ['--capability=cap_ipc_lock', '--bind=/dev/btrfs-control', '--bind=/dev/mapper/control', '--bind=/dev/fuse', '--bind=/dev/loop-control', '--bind=/dev/loop0', '--bind=/dev/loop1', '--bind=/dev/loop2', '--bind=/dev/loop3', '--bind=/dev/loop4', '--bind=/dev/loop5', '--bind=/dev/loop6', '--bind=/dev/loop7', '--bind=/dev/loop8', '--bind=/dev/loop9', '--bind=/dev/loop10', '--bind=/dev/loop11', '--resolv-conf=off']
+Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'db0b5d097e1742b19e05957dd448a0f6', '-D', '/var/lib/mock/fedora-rawhide-x86_64/root', '-a', '-u', 'mockbuild', '--capability=cap_ipc_lock', '--bind=/dev/btrfs-control', '--bind=/dev/mapper/control', '--bind=/dev/fuse', '--bind=/dev/loop-control', '--bind=/dev/loop0', '--bind=/dev/loop1', '--bind=/dev/loop2', '--bind=/dev/loop3', '--bind=/dev/loop4', '--bind=/dev/loop5', '--bind=/dev/loop6', '--bind=/dev/loop7', '--bind=/dev/loop8', '--bind=/dev/loop9', '--bind=/dev/loop10', '--bind=/dev/loop11', '--resolv-conf=off', '--console=pipe', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=C.UTF-8', 'bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/plexus-testing.spec'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
+Building target platforms: x86_64
+Building for target x86_64
+setting SOURCE_DATE_EPOCH=1789430400
+Wrote: /builddir/build/SRPMS/plexus-testing-2.2.0-1.fc46.src.rpm
+Child return code was: 0
+Using nspawn with args ['--capability=cap_ipc_lock', '--bind=/dev/btrfs-control', '--bind=/dev/mapper/control', '--bind=/dev/fuse', '--bind=/dev/loop-control', '--bind=/dev/loop0', '--bind=/dev/loop1', '--bind=/dev/loop2', '--bind=/dev/loop3', '--bind=/dev/loop4', '--bind=/dev/loop5', '--bind=/dev/loop6', '--bind=/dev/loop7', '--bind=/dev/loop8', '--bind=/dev/loop9', '--bind=/dev/loop10', '--bind=/dev/loop11', '--resolv-conf=off']
+Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'e51c93feef3b487fb006be229432840f', '-D', '/var/lib/mock/fedora-rawhide-x86_64/root', '-a', '-u', 'mockbuild', '--capability=cap_ipc_lock', '--bind=/dev/btrfs-control', '--bind=/dev/mapper/control', '--bind=/dev/fuse', '--bind=/dev/loop-control', '--bind=/dev/loop0', '--bind=/dev/loop1', '--bind=/dev/loop2', '--bind=/dev/loop3', '--bind=/dev/loop4', '--bind=/dev/loop5', '--bind=/dev/loop6', '--bind=/dev/loop7', '--bind=/dev/loop8', '--bind=/dev/loop9', '--bind=/dev/loop10', '--bind=/dev/loop11', '--resolv-conf=off', '--console=pipe', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=C.UTF-8', 'bash', '--login', '-c', '/usr/bin/rpmbuild -bb --target x86_64 --nodeps /builddir/build/SPECS/plexus-testing.spec'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
+Building target platforms: x86_64
+Building for target x86_64
+setting SOURCE_DATE_EPOCH=1789430400
+Executing(mkbuilddir): /bin/sh -e /var/tmp/rpm-tmp.5tvYbe
+Creating(rpmbuild.env): /builddir/build/BUILD/plexus-testing-2.2.0-build/rpmbuild.env
+  RPM_SOURCE_DIR="/builddir/build/SOURCES"
+  RPM_BUILD_DIR="/builddir/build/BUILD/plexus-testing-2.2.0-build"
+  RPM_OPT_FLAGS="-O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Wno-complain-wrong-lang -Werror=format-security -Wp,-U_FORTIFY_SOURCE,-D_FORTIFY_SOURCE=3 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -m64 -march=x86-64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -mtls-dialect=gnu2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer"
+  RPM_LD_FLAGS="-Wl,-z,relro -Wl,--as-needed  -Wl,-z,pack-relative-relocs -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld -specs=/usr/lib/rpm/redhat/redhat-hardened-ld-errors -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -Wl,--build-id=sha1 -specs=/usr/lib/rpm/redhat/redhat-package-notes  "
+  RPM_ARCH="x86_64"
+  RPM_OS="linux"
+  RPM_BUILD_NCPUS="4"
+  RPM_SPECPARTS_DIR="/builddir/build/BUILD/plexus-testing-2.2.0-build/SPECPARTS"
+  export RPM_SOURCE_DIR RPM_BUILD_DIR RPM_OPT_FLAGS RPM_ARCH RPM_OS RPM_BUILD_NCPUS RPM_SPECPARTS_DIR RPM_LD_FLAGS
+  RPM_DOC_DIR="/usr/share/doc"
+  export RPM_DOC_DIR
+  RPM_PACKAGE_NAME="plexus-testing"
+  RPM_PACKAGE_VERSION="2.2.0"
+  RPM_PACKAGE_RELEASE="1.fc46"
+  export RPM_PACKAGE_NAME RPM_PACKAGE_VERSION RPM_PACKAGE_RELEASE
+  LANG=C.UTF-8
+  export LANG
+  unset CDPATH DISPLAY ||:
+  unset DEBUGINFOD_URLS ||:
+  unset RPM_CONFIG_DIR ||:
+  RPM_BUILD_ROOT="/builddir/build/BUILD/plexus-testing-2.2.0-build/BUILDROOT"
+  export RPM_BUILD_ROOT
+  
+  PKG_CONFIG_PATH="${PKG_CONFIG_PATH}:/usr/lib64/pkgconfig:/usr/share/pkgconfig"
+  export PKG_CONFIG_PATH
+  CONFIG_SITE=${CONFIG_SITE:-NONE}
+  export CONFIG_SITE
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.ereMOF
++ umask 022
++ cd /builddir/build/BUILD/plexus-testing-2.2.0-build
++ cd /builddir/build/BUILD/plexus-testing-2.2.0-build
++ rm -rf codehaus-plexus-plexus-testing-d7af192
++ /usr/bin/rpmuncompress -x /builddir/build/SOURCES/plexus-testing-2.2.0.tar.gz
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd codehaus-plexus-plexus-testing-d7af192
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.JiDwbD
++ umask 022
++ cd /builddir/build/BUILD/plexus-testing-2.2.0-build
++ CFLAGS='-O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-U_FORTIFY_SOURCE,-D_FORTIFY_SOURCE=3 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -m64 -march=x86-64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -mtls-dialect=gnu2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer  '
++ export CFLAGS
++ CXXFLAGS='-O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-U_FORTIFY_SOURCE,-D_FORTIFY_SOURCE=3 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -m64 -march=x86-64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -mtls-dialect=gnu2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer  '
++ export CXXFLAGS
++ FFLAGS='-O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Wp,-U_FORTIFY_SOURCE,-D_FORTIFY_SOURCE=3 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -m64 -march=x86-64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -mtls-dialect=gnu2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -I/usr/lib64/gfortran/modules  '
++ export FFLAGS
++ FCFLAGS='-O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Wp,-U_FORTIFY_SOURCE,-D_FORTIFY_SOURCE=3 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -m64 -march=x86-64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -mtls-dialect=gnu2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -I/usr/lib64/gfortran/modules  '
++ export FCFLAGS
++ VALAFLAGS=-g
++ export VALAFLAGS
++ RUSTFLAGS='-Copt-level=3 -Cdebuginfo=2 -Ccodegen-units=1 -Cstrip=none -Cforce-frame-pointers=yes -Clink-arg=-specs=/usr/lib/rpm/redhat/redhat-package-notes --cap-lints=warn'
++ export RUSTFLAGS
++ LDFLAGS='-Wl,-z,relro -Wl,--as-needed  -Wl,-z,pack-relative-relocs -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld -specs=/usr/lib/rpm/redhat/redhat-hardened-ld-errors -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -Wl,--build-id=sha1 -specs=/usr/lib/rpm/redhat/redhat-package-notes  '
++ export LDFLAGS
++ LT_SYS_LIBRARY_PATH=/usr/lib64:
++ export LT_SYS_LIBRARY_PATH
++ CC=gcc
++ export CC
++ CXX=g++
++ export CXX
++ cd codehaus-plexus-plexus-testing-d7af192
++ /usr/bin/python3 /usr/share/java-utils/mvn_build.py --xmvn-javadoc -j
+Executing: xmvn --batch-mode --offline verify org.fedoraproject.xmvn:xmvn-mojo:install org.fedoraproject.xmvn:xmvn-mojo:builddep
+['xmvn', '--batch-mode', '--offline', 'verify', 'org.fedoraproject.xmvn:xmvn-mojo:install', 'org.fedoraproject.xmvn:xmvn-mojo:builddep']
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::staticFieldBase has been called by com.google.inject.internal.aop.HiddenClassDefiner (file:/usr/share/xmvn/lib/guice-5.1.0-classes.jar)
+WARNING: Please consider reporting this to the maintainers of class com.google.inject.internal.aop.HiddenClassDefiner
+WARNING: sun.misc.Unsafe::staticFieldBase will be removed in a future release
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< org.codehaus.plexus:plexus-testing >-----------------
+[INFO] Building Plexus Testing 2.2.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ plexus-testing ---
+[INFO] skip non existing resourceDirectory /builddir/build/BUILD/plexus-testing-2.2.0-build/codehaus-plexus-plexus-testing-d7af192/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.12.1:compile (default-compile) @ plexus-testing ---
+[INFO] Toolchain in maven-compiler-plugin: JDK[/usr/lib/jvm/java-25-openjdk]
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 3 source files with javac [forked debug deprecation release 8] to target/classes
+[WARNING] [options] source value 8 is obsolete and will be removed in a future release
+[WARNING] [options] target value 8 is obsolete and will be removed in a future release
+[WARNING] [options] To suppress warnings about obsolete options, use -Xlint:-options.
+[WARNING] unknown enum constant Status.STABLE
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ plexus-testing ---
+[INFO] skip non existing resourceDirectory /builddir/build/BUILD/plexus-testing-2.2.0-build/codehaus-plexus-plexus-testing-d7af192/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.12.1:testCompile (default-testCompile) @ plexus-testing ---
+[INFO] Toolchain in maven-compiler-plugin: JDK[/usr/lib/jvm/java-25-openjdk]
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 4 source files with javac [forked debug deprecation release 8] to target/test-classes
+[WARNING] [options] source value 8 is obsolete and will be removed in a future release
+[WARNING] [options] target value 8 is obsolete and will be removed in a future release
+[WARNING] [options] To suppress warnings about obsolete options, use -Xlint:-options.
+[WARNING] unknown enum constant Status.STABLE
+[INFO] 
+[INFO] --- surefire:3.2.2:test (default-test) @ plexus-testing ---
+[INFO] Toolchain in maven-surefire-plugin: JDK[/usr/lib/jvm/java-25-openjdk]
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.codehaus.plexus.testing.PlexusTestCustomizeTest
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by net.bytebuddy.dynamic.loading.ClassInjector$UsingUnsafe$Dispatcher$CreationAction (file:/usr/share/java/byte-buddy/byte-buddy-dep.jar)
+WARNING: Please consider reporting this to the maintainers of class net.bytebuddy.dynamic.loading.ClassInjector$UsingUnsafe$Dispatcher$CreationAction
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+WARNING: A Java agent has been loaded dynamically (/usr/share/java/byte-buddy/byte-buddy-agent.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+[INFO] Running org.codehaus.plexus.testing.PlexusTestCustomizeTest$NestedTest
+[ERROR] Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.019 s <<< FAILURE! -- in org.codehaus.plexus.testing.PlexusTestCustomizeTest$NestedTest
+[ERROR] org.codehaus.plexus.testing.PlexusTestCustomizeTest.dependencyShouldBeInjected -- Time elapsed: 1.155 s <<< ERROR!
+java.lang.NoClassDefFoundError: org/codehaus/plexus/util/InterpolationFilterReader
+	at org.eclipse.sisu.plexus.PlexusAnnotatedBeanModule$PlexusAnnotatedBeanSource.<init>(PlexusAnnotatedBeanModule.java:129)
+	at org.eclipse.sisu.plexus.PlexusAnnotatedBeanModule.<init>(PlexusAnnotatedBeanModule.java:88)
+	at org.codehaus.plexus.DefaultPlexusContainer.<init>(DefaultPlexusContainer.java:197)
+	at org.codehaus.plexus.DefaultPlexusContainer.<init>(DefaultPlexusContainer.java:160)
+	at org.codehaus.plexus.testing.PlexusExtension.setupContainer(PlexusExtension.java:154)
+	at org.codehaus.plexus.testing.PlexusExtension.getContainer(PlexusExtension.java:232)
+	at org.codehaus.plexus.testing.PlexusExtension.lambda$beforeEach$0(PlexusExtension.java:102)
+	at java.base/java.util.Collections$SingletonList.forEach(Collections.java:5297)
+	at org.codehaus.plexus.testing.PlexusExtension.beforeEach(PlexusExtension.java:101)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+Caused by: java.lang.ClassNotFoundException: org.codehaus.plexus.util.InterpolationFilterReader
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:580)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490)
+	... 11 more
+[ERROR] org.codehaus.plexus.testing.PlexusTestCustomizeTest$NestedTest.nestedDependencyShouldAlsoBeInjected -- Time elapsed: 0.010 s <<< ERROR!
+java.lang.NoClassDefFoundError: org/codehaus/plexus/util/InterpolationFilterReader
+	at org.eclipse.sisu.plexus.PlexusAnnotatedBeanModule$PlexusAnnotatedBeanSource.<init>(PlexusAnnotatedBeanModule.java:129)
+	at org.eclipse.sisu.plexus.PlexusAnnotatedBeanModule.<init>(PlexusAnnotatedBeanModule.java:88)
+	at org.codehaus.plexus.DefaultPlexusContainer.<init>(DefaultPlexusContainer.java:197)
+	at org.codehaus.plexus.DefaultPlexusContainer.<init>(DefaultPlexusContainer.java:160)
+	at org.codehaus.plexus.testing.PlexusExtension.setupContainer(PlexusExtension.java:154)
+	at org.codehaus.plexus.testing.PlexusExtension.getContainer(PlexusExtension.java:232)
+	at org.codehaus.plexus.testing.PlexusExtension.lambda$beforeEach$0(PlexusExtension.java:102)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.Collections$UnmodifiableCollection.forEach(Collections.java:1118)
+	at org.codehaus.plexus.testing.PlexusExtension.beforeEach(PlexusExtension.java:101)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+Caused by: java.lang.ClassNotFoundException: org.codehaus.plexus.util.InterpolationFilterReader
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:580)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490)
+	... 13 more
+[INFO] Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.223 s -- in org.codehaus.plexus.testing.PlexusTestCustomizeTest
+[INFO] Running org.codehaus.plexus.testing.PlexusTestJavaxTest
+[INFO] Running org.codehaus.plexus.testing.PlexusTestJavaxTest$NestedTest
+[ERROR] Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.007 s <<< FAILURE! -- in org.codehaus.plexus.testing.PlexusTestJavaxTest$NestedTest
+[ERROR] org.codehaus.plexus.testing.PlexusTestJavaxTest.dependencyShouldBeInjected -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.NoClassDefFoundError: org/codehaus/plexus/util/InterpolationFilterReader
+	at org.eclipse.sisu.plexus.PlexusAnnotatedBeanModule$PlexusAnnotatedBeanSource.<init>(PlexusAnnotatedBeanModule.java:129)
+	at org.eclipse.sisu.plexus.PlexusAnnotatedBeanModule.<init>(PlexusAnnotatedBeanModule.java:88)
+	at org.codehaus.plexus.DefaultPlexusContainer.<init>(DefaultPlexusContainer.java:197)
+	at org.codehaus.plexus.DefaultPlexusContainer.<init>(DefaultPlexusContainer.java:160)
+	at org.codehaus.plexus.testing.PlexusExtension.setupContainer(PlexusExtension.java:154)
+	at org.codehaus.plexus.testing.PlexusExtension.getContainer(PlexusExtension.java:232)
+	at org.codehaus.plexus.testing.PlexusExtension.lambda$beforeEach$0(PlexusExtension.java:102)
+	at java.base/java.util.Collections$SingletonList.forEach(Collections.java:5297)
+	at org.codehaus.plexus.testing.PlexusExtension.beforeEach(PlexusExtension.java:101)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+Caused by: java.lang.ClassNotFoundException: org.codehaus.plexus.util.InterpolationFilterReader
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:580)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490)
+	... 11 more
+[ERROR] org.codehaus.plexus.testing.PlexusTestJavaxTest$NestedTest.nestedDependencyShouldAlsoBeInjected -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.NoClassDefFoundError: org/codehaus/plexus/util/InterpolationFilterReader
+	at org.eclipse.sisu.plexus.PlexusAnnotatedBeanModule$PlexusAnnotatedBeanSource.<init>(PlexusAnnotatedBeanModule.java:129)
+	at org.eclipse.sisu.plexus.PlexusAnnotatedBeanModule.<init>(PlexusAnnotatedBeanModule.java:88)
+	at org.codehaus.plexus.DefaultPlexusContainer.<init>(DefaultPlexusContainer.java:197)
+	at org.codehaus.plexus.DefaultPlexusContainer.<init>(DefaultPlexusContainer.java:160)
+	at org.codehaus.plexus.testing.PlexusExtension.setupContainer(PlexusExtension.java:154)
+	at org.codehaus.plexus.testing.PlexusExtension.getContainer(PlexusExtension.java:232)
+	at org.codehaus.plexus.testing.PlexusExtension.lambda$beforeEach$0(PlexusExtension.java:102)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.Collections$UnmodifiableCollection.forEach(Collections.java:1118)
+	at org.codehaus.plexus.testing.PlexusExtension.beforeEach(PlexusExtension.java:101)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+Caused by: java.lang.ClassNotFoundException: org.codehaus.plexus.util.InterpolationFilterReader
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:580)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490)
+	... 13 more
+[INFO] Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s -- in org.codehaus.plexus.testing.PlexusTestJavaxTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Errors: 
+[ERROR]   PlexusTestCustomizeTest$NestedTest.nestedDependencyShouldAlsoBeInjected » NoClassDefFound org/codehaus/plexus/util/InterpolationFilterReader
+[ERROR]   PlexusTestCustomizeTest.dependencyShouldBeInjected » NoClassDefFound org/codehaus/plexus/util/InterpolationFilterReader
+[ERROR]   PlexusTestJavaxTest$NestedTest.nestedDependencyShouldAlsoBeInjected » NoClassDefFound org/codehaus/plexus/util/InterpolationFilterReader
+[ERROR]   PlexusTestJavaxTest.dependencyShouldBeInjected » NoClassDefFound org/codehaus/plexus/util/InterpolationFilterReader
+[INFO] 
+[ERROR] Tests run: 4, Failures: 0, Errors: 4, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Skipping Plexus Testing
+[INFO] This project has been banned from the build due to previous failures.
+[INFO] ------------------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  7.480 s
+[INFO] Finished at: 2026-09-15T12:52:33Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.2.2:test (default-test) on project plexus-testing: 
+[ERROR] 
+[ERROR] Please refer to /builddir/build/BUILD/plexus-testing-2.2.0-build/codehaus-plexus-plexus-testing-d7af192/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+error: Bad exit status from /var/tmp/rpm-tmp.JiDwbD (%build)
+RPM build errors:
+    Bad exit status from /var/tmp/rpm-tmp.JiDwbD (%build)
+Child return code was: 1
+Mock Version: 6.8
+Using nspawn with args ['--capability=cap_ipc_lock', '--bind=/dev/btrfs-control', '--bind=/dev/mapper/control', '--bind=/dev/fuse', '--bind=/dev/loop-control', '--bind=/dev/loop0', '--bind=/dev/loop1', '--bind=/dev/loop2', '--bind=/dev/loop3', '--bind=/dev/loop4', '--bind=/dev/loop5', '--bind=/dev/loop6', '--bind=/dev/loop7', '--bind=/dev/loop8', '--bind=/dev/loop9', '--bind=/dev/loop10', '--bind=/dev/loop11', '--resolv-conf=off']
+Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'e74b4f06cea64eae95c1a428d1fec02b', '-D', '/var/lib/mock/fedora-rawhide-x86_64/root', '-a', '-u', 'mockbuild', '--capability=cap_ipc_lock', '--bind=/dev/btrfs-control', '--bind=/dev/mapper/control', '--bind=/dev/fuse', '--bind=/dev/loop-control', '--bind=/dev/loop0', '--bind=/dev/loop1', '--bind=/dev/loop2', '--bind=/dev/loop3', '--bind=/dev/loop4', '--bind=/dev/loop5', '--bind=/dev/loop6', '--bind=/dev/loop7', '--bind=/dev/loop8', '--bind=/dev/loop9', '--bind=/dev/loop10', '--bind=/dev/loop11', '--resolv-conf=off', '--console=pipe', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=C.UTF-8', 'bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/plexus-testing.spec'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
+Building target platforms: x86_64
+Building for target x86_64
+setting SOURCE_DATE_EPOCH=1789430400
+Wrote: /builddir/build/SRPMS/plexus-testing-2.2.0-1.fc46.src.rpm
+Child return code was: 0
+Using nspawn with args ['--capability=cap_ipc_lock', '--bind=/dev/btrfs-control', '--bind=/dev/mapper/control', '--bind=/dev/fuse', '--bind=/dev/loop-control', '--bind=/dev/loop0', '--bind=/dev/loop1', '--bind=/dev/loop2', '--bind=/dev/loop3', '--bind=/dev/loop4', '--bind=/dev/loop5', '--bind=/dev/loop6', '--bind=/dev/loop7', '--bind=/dev/loop8', '--bind=/dev/loop9', '--bind=/dev/loop10', '--bind=/dev/loop11', '--resolv-conf=off']
+Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'b01a1c062af84d7ebaceafa8de2c0a85', '-D', '/var/lib/mock/fedora-rawhide-x86_64/root', '-a', '-u', 'mockbuild', '--capability=cap_ipc_lock', '--bind=/dev/btrfs-control', '--bind=/dev/mapper/control', '--bind=/dev/fuse', '--bind=/dev/loop-control', '--bind=/dev/loop0', '--bind=/dev/loop1', '--bind=/dev/loop2', '--bind=/dev/loop3', '--bind=/dev/loop4', '--bind=/dev/loop5', '--bind=/dev/loop6', '--bind=/dev/loop7', '--bind=/dev/loop8', '--bind=/dev/loop9', '--bind=/dev/loop10', '--bind=/dev/loop11', '--resolv-conf=off', '--console=pipe', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=C.UTF-8', 'bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/plexus-testing.spec'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
+Building target platforms: x86_64
+Building for target x86_64
+setting SOURCE_DATE_EPOCH=1789430400
+Wrote: /builddir/build/SRPMS/plexus-testing-2.2.0-1.fc46.src.rpm
+Child return code was: 0
+Using nspawn with args ['--capability=cap_ipc_lock', '--bind=/dev/btrfs-control', '--bind=/dev/mapper/control', '--bind=/dev/fuse', '--bind=/dev/loop-control', '--bind=/dev/loop0', '--bind=/dev/loop1', '--bind=/dev/loop2', '--bind=/dev/loop3', '--bind=/dev/loop4', '--bind=/dev/loop5', '--bind=/dev/loop6', '--bind=/dev/loop7', '--bind=/dev/loop8', '--bind=/dev/loop9', '--bind=/dev/loop10', '--bind=/dev/loop11', '--resolv-conf=off']
+Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '97c1cb39e714489898c3a829af5e82b2', '-D', '/var/lib/mock/fedora-rawhide-x86_64/root', '-a', '-u', 'mockbuild', '--capability=cap_ipc_lock', '--bind=/dev/btrfs-control', '--bind=/dev/mapper/control', '--bind=/dev/fuse', '--bind=/dev/loop-control', '--bind=/dev/loop0', '--bind=/dev/loop1', '--bind=/dev/loop2', '--bind=/dev/loop3', '--bind=/dev/loop4', '--bind=/dev/loop5', '--bind=/dev/loop6', '--bind=/dev/loop7', '--bind=/dev/loop8', '--bind=/dev/loop9', '--bind=/dev/loop10', '--bind=/dev/loop11', '--resolv-conf=off', '--console=pipe', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=C.UTF-8', 'bash', '--login', '-c', '/usr/bin/rpmbuild -bb --target x86_64 --nodeps /builddir/build/SPECS/plexus-testing.spec'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
+Building target platforms: x86_64
+Building for target x86_64
+setting SOURCE_DATE_EPOCH=1789430400
+Executing(mkbuilddir): /bin/sh -e /var/tmp/rpm-tmp.shNRJS
+Creating(rpmbuild.env): /builddir/build/BUILD/plexus-testing-2.2.0-build/rpmbuild.env
+  RPM_SOURCE_DIR="/builddir/build/SOURCES"
+  RPM_BUILD_DIR="/builddir/build/BUILD/plexus-testing-2.2.0-build"
+  RPM_OPT_FLAGS="-O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Wno-complain-wrong-lang -Werror=format-security -Wp,-U_FORTIFY_SOURCE,-D_FORTIFY_SOURCE=3 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -m64 -march=x86-64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -mtls-dialect=gnu2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer"
+  RPM_LD_FLAGS="-Wl,-z,relro -Wl,--as-needed  -Wl,-z,pack-relative-relocs -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld -specs=/usr/lib/rpm/redhat/redhat-hardened-ld-errors -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -Wl,--build-id=sha1 -specs=/usr/lib/rpm/redhat/redhat-package-notes  "
+  RPM_ARCH="x86_64"
+  RPM_OS="linux"
+  RPM_BUILD_NCPUS="4"
+  RPM_SPECPARTS_DIR="/builddir/build/BUILD/plexus-testing-2.2.0-build/SPECPARTS"
+  export RPM_SOURCE_DIR RPM_BUILD_DIR RPM_OPT_FLAGS RPM_ARCH RPM_OS RPM_BUILD_NCPUS RPM_SPECPARTS_DIR RPM_LD_FLAGS
+  RPM_DOC_DIR="/usr/share/doc"
+  export RPM_DOC_DIR
+  RPM_PACKAGE_NAME="plexus-testing"
+  RPM_PACKAGE_VERSION="2.2.0"
+  RPM_PACKAGE_RELEASE="1.fc46"
+  export RPM_PACKAGE_NAME RPM_PACKAGE_VERSION RPM_PACKAGE_RELEASE
+  LANG=C.UTF-8
+  export LANG
+  unset CDPATH DISPLAY ||:
+  unset DEBUGINFOD_URLS ||:
+  unset RPM_CONFIG_DIR ||:
+  RPM_BUILD_ROOT="/builddir/build/BUILD/plexus-testing-2.2.0-build/BUILDROOT"
+  export RPM_BUILD_ROOT
+  
+  PKG_CONFIG_PATH="${PKG_CONFIG_PATH}:/usr/lib64/pkgconfig:/usr/share/pkgconfig"
+  export PKG_CONFIG_PATH
+  CONFIG_SITE=${CONFIG_SITE:-NONE}
+  export CONFIG_SITE
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.1FJkLZ
++ umask 022
++ cd /builddir/build/BUILD/plexus-testing-2.2.0-build
++ cd /builddir/build/BUILD/plexus-testing-2.2.0-build
++ rm -rf codehaus-plexus-plexus-testing-d7af192
++ /usr/bin/rpmuncompress -x /builddir/build/SOURCES/plexus-testing-2.2.0.tar.gz
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd codehaus-plexus-plexus-testing-d7af192
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ /usr/bin/python3 /usr/share/java-utils/pom_editor.py pom_add_dep org.codehaus.plexus:plexus-utils
++ /usr/bin/python3 /usr/share/java-utils/pom_editor.py pom_add_dep org.codehaus.plexus:plexus-xml
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.rGvT9D
++ umask 022
++ cd /builddir/build/BUILD/plexus-testing-2.2.0-build
++ CFLAGS='-O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-U_FORTIFY_SOURCE,-D_FORTIFY_SOURCE=3 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -m64 -march=x86-64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -mtls-dialect=gnu2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer  '
++ export CFLAGS
++ CXXFLAGS='-O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-U_FORTIFY_SOURCE,-D_FORTIFY_SOURCE=3 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -m64 -march=x86-64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -mtls-dialect=gnu2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer  '
++ export CXXFLAGS
++ FFLAGS='-O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Wp,-U_FORTIFY_SOURCE,-D_FORTIFY_SOURCE=3 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -m64 -march=x86-64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -mtls-dialect=gnu2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -I/usr/lib64/gfortran/modules  '
++ export FFLAGS
++ FCFLAGS='-O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Wp,-U_FORTIFY_SOURCE,-D_FORTIFY_SOURCE=3 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -m64 -march=x86-64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -mtls-dialect=gnu2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -I/usr/lib64/gfortran/modules  '
++ export FCFLAGS
++ VALAFLAGS=-g
++ export VALAFLAGS
++ RUSTFLAGS='-Copt-level=3 -Cdebuginfo=2 -Ccodegen-units=1 -Cstrip=none -Cforce-frame-pointers=yes -Clink-arg=-specs=/usr/lib/rpm/redhat/redhat-package-notes --cap-lints=warn'
++ export RUSTFLAGS
++ LDFLAGS='-Wl,-z,relro -Wl,--as-needed  -Wl,-z,pack-relative-relocs -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld -specs=/usr/lib/rpm/redhat/redhat-hardened-ld-errors -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -Wl,--build-id=sha1 -specs=/usr/lib/rpm/redhat/redhat-package-notes  '
++ export LDFLAGS
++ LT_SYS_LIBRARY_PATH=/usr/lib64:
++ export LT_SYS_LIBRARY_PATH
++ CC=gcc
++ export CC
++ CXX=g++
++ export CXX
++ cd codehaus-plexus-plexus-testing-d7af192
++ /usr/bin/python3 /usr/share/java-utils/mvn_build.py --xmvn-javadoc -j
+Executing: xmvn --batch-mode --offline verify org.fedoraproject.xmvn:xmvn-mojo:install org.fedoraproject.xmvn:xmvn-mojo:builddep
+['xmvn', '--batch-mode', '--offline', 'verify', 'org.fedoraproject.xmvn:xmvn-mojo:install', 'org.fedoraproject.xmvn:xmvn-mojo:builddep']
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::staticFieldBase has been called by com.google.inject.internal.aop.HiddenClassDefiner (file:/usr/share/xmvn/lib/guice-5.1.0-classes.jar)
+WARNING: Please consider reporting this to the maintainers of class com.google.inject.internal.aop.HiddenClassDefiner
+WARNING: sun.misc.Unsafe::staticFieldBase will be removed in a future release
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< org.codehaus.plexus:plexus-testing >-----------------
+[INFO] Building Plexus Testing 2.2.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ plexus-testing ---
+[INFO] skip non existing resourceDirectory /builddir/build/BUILD/plexus-testing-2.2.0-build/codehaus-plexus-plexus-testing-d7af192/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.12.1:compile (default-compile) @ plexus-testing ---
+[INFO] Toolchain in maven-compiler-plugin: JDK[/usr/lib/jvm/java-25-openjdk]
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 3 source files with javac [forked debug deprecation release 8] to target/classes
+[WARNING] [options] source value 8 is obsolete and will be removed in a future release
+[WARNING] [options] target value 8 is obsolete and will be removed in a future release
+[WARNING] [options] To suppress warnings about obsolete options, use -Xlint:-options.
+[WARNING] unknown enum constant Status.STABLE
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ plexus-testing ---
+[INFO] skip non existing resourceDirectory /builddir/build/BUILD/plexus-testing-2.2.0-build/codehaus-plexus-plexus-testing-d7af192/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.12.1:testCompile (default-testCompile) @ plexus-testing ---
+[INFO] Toolchain in maven-compiler-plugin: JDK[/usr/lib/jvm/java-25-openjdk]
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 4 source files with javac [forked debug deprecation release 8] to target/test-classes
+[WARNING] [options] source value 8 is obsolete and will be removed in a future release
+[WARNING] [options] target value 8 is obsolete and will be removed in a future release
+[WARNING] [options] To suppress warnings about obsolete options, use -Xlint:-options.
+[WARNING] unknown enum constant Status.STABLE
+[INFO] 
+[INFO] --- surefire:3.2.2:test (default-test) @ plexus-testing ---
+[INFO] Toolchain in maven-surefire-plugin: JDK[/usr/lib/jvm/java-25-openjdk]
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.codehaus.plexus.testing.PlexusTestCustomizeTest
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by net.bytebuddy.dynamic.loading.ClassInjector$UsingUnsafe$Dispatcher$CreationAction (file:/usr/share/java/byte-buddy/byte-buddy-dep.jar)
+WARNING: Please consider reporting this to the maintainers of class net.bytebuddy.dynamic.loading.ClassInjector$UsingUnsafe$Dispatcher$CreationAction
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+WARNING: A Java agent has been loaded dynamically (/usr/share/java/byte-buddy/byte-buddy-agent.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] Running org.codehaus.plexus.testing.PlexusTestCustomizeTest$NestedTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.068 s -- in org.codehaus.plexus.testing.PlexusTestCustomizeTest$NestedTest
+[INFO] Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.484 s -- in org.codehaus.plexus.testing.PlexusTestCustomizeTest
+[INFO] Running org.codehaus.plexus.testing.PlexusTestJavaxTest
+[INFO] Running org.codehaus.plexus.testing.PlexusTestJavaxTest$NestedTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s -- in org.codehaus.plexus.testing.PlexusTestJavaxTest$NestedTest
+[INFO] Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 s -- in org.codehaus.plexus.testing.PlexusTestJavaxTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- jar:3.3.0:jar (default-jar) @ plexus-testing ---
+[INFO] Building jar: /builddir/build/BUILD/plexus-testing-2.2.0-build/codehaus-plexus-plexus-testing-d7af192/target/plexus-testing-2.2.0.jar
+[INFO] 
+[INFO] -----------------< org.codehaus.plexus:plexus-testing >-----------------
+[INFO] Building Plexus Testing 2.2.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- xmvn-mojo:4.3.0:install (default-cli) @ plexus-testing ---
+[INFO] 
+[INFO] --- xmvn-mojo:4.3.0:builddep (default-cli) @ plexus-testing ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  8.148 s
+[INFO] Finished at: 2026-09-15T12:53:58Z
+[INFO] ------------------------------------------------------------------------
+-----BEGIN MAVEN BUILD DEPENDENCIES-----
+H4sIAAAAAAAC/72UP2/DIBDF93wKmh3c7q4jdeuQvSvFF3ouBsQfy/n2xY6j2FFEVaftgrjHk37v
+OES561tFOnAejX7ePrHHLdlVm/KBUvISUdWkBgu6Bi0QPJGgwfEANXk/krd9pwmlyT33VBtCLsJx
+KJMgnYn2ta6Mk0yYGj549Mwq6KMvi/PhycpdwAMXIQlnw0w6eaAPoIfIlTVtWVzKAV4s6b8bhqb7
+ug70x8QYUPn1TGFaJo2RCpiMvOMZ4HR+T3cgFFoPzKOPGdK1ld0e9aouUTcgQrZNFHDjVQnFvccD
+gqvGLaQ8M+3Hd9FEjSGtFgO4TJ7RRycf5RbvG0FrxCcGkwFODiqMg/9iLZpcD23SC+2/H/HSloPN
+qvH3+gJB3omnEgUAAA==
+-----END MAVEN BUILD DEPENDENCIES-----
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.Y6L3On
++ umask 022
++ cd /builddir/build/BUILD/plexus-testing-2.2.0-build
++ '[' /builddir/build/BUILD/plexus-testing-2.2.0-build/BUILDROOT '!=' / ']'
++ rm -rf /builddir/build/BUILD/plexus-testing-2.2.0-build/BUILDROOT
+++ dirname /builddir/build/BUILD/plexus-testing-2.2.0-build/BUILDROOT
++ mkdir -p /builddir/build/BUILD/plexus-testing-2.2.0-build
++ mkdir /builddir/build/BUILD/plexus-testing-2.2.0-build/BUILDROOT
++ CFLAGS='-O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-U_FORTIFY_SOURCE,-D_FORTIFY_SOURCE=3 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -m64 -march=x86-64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -mtls-dialect=gnu2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer  '
++ export CFLAGS
++ CXXFLAGS='-O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-U_FORTIFY_SOURCE,-D_FORTIFY_SOURCE=3 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -m64 -march=x86-64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -mtls-dialect=gnu2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer  '
++ export CXXFLAGS
++ FFLAGS='-O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Wp,-U_FORTIFY_SOURCE,-D_FORTIFY_SOURCE=3 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -m64 -march=x86-64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -mtls-dialect=gnu2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -I/usr/lib64/gfortran/modules  '
++ export FFLAGS
++ FCFLAGS='-O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Wp,-U_FORTIFY_SOURCE,-D_FORTIFY_SOURCE=3 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -m64 -march=x86-64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -mtls-dialect=gnu2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -I/usr/lib64/gfortran/modules  '
++ export FCFLAGS
++ VALAFLAGS=-g
++ export VALAFLAGS
++ RUSTFLAGS='-Copt-level=3 -Cdebuginfo=2 -Ccodegen-units=1 -Cstrip=none -Cforce-frame-pointers=yes -Clink-arg=-specs=/usr/lib/rpm/redhat/redhat-package-notes --cap-lints=warn'
++ export RUSTFLAGS
++ LDFLAGS='-Wl,-z,relro -Wl,--as-needed  -Wl,-z,pack-relative-relocs -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld -specs=/usr/lib/rpm/redhat/redhat-hardened-ld-errors -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -Wl,--build-id=sha1 -specs=/usr/lib/rpm/redhat/redhat-package-notes  '
++ export LDFLAGS
++ LT_SYS_LIBRARY_PATH=/usr/lib64:
++ export LT_SYS_LIBRARY_PATH
++ CC=gcc
++ export CC
++ CXX=g++
++ export CXX
++ cd codehaus-plexus-plexus-testing-d7af192
++ xmvn-install -R .xmvn-reactor -n plexus-testing -d /builddir/build/BUILD/plexus-testing-2.2.0-build/BUILDROOT
+[INFO] Installing artifact org.codehaus.plexus:plexus-testing:jar:2.2.0
+[INFO] Installing artifact org.codehaus.plexus:plexus-testing:pom:2.2.0
+[INFO] Installation successful
++ jdir=target/site/apidocs
++ '[' -d .xmvn/apidocs ']'
++ /usr/bin/mkdir -p /builddir/build/BUILD/plexus-testing-2.2.0-build/BUILDROOT/usr/share/licenses
++ '[' -d target/site/apidocs ']'
++ /usr/lib/rpm/check-buildroot
++ /usr/lib/jvm/java-25-openjdk/bin/java -cp /usr/share/java/xmvn-generator.jar org.fedoraproject.xmvn.generator.callback.CallbackEntry /tmp/xmvngen-1397850027387901371/socket
++ /usr/lib/rpm/redhat/brp-ldconfig
++ COMPRESS='gzip -9 -n'
++ COMPRESS_EXT=.gz
++ /usr/lib/rpm/brp-compress
++ /usr/lib/rpm/brp-strip /usr/bin/strip
++ /usr/lib/rpm/brp-strip-comment-note /usr/bin/strip /usr/bin/objdump
++ /usr/lib/rpm/redhat/brp-strip-lto /usr/bin/strip
++ /usr/lib/rpm/check-rpaths
++ /usr/lib/rpm/redhat/brp-mangle-shebangs
++ /usr/lib/rpm/brp-remove-la-files
++ /usr/lib/rpm/redhat/brp-python-rpm-in-distinfo
++ env /usr/lib/rpm/redhat/brp-python-bytecompile '' 1 0 -j4
++ /usr/lib/rpm/redhat/brp-python-hardlink
++ /usr/bin/add-det --brp -j4 /builddir/build/BUILD/plexus-testing-2.2.0-build/BUILDROOT
+/builddir/build/BUILD/plexus-testing-2.2.0-build/BUILDROOT/usr/share/java/plexus-testing/plexus-testing.jar: replacing with normalized version
+Scanned 9 directories and 3 files,
+    processed 1 inodes,
+    1 modified (1 replaced + 0 rewritten),
+    0 unsupported format, 0 errors
++ /usr/bin/linkdupes --brp /builddir/build/BUILD/plexus-testing-2.2.0-build/BUILDROOT/usr
+Scanned 8 directories and 3 files,
+    considered 3 files, read 0 files, linked 0 files, 0 errors
+    sum of sizes of linked files: 0 bytes
+Processing files: plexus-testing-2.2.0-1.fc46.noarch
+Executing(%doc): /bin/sh -e /var/tmp/rpm-tmp.iorAZP
++ umask 022
++ cd /builddir/build/BUILD/plexus-testing-2.2.0-build
++ cd codehaus-plexus-plexus-testing-d7af192
++ DOCDIR=/builddir/build/BUILD/plexus-testing-2.2.0-build/BUILDROOT/usr/share/doc/plexus-testing
++ export LC_ALL=C.UTF-8
++ LC_ALL=C.UTF-8
++ export DOCDIR
++ /usr/bin/mkdir -p /builddir/build/BUILD/plexus-testing-2.2.0-build/BUILDROOT/usr/share/doc/plexus-testing
++ cp -pr /builddir/build/BUILD/plexus-testing-2.2.0-build/codehaus-plexus-plexus-testing-d7af192/README.md /builddir/build/BUILD/plexus-testing-2.2.0-build/BUILDROOT/usr/share/doc/plexus-testing
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%license): /bin/sh -e /var/tmp/rpm-tmp.zrQgkQ
++ umask 022
++ cd /builddir/build/BUILD/plexus-testing-2.2.0-build
++ cd codehaus-plexus-plexus-testing-d7af192
++ LICENSEDIR=/builddir/build/BUILD/plexus-testing-2.2.0-build/BUILDROOT/usr/share/licenses/plexus-testing
++ export LC_ALL=C.UTF-8
++ LC_ALL=C.UTF-8
++ export LICENSEDIR
++ /usr/bin/mkdir -p /builddir/build/BUILD/plexus-testing-2.2.0-build/BUILDROOT/usr/share/licenses/plexus-testing
++ cp -pr /builddir/build/BUILD/plexus-testing-2.2.0-build/codehaus-plexus-plexus-testing-d7af192/LICENSE /builddir/build/BUILD/plexus-testing-2.2.0-build/BUILDROOT/usr/share/licenses/plexus-testing
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Provides: jpms(org.codehaus.plexus.testing) mvn(org.codehaus.plexus:plexus-testing) = 2.2.0 mvn(org.codehaus.plexus:plexus-testing:pom:) = 2.2.0 plexus-testing = 2.2.0-1.fc46
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires: javapackages-filesystem mvn(com.google.guava:guava) mvn(com.google.inject:guice::classes:) mvn(org.codehaus.plexus:plexus-utils) mvn(org.codehaus.plexus:plexus-xml) mvn(org.eclipse.sisu:org.eclipse.sisu.plexus) mvn(org.junit.jupiter:junit-jupiter-api)
+Obsoletes: plexus-testing-javadoc < 1.3.0-12
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /builddir/build/BUILD/plexus-testing-2.2.0-build/BUILDROOT
+Wrote: /builddir/build/RPMS/plexus-testing-2.2.0-1.fc46.noarch.rpm
+Executing(rmbuild): /bin/sh -e /var/tmp/rpm-tmp.q2ssDQ
++ umask 022
++ cd /builddir/build/BUILD/plexus-testing-2.2.0-build
++ test -d /builddir/build/BUILD/plexus-testing-2.2.0-build
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w /builddir/build/BUILD/plexus-testing-2.2.0-build
++ rm -rf /builddir/build/BUILD/plexus-testing-2.2.0-build
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Child return code was: 0

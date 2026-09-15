@@ -1,0 +1,8 @@
+{
+  "repository": "https://github.com/codehaus-plexus/plexus-testing",
+  "tag": "plexus-testing-2.2.0",
+  "commit": "d7af192b409467956b30d1b0fd643e68d3f65f06",
+  "url": "https://api.github.com/repos/codehaus-plexus/plexus-testing/tarball/d7af192b409467956b30d1b0fd643e68d3f65f06",
+  "archiveRoot": "codehaus-plexus-plexus-testing-d7af192",
+  "sha256": "058030e21787cfe3cacc1da5c176efe77b69701fce7f815fb798006c2952c30d"
+}

@@ -32,3 +32,5 @@ Norm's own compiler and release definitions remain in the [upstream repository](
 Build-tool prerequisites are tracked separately in the [Gradle source-build investigation](gradle/).
 
 The [GraalVM SDK/Truffle source-build preparation](graal/) records the runtime toolchain investigation and remaining packaging work.
+
+[Plexus Testing](plexus-testing/) maintains a source update for the Maven plugin test framework.

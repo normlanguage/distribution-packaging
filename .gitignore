@@ -151,6 +151,16 @@ graal/evidence/*
 !graal/evidence/mx-upstream-tests-home.log
 !graal/evidence/mx-deploy-plugin-rawhide-query.log
 !graal/evidence/mx-maven-deploy-install.log
+!plexus-testing/
+plexus-testing/*
+!plexus-testing/README.md
+!plexus-testing/source.json
+!plexus-testing/fedora/
+!plexus-testing/fedora/**
+!plexus-testing/evidence/
+plexus-testing/evidence/*
+!plexus-testing/evidence/build.log
+!plexus-testing/evidence/installed_pkgs.log
 !graal/fedora/
 !graal/fedora/**
 !graal/tests/
