@@ -1,0 +1,16 @@
+*
+!.gitignore
+!.gitattributes
+!README.md
+!LICENSE
+!kryo/
+kryo/*
+!kryo/debian/
+!kryo/debian/**
+!kryo/source.json
+!kryo/repack.json
+!minlog/
+minlog/*
+!minlog/fedora/
+!minlog/fedora/**
+!minlog/source.json

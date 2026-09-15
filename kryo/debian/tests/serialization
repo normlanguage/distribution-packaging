@@ -1,0 +1,5 @@
+#!/bin/sh
+set -eu
+classpath=/usr/share/java/kryo5.jar:/usr/share/java/minlog.jar:/usr/share/java/objenesis.jar:/usr/share/java/reflectasm.jar
+javac -cp "$classpath" -d "$AUTOPKGTEST_TMP" debian/tests/KryoRoundTrip.java
+java -cp "$classpath:$AUTOPKGTEST_TMP" KryoRoundTrip

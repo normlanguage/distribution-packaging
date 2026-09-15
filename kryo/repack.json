@@ -1,0 +1,22 @@
+{
+  "source_sha256": "d969e5cb9e69992c1932572eab0f0852fde3b1e7ee8f592ae8f5434ed83a2903",
+  "output_sha256": "1f572647d77eaaec3e12aa98632ecd16eb7370968655e4d74f0ed4f831a48fa3",
+  "output_bytes": 429873,
+  "removed_files": [
+    "benchmarks/lib/byte-buddy-1.12.7.jar",
+    "benchmarks/lib/commons-cli-1.3.1.jar",
+    "benchmarks/lib/commons-math3-3.2.jar",
+    "benchmarks/lib/jmh-core-1.21.jar",
+    "benchmarks/lib/jmh-generator-annprocess-1.21.jar",
+    "benchmarks/lib/jopt-simple-4.6.jar",
+    "build/commons-lang-2.6.jar",
+    "build/junit-platform-console-standalone-1.8.2.jar",
+    "compat_reports/kryo-2.22.jar",
+    "compat_reports/kryo-2.23.0.jar",
+    "lib/minlog-1.3.1.jar",
+    "lib/objenesis-3.2.jar",
+    "lib/reflectasm-1.11.9.jar"
+  ],
+  "normalization": "Sorted paths; original minimum timestamp; root ownership; empty gzip filename; original contents and modes retained.",
+  "retained_files_verified": 206
+}

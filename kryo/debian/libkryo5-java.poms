@@ -1,0 +1,4 @@
+pom.xml
+main/pom.xml --java-lib --usj-name=kryo5
+main-versioned/pom.xml --ignore
+benchmarks/pom.xml --ignore

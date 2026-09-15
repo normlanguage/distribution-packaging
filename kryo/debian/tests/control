@@ -1,0 +1,3 @@
+Tests: serialization
+Depends: @, default-jdk-headless
+Restrictions: allow-stderr

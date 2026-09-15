@@ -1,0 +1,22 @@
+{
+  "repository": "https://github.com/EsotericSoftware/kryo",
+  "tag": "kryo-parent-5.6.2",
+  "commit": "fee63879ddcec23fbd09ac7785bc04a3de758483",
+  "files": [
+    {
+      "path": "pom.xml",
+      "gitBlob": "c9b27d47943e23f51acf11f73ba532af6d9cf233",
+      "url": "https://github.com/EsotericSoftware/kryo/blob/fee63879ddcec23fbd09ac7785bc04a3de758483/pom.xml"
+    },
+    {
+      "path": "main/pom.xml",
+      "gitBlob": "200467d917d55ea63298679c6132ea6afa6c3375",
+      "url": "https://github.com/EsotericSoftware/kryo/blob/fee63879ddcec23fbd09ac7785bc04a3de758483/main/pom.xml"
+    },
+    {
+      "path": "LICENSE.md",
+      "gitBlob": "a99bed8854bccddc51ab701b0faf1f060be1d640",
+      "url": "https://github.com/EsotericSoftware/kryo/blob/fee63879ddcec23fbd09ac7785bc04a3de758483/LICENSE.md"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+Source: libkryo5-java
+Section: java
+Priority: optional
+Maintainer: w0fv1 <wofbi1@outlook.com>
+Build-Depends: debhelper-compat (= 13), default-jdk, maven-debian-helper, junit5, libcommons-lang3-java, libminlog-java, libobjenesis-java, libreflectasm-java, libmaven-bundle-plugin-java, libbuild-helper-maven-plugin-java
+Standards-Version: 4.7.2
+Homepage: https://github.com/EsotericSoftware/kryo
+Rules-Requires-Root: no
+
+Package: libkryo5-java
+Architecture: all
+Depends: ${maven:Depends}, ${misc:Depends}
+Description: fast Java serialization library, major version 5
+ Kryo provides fast and efficient serialization of Java objects.
+ This package provides the version 5 API alongside the older Kryo library.
