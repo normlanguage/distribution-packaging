@@ -17,3 +17,7 @@ The [functional check](tests/run-check.sh) verifies DSL annotation processing, a
 Evidence: [fresh build](evidence/graal-truffle-candidate-build.log), [functional check](evidence/graal-candidate-functional-check.log), [explicit JVMCI/compiler diagnostic](evidence/graal-candidate-jvmci-check.log). The default JVM uses interpreter fallback. Explicitly enabling JVMCI and resolving the system `jdk.graal.compiler` module fails because that module lacks the Truffle compiler package. Optimizing compilation remains unverified; these checks do not establish upstream unit-test coverage or full Norm compatibility.
 
 mx packaging, upstream tests, a compatible optimizing compiler and distribution-native package generation remain required.
+
+## Optimizing compiler
+
+The upstream compiler suite's `GRAAL` target builds its processor and options module with the same offline mx command, then fails because system OpenJDK 25 does not provide `jdk.vm.ci.meta.annotation`. [Compiler build evidence](evidence/graal-compiler-source-build.log) records the failure. The pinned compiler source uses this package in its annotation support, snippet metadata and replay proxies; its `JVMCIVersionCheck.java` specifies Labs JDK 25.0.3+9, release 25.1, JVMCI build 19 as the minimum for JDK 25. Removing a suite export would not supply the missing API. A distribution-supported JVMCI implementation compatible with this compiler remains unresolved.
