@@ -9,6 +9,9 @@ SRPM URL: https://github.com/normlanguage/distribution-packaging/releases/downlo
 Description:
 MinLog provides lightweight Java logging with configurable levels and custom log handlers. This package is needed for Kryo 5 and the Norm programming language toolchain.
 
+This is a re-review of a package retired on 2019-09-11 after being orphaned for more than six weeks. The original accepted review was Bug 919495:
+https://bugzilla.redhat.com/show_bug.cgi?id=919495
+
 Fedora Account System Username: w0fv1
 
 I am a new Fedora packager and need a sponsor. I welcome coordination with the Java SIG and any existing packaging or review work for MinLog.
