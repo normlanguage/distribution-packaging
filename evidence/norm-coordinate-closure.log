@@ -23,5 +23,5 @@ FOUND	com.esotericsoftware:kryo	kryo5-5.6.2-1.fc46.noarch
 FOUND	org.graalvm.buildtools:graalvm-reachability-metadata	graalvm-native-build-tools-1.1.12-1.fc46.noarch
 FOUND	org.graalvm.buildtools:utils	graalvm-native-build-tools-1.1.12-1.fc46.noarch
 FOUND	org.jspecify:jspecify	jspecify-1.0.0-1.fc46.noarch
-MISSING	com.tngtech.archunit:archunit
+FOUND	com.tngtech.archunit:archunit	archunit-1.5.0-1.fc46.noarch
 FOUND	org.java-websocket:Java-WebSocket	Java-WebSocket-1.6.0-7.fc44.noarch

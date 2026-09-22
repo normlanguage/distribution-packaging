@@ -1,0 +1,227 @@
+Mock Version: 6.8
+Using nspawn with args ['--capability=cap_ipc_lock', '--hostname=localhost', '--bind=/dev/btrfs-control', '--bind=/dev/mapper/control', '--bind=/dev/fuse', '--bind=/dev/loop-control', '--bind=/dev/loop0', '--bind=/dev/loop1', '--bind=/dev/loop2', '--bind=/dev/loop3', '--bind=/dev/loop4', '--bind=/dev/loop5', '--bind=/dev/loop6', '--bind=/dev/loop7', '--bind=/dev/loop8', '--bind=/dev/loop9', '--bind=/dev/loop10', '--bind=/dev/loop11', '--resolv-conf=off']
+Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '062ac3ee798047c7817c13e1655202b9', '-D', '/var/lib/mock/fedora-rawhide-x86_64/root', '-a', '-u', 'mockbuild', '--capability=cap_ipc_lock', '--hostname=localhost', '--bind=/dev/btrfs-control', '--bind=/dev/mapper/control', '--bind=/dev/fuse', '--bind=/dev/loop-control', '--bind=/dev/loop0', '--bind=/dev/loop1', '--bind=/dev/loop2', '--bind=/dev/loop3', '--bind=/dev/loop4', '--bind=/dev/loop5', '--bind=/dev/loop6', '--bind=/dev/loop7', '--bind=/dev/loop8', '--bind=/dev/loop9', '--bind=/dev/loop10', '--bind=/dev/loop11', '--resolv-conf=off', '--console=pipe', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=C.UTF-8', 'bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/archunit.spec'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
+Building target platforms: x86_64
+Building for target x86_64
+setting SOURCE_DATE_EPOCH=1790035200
+Wrote: /builddir/build/SRPMS/archunit-1.5.0-1.fc46.src.rpm
+Child return code was: 0
+Using nspawn with args ['--capability=cap_ipc_lock', '--hostname=localhost', '--bind=/dev/btrfs-control', '--bind=/dev/mapper/control', '--bind=/dev/fuse', '--bind=/dev/loop-control', '--bind=/dev/loop0', '--bind=/dev/loop1', '--bind=/dev/loop2', '--bind=/dev/loop3', '--bind=/dev/loop4', '--bind=/dev/loop5', '--bind=/dev/loop6', '--bind=/dev/loop7', '--bind=/dev/loop8', '--bind=/dev/loop9', '--bind=/dev/loop10', '--bind=/dev/loop11', '--resolv-conf=off']
+Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'f7c2e3ec947f4b7aa0cc9e102fba379b', '-D', '/var/lib/mock/fedora-rawhide-x86_64/root', '-a', '-u', 'mockbuild', '--capability=cap_ipc_lock', '--hostname=localhost', '--bind=/dev/btrfs-control', '--bind=/dev/mapper/control', '--bind=/dev/fuse', '--bind=/dev/loop-control', '--bind=/dev/loop0', '--bind=/dev/loop1', '--bind=/dev/loop2', '--bind=/dev/loop3', '--bind=/dev/loop4', '--bind=/dev/loop5', '--bind=/dev/loop6', '--bind=/dev/loop7', '--bind=/dev/loop8', '--bind=/dev/loop9', '--bind=/dev/loop10', '--bind=/dev/loop11', '--resolv-conf=off', '--console=pipe', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=C.UTF-8', 'bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/archunit.spec'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
+Building target platforms: x86_64
+Building for target x86_64
+setting SOURCE_DATE_EPOCH=1790035200
+Wrote: /builddir/build/SRPMS/archunit-1.5.0-1.fc46.src.rpm
+Child return code was: 0
+Using nspawn with args ['--capability=cap_ipc_lock', '--hostname=localhost', '--bind=/dev/btrfs-control', '--bind=/dev/mapper/control', '--bind=/dev/fuse', '--bind=/dev/loop-control', '--bind=/dev/loop0', '--bind=/dev/loop1', '--bind=/dev/loop2', '--bind=/dev/loop3', '--bind=/dev/loop4', '--bind=/dev/loop5', '--bind=/dev/loop6', '--bind=/dev/loop7', '--bind=/dev/loop8', '--bind=/dev/loop9', '--bind=/dev/loop10', '--bind=/dev/loop11', '--resolv-conf=off']
+Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '12925c184fa7493da9599964338fedb4', '-D', '/var/lib/mock/fedora-rawhide-x86_64/root', '-a', '-u', 'mockbuild', '--capability=cap_ipc_lock', '--hostname=localhost', '--bind=/dev/btrfs-control', '--bind=/dev/mapper/control', '--bind=/dev/fuse', '--bind=/dev/loop-control', '--bind=/dev/loop0', '--bind=/dev/loop1', '--bind=/dev/loop2', '--bind=/dev/loop3', '--bind=/dev/loop4', '--bind=/dev/loop5', '--bind=/dev/loop6', '--bind=/dev/loop7', '--bind=/dev/loop8', '--bind=/dev/loop9', '--bind=/dev/loop10', '--bind=/dev/loop11', '--resolv-conf=off', '--console=pipe', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=C.UTF-8', 'bash', '--login', '-c', '/usr/bin/rpmbuild -bb --target x86_64 --nodeps /builddir/build/SPECS/archunit.spec'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
+Building target platforms: x86_64
+Building for target x86_64
+setting SOURCE_DATE_EPOCH=1790035200
+Executing(mkbuilddir): /bin/sh -e /var/tmp/rpm-tmp.wFV0dq
+Creating(rpmbuild.env): /builddir/build/BUILD/archunit-1.5.0-build/rpmbuild.env
+  RPM_SOURCE_DIR="/builddir/build/SOURCES"
+  RPM_BUILD_DIR="/builddir/build/BUILD/archunit-1.5.0-build"
+  RPM_OPT_FLAGS="-O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Wno-complain-wrong-lang -Werror=format-security -Wp,-U_FORTIFY_SOURCE,-D_FORTIFY_SOURCE=3 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -m64 -march=x86-64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -mtls-dialect=gnu2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer"
+  RPM_LD_FLAGS="-Wl,-z,relro -Wl,--as-needed  -Wl,-z,pack-relative-relocs -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld -specs=/usr/lib/rpm/redhat/redhat-hardened-ld-errors -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -Wl,--build-id=sha1 -specs=/usr/lib/rpm/redhat/redhat-package-notes  "
+  RPM_ARCH="x86_64"
+  RPM_OS="linux"
+  RPM_BUILD_NCPUS="1"
+  RPM_SPECPARTS_DIR="/builddir/build/BUILD/archunit-1.5.0-build/SPECPARTS"
+  export RPM_SOURCE_DIR RPM_BUILD_DIR RPM_OPT_FLAGS RPM_ARCH RPM_OS RPM_BUILD_NCPUS RPM_SPECPARTS_DIR RPM_LD_FLAGS
+  RPM_DOC_DIR="/usr/share/doc"
+  export RPM_DOC_DIR
+  RPM_PACKAGE_NAME="archunit"
+  RPM_PACKAGE_VERSION="1.5.0"
+  RPM_PACKAGE_RELEASE="1.fc46"
+  export RPM_PACKAGE_NAME RPM_PACKAGE_VERSION RPM_PACKAGE_RELEASE
+  LANG=C.UTF-8
+  export LANG
+  unset CDPATH DISPLAY ||:
+  unset DEBUGINFOD_URLS ||:
+  unset RPM_CONFIG_DIR ||:
+  RPM_BUILD_ROOT="/builddir/build/BUILD/archunit-1.5.0-build/BUILDROOT"
+  export RPM_BUILD_ROOT
+
+  PKG_CONFIG_PATH="${PKG_CONFIG_PATH}:/usr/lib64/pkgconfig:/usr/share/pkgconfig"
+  export PKG_CONFIG_PATH
+  CONFIG_SITE=${CONFIG_SITE:-NONE}
+  export CONFIG_SITE
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.lyVsEp
++ umask 022
++ cd /builddir/build/BUILD/archunit-1.5.0-build
++ cd /builddir/build/BUILD/archunit-1.5.0-build
++ rm -rf ArchUnit-502d782bfbf2632a2c9f943a502ddd8cc3e3c46d
++ /usr/bin/rpmuncompress -x /builddir/build/SOURCES/ArchUnit-502d782bfbf2632a2c9f943a502ddd8cc3e3c46d.tar.gz
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd ArchUnit-502d782bfbf2632a2c9f943a502ddd8cc3e3c46d
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.iNZJaO
++ umask 022
++ cd /builddir/build/BUILD/archunit-1.5.0-build
++ CFLAGS='-O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-U_FORTIFY_SOURCE,-D_FORTIFY_SOURCE=3 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -m64 -march=x86-64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -mtls-dialect=gnu2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer  '
++ export CFLAGS
++ CXXFLAGS='-O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-U_FORTIFY_SOURCE,-D_FORTIFY_SOURCE=3 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -m64 -march=x86-64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -mtls-dialect=gnu2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer  '
++ export CXXFLAGS
++ FFLAGS='-O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Wp,-U_FORTIFY_SOURCE,-D_FORTIFY_SOURCE=3 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -m64 -march=x86-64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -mtls-dialect=gnu2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -I/usr/lib64/gfortran/modules  '
++ export FFLAGS
++ FCFLAGS='-O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Wp,-U_FORTIFY_SOURCE,-D_FORTIFY_SOURCE=3 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -m64 -march=x86-64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -mtls-dialect=gnu2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -I/usr/lib64/gfortran/modules  '
++ export FCFLAGS
++ VALAFLAGS=-g
++ export VALAFLAGS
++ RUSTFLAGS='-Copt-level=3 -Cdebuginfo=2 -Ccodegen-units=1 -Cstrip=none -Cforce-frame-pointers=yes -Clink-arg=-specs=/usr/lib/rpm/redhat/redhat-package-notes --cap-lints=warn'
++ export RUSTFLAGS
++ LDFLAGS='-Wl,-z,relro -Wl,--as-needed  -Wl,-z,pack-relative-relocs -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld -specs=/usr/lib/rpm/redhat/redhat-hardened-ld-errors -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -Wl,--build-id=sha1 -specs=/usr/lib/rpm/redhat/redhat-package-notes  '
++ export LDFLAGS
++ LT_SYS_LIBRARY_PATH=/usr/lib64:
++ export LT_SYS_LIBRARY_PATH
++ CC=gcc
++ export CC
++ CXX=g++
++ export CXX
++ cd ArchUnit-502d782bfbf2632a2c9f943a502ddd8cc3e3c46d
+++ build-classpath objectweb-asm guava slf4j/slf4j-api
++ classpath=/usr/share/java/objectweb-asm/asm-analysis.jar:/usr/share/java/objectweb-asm/asm-commons.jar:/usr/share/java/objectweb-asm/asm-tree.jar:/usr/share/java/objectweb-asm/asm-util.jar:/usr/share/java/objectweb-asm/asm.jar:/usr/share/java/guava/failureaccess.jar:/usr/share/java/guava/guava.jar:/usr/share/java/slf4j/slf4j-api.jar
++ bash /builddir/build/SOURCES/build.sh /builddir/build/BUILD/archunit-1.5.0-build/ArchUnit-502d782bfbf2632a2c9f943a502ddd8cc3e3c46d build /usr/share/java/objectweb-asm/asm-analysis.jar:/usr/share/java/objectweb-asm/asm-commons.jar:/usr/share/java/objectweb-asm/asm-tree.jar:/usr/share/java/objectweb-asm/asm-util.jar:/usr/share/java/objectweb-asm/asm.jar:/usr/share/java/guava/failureaccess.jar:/usr/share/java/guava/guava.jar:/usr/share/java/slf4j/slf4j-api.jar
+warning: [options] source value 8 is obsolete and will be removed in a future release
+warning: [options] target value 8 is obsolete and will be removed in a future release
+warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+Note: /builddir/build/BUILD/archunit-1.5.0-build/ArchUnit-502d782bfbf2632a2c9f943a502ddd8cc3e3c46d/archunit/src/main/java/com/tngtech/archunit/core/importer/JavaClassProcessor.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+3 warnings
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.tp9f4Y
++ umask 022
++ cd /builddir/build/BUILD/archunit-1.5.0-build
++ '[' /builddir/build/BUILD/archunit-1.5.0-build/BUILDROOT '!=' / ']'
++ rm -rf /builddir/build/BUILD/archunit-1.5.0-build/BUILDROOT
+++ dirname /builddir/build/BUILD/archunit-1.5.0-build/BUILDROOT
++ mkdir -p /builddir/build/BUILD/archunit-1.5.0-build
++ mkdir /builddir/build/BUILD/archunit-1.5.0-build/BUILDROOT
++ CFLAGS='-O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-U_FORTIFY_SOURCE,-D_FORTIFY_SOURCE=3 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -m64 -march=x86-64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -mtls-dialect=gnu2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer  '
++ export CFLAGS
++ CXXFLAGS='-O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-U_FORTIFY_SOURCE,-D_FORTIFY_SOURCE=3 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -m64 -march=x86-64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -mtls-dialect=gnu2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer  '
++ export CXXFLAGS
++ FFLAGS='-O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Wp,-U_FORTIFY_SOURCE,-D_FORTIFY_SOURCE=3 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -m64 -march=x86-64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -mtls-dialect=gnu2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -I/usr/lib64/gfortran/modules  '
++ export FFLAGS
++ FCFLAGS='-O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Wp,-U_FORTIFY_SOURCE,-D_FORTIFY_SOURCE=3 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -m64 -march=x86-64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -mtls-dialect=gnu2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -I/usr/lib64/gfortran/modules  '
++ export FCFLAGS
++ VALAFLAGS=-g
++ export VALAFLAGS
++ RUSTFLAGS='-Copt-level=3 -Cdebuginfo=2 -Ccodegen-units=1 -Cstrip=none -Cforce-frame-pointers=yes -Clink-arg=-specs=/usr/lib/rpm/redhat/redhat-package-notes --cap-lints=warn'
++ export RUSTFLAGS
++ LDFLAGS='-Wl,-z,relro -Wl,--as-needed  -Wl,-z,pack-relative-relocs -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld -specs=/usr/lib/rpm/redhat/redhat-hardened-ld-errors -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -Wl,--build-id=sha1 -specs=/usr/lib/rpm/redhat/redhat-package-notes  '
++ export LDFLAGS
++ LT_SYS_LIBRARY_PATH=/usr/lib64:
++ export LT_SYS_LIBRARY_PATH
++ CC=gcc
++ export CC
++ CXX=g++
++ export CXX
++ cd ArchUnit-502d782bfbf2632a2c9f943a502ddd8cc3e3c46d
++ /usr/bin/python3 /usr/share/java-utils/mvn_artifact.py /builddir/build/SOURCES/archunit.pom build/archunit.jar
++ xmvn-install -R .xmvn-reactor -n archunit -d /builddir/build/BUILD/archunit-1.5.0-build/BUILDROOT
+[INFO] Installing artifact com.tngtech.archunit:archunit:pom:1.5.0
+[INFO] Installing artifact com.tngtech.archunit:archunit:jar:1.5.0
+[INFO] Installation successful
++ jdir=target/site/apidocs
++ '[' -d .xmvn/apidocs ']'
++ /usr/bin/mkdir -p /builddir/build/BUILD/archunit-1.5.0-build/BUILDROOT/usr/share/licenses
++ '[' -d target/site/apidocs ']'
++ /usr/lib/rpm/check-buildroot
++ /usr/lib/jvm/java-25-openjdk/bin/java -cp /usr/share/java/xmvn-generator.jar org.fedoraproject.xmvn.generator.callback.CallbackEntry /tmp/xmvngen-7587291863742956208/socket
++ /usr/lib/rpm/redhat/brp-ldconfig
++ COMPRESS='gzip -9 -n'
++ COMPRESS_EXT=.gz
++ /usr/lib/rpm/brp-compress
++ /usr/lib/rpm/brp-strip /usr/bin/strip
++ /usr/lib/rpm/brp-strip-comment-note /usr/bin/strip /usr/bin/objdump
++ /usr/lib/rpm/redhat/brp-strip-lto /usr/bin/strip
++ /usr/lib/rpm/check-rpaths
++ /usr/lib/rpm/redhat/brp-mangle-shebangs
++ /usr/lib/rpm/brp-remove-la-files
++ /usr/lib/rpm/redhat/brp-python-rpm-in-distinfo
++ env /usr/lib/rpm/redhat/brp-python-bytecompile '' 1 0 -j1
++ /usr/lib/rpm/redhat/brp-python-hardlink
++ /usr/bin/add-det --brp -j1 /builddir/build/BUILD/archunit-1.5.0-build/BUILDROOT
+/builddir/build/BUILD/archunit-1.5.0-build/BUILDROOT/usr/share/java/archunit/archunit.jar: replacing with normalized version
+Scanned 9 directories and 3 files,
+    processed 1 inodes,
+    1 modified (1 replaced + 0 rewritten),
+    0 unsupported format, 0 errors
++ /usr/bin/linkdupes --brp /builddir/build/BUILD/archunit-1.5.0-build/BUILDROOT/usr
+Scanned 8 directories and 3 files,
+    considered 3 files, read 0 files, linked 0 files, 0 errors
+    sum of sizes of linked files: 0 bytes
+Executing(%check): /bin/sh -e /var/tmp/rpm-tmp.2EQQYg
++ umask 022
++ cd /builddir/build/BUILD/archunit-1.5.0-build
++ CFLAGS='-O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-U_FORTIFY_SOURCE,-D_FORTIFY_SOURCE=3 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -m64 -march=x86-64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -mtls-dialect=gnu2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer  '
++ export CFLAGS
++ CXXFLAGS='-O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-U_FORTIFY_SOURCE,-D_FORTIFY_SOURCE=3 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -m64 -march=x86-64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -mtls-dialect=gnu2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer  '
++ export CXXFLAGS
++ FFLAGS='-O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Wp,-U_FORTIFY_SOURCE,-D_FORTIFY_SOURCE=3 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -m64 -march=x86-64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -mtls-dialect=gnu2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -I/usr/lib64/gfortran/modules  '
++ export FFLAGS
++ FCFLAGS='-O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Wp,-U_FORTIFY_SOURCE,-D_FORTIFY_SOURCE=3 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -m64 -march=x86-64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -mtls-dialect=gnu2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -I/usr/lib64/gfortran/modules  '
++ export FCFLAGS
++ VALAFLAGS=-g
++ export VALAFLAGS
++ RUSTFLAGS='-Copt-level=3 -Cdebuginfo=2 -Ccodegen-units=1 -Cstrip=none -Cforce-frame-pointers=yes -Clink-arg=-specs=/usr/lib/rpm/redhat/redhat-package-notes --cap-lints=warn'
++ export RUSTFLAGS
++ LDFLAGS='-Wl,-z,relro -Wl,--as-needed  -Wl,-z,pack-relative-relocs -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld -specs=/usr/lib/rpm/redhat/redhat-hardened-ld-errors -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -Wl,--build-id=sha1 -specs=/usr/lib/rpm/redhat/redhat-package-notes  '
++ export LDFLAGS
++ LT_SYS_LIBRARY_PATH=/usr/lib64:
++ export LT_SYS_LIBRARY_PATH
++ CC=gcc
++ export CC
++ CXX=g++
++ export CXX
++ cd ArchUnit-502d782bfbf2632a2c9f943a502ddd8cc3e3c46d
+++ build-classpath objectweb-asm guava slf4j/slf4j-api
++ classpath=build/archunit.jar:/usr/share/java/objectweb-asm/asm-analysis.jar:/usr/share/java/objectweb-asm/asm-commons.jar:/usr/share/java/objectweb-asm/asm-tree.jar:/usr/share/java/objectweb-asm/asm-util.jar:/usr/share/java/objectweb-asm/asm.jar:/usr/share/java/guava/failureaccess.jar:/usr/share/java/guava/guava.jar:/usr/share/java/slf4j/slf4j-api.jar
++ javac --release 17 -cp build/archunit.jar:/usr/share/java/objectweb-asm/asm-analysis.jar:/usr/share/java/objectweb-asm/asm-commons.jar:/usr/share/java/objectweb-asm/asm-tree.jar:/usr/share/java/objectweb-asm/asm-util.jar:/usr/share/java/objectweb-asm/asm.jar:/usr/share/java/guava/failureaccess.jar:/usr/share/java/guava/guava.jar:/usr/share/java/slf4j/slf4j-api.jar -d build/check /builddir/build/SOURCES/ArchUnitCheck.java
++ java -cp build/check:build/archunit.jar:/usr/share/java/objectweb-asm/asm-analysis.jar:/usr/share/java/objectweb-asm/asm-commons.jar:/usr/share/java/objectweb-asm/asm-tree.jar:/usr/share/java/objectweb-asm/asm-util.jar:/usr/share/java/objectweb-asm/asm.jar:/usr/share/java/guava/failureaccess.jar:/usr/share/java/guava/guava.jar:/usr/share/java/slf4j/slf4j-api.jar ArchUnitCheck
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+ArchUnit installed API passed
++ java --module-path build/archunit.jar:/usr/share/java/objectweb-asm/asm-analysis.jar:/usr/share/java/objectweb-asm/asm-commons.jar:/usr/share/java/objectweb-asm/asm-tree.jar:/usr/share/java/objectweb-asm/asm-util.jar:/usr/share/java/objectweb-asm/asm.jar:/usr/share/java/guava/failureaccess.jar:/usr/share/java/guava/guava.jar:/usr/share/java/slf4j/slf4j-api.jar --validate-modules
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Processing files: archunit-1.5.0-1.fc46.noarch
+Executing(%license): /bin/sh -e /var/tmp/rpm-tmp.NntGOS
++ umask 022
++ cd /builddir/build/BUILD/archunit-1.5.0-build
++ cd ArchUnit-502d782bfbf2632a2c9f943a502ddd8cc3e3c46d
++ LICENSEDIR=/builddir/build/BUILD/archunit-1.5.0-build/BUILDROOT/usr/share/licenses/archunit
++ export LC_ALL=C.UTF-8
++ LC_ALL=C.UTF-8
++ export LICENSEDIR
++ /usr/bin/mkdir -p /builddir/build/BUILD/archunit-1.5.0-build/BUILDROOT/usr/share/licenses/archunit
++ cp -pr /builddir/build/BUILD/archunit-1.5.0-build/ArchUnit-502d782bfbf2632a2c9f943a502ddd8cc3e3c46d/LICENSE /builddir/build/BUILD/archunit-1.5.0-build/BUILDROOT/usr/share/licenses/archunit
++ cp -pr /builddir/build/BUILD/archunit-1.5.0-build/ArchUnit-502d782bfbf2632a2c9f943a502ddd8cc3e3c46d/NOTICE /builddir/build/BUILD/archunit-1.5.0-build/BUILDROOT/usr/share/licenses/archunit
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Provides: archunit = 1.5.0-1.fc46 jpms(com.tngtech.archunit) mvn(com.tngtech.archunit:archunit) = 1.5.0 mvn(com.tngtech.archunit:archunit:pom:) = 1.5.0
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires: javapackages-filesystem mvn(com.google.guava:guava) mvn(org.ow2.asm:asm) mvn(org.slf4j:slf4j-api)
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /builddir/build/BUILD/archunit-1.5.0-build/BUILDROOT
+Wrote: /builddir/build/RPMS/archunit-1.5.0-1.fc46.noarch.rpm
+Executing(rmbuild): /bin/sh -e /var/tmp/rpm-tmp.k8gl08
++ umask 022
++ cd /builddir/build/BUILD/archunit-1.5.0-build
++ test -d /builddir/build/BUILD/archunit-1.5.0-build
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w /builddir/build/BUILD/archunit-1.5.0-build
++ rm -rf /builddir/build/BUILD/archunit-1.5.0-build
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Child return code was: 0

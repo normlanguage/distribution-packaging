@@ -23,6 +23,7 @@ Distribution-native packaging for dependencies required by [Norm](https://github
 | LSP4J | [Fedora](lsp4j/) | [Source](lsp4j/source.json) |
 | GraalVM Native Build Tools | [Fedora](native-build-tools/) | [Source](native-build-tools/source.json) |
 | Maven Resolver 2 | [Fedora](maven-resolver/) | [Source](maven-resolver/source.json) |
+| ArchUnit | [Fedora](archunit/) | [Source](archunit/source.json) |
 
 Debian source and binary artifacts are published as prerelease assets for review. The `.dsc` and its referenced archives are sufficient to extract the source with `dpkg-source -x`; use `sbuild` for an isolated build. Installed-package tests are defined in [debian/tests](kryo/debian/tests/).
 
