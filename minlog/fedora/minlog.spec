@@ -2,7 +2,7 @@
 
 Name: minlog
 Version: 1.3.1
-Release: 1%{?dist}
+Release: 2%{?dist}
 Summary: Minimal overhead Java logging
 License: BSD-3-Clause
 URL: https://github.com/EsotericSoftware/minlog
@@ -36,6 +36,7 @@ API documentation for MinLog.
 
 %install
 %mvn_install
+rm -rf %{buildroot}%{_javadocdir}/%{name}/legal
 
 %check
 javac -cp target/classes -d target/test-classes %{SOURCE1}
@@ -49,5 +50,8 @@ java -cp target/classes:target/test-classes MinlogCheck
 %license license.txt
 
 %changelog
+* Tue Sep 22 2026 w0fv1 <wofbi1@outlook.com> - 1.3.1-2
+- Exclude JDK platform legal notices from generated package Javadocs
+
 * Tue Sep 15 2026 w0fv1 <wofbi1@outlook.com> - 1.3.1-1
 - Initial package

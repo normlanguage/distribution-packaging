@@ -1,0 +1,28 @@
+Product: Fedora
+Component: Package Review
+Version: rawhide
+Summary: Review Request: minlog - Minimal overhead Java logging
+
+Spec URL: https://github.com/normlanguage/distribution-packaging/releases/download/minlog-1.3.1-fedora2/minlog.spec
+SRPM URL: https://github.com/normlanguage/distribution-packaging/releases/download/minlog-1.3.1-fedora2/minlog-1.3.1-2.fc46.src.rpm
+
+Description:
+MinLog provides lightweight Java logging with configurable levels and custom log handlers. This package is needed for Kryo 5 and the Norm programming language toolchain.
+
+Fedora Account System Username: w0fv1
+
+I am a new Fedora packager and need a sponsor. I welcome coordination with the Java SIG and any existing packaging or review work for MinLog.
+
+The package was built successfully from upstream source in a clean Fedora Rawhide x86_64 mock environment. Its logging behavior check ran during the build and against the freshly installed RPM. Rpmlint reports zero errors and one documentation-ratio warning.
+
+Build log:
+https://github.com/normlanguage/distribution-packaging/releases/download/minlog-1.3.1-fedora2/build.log
+
+Installed-library check:
+https://github.com/normlanguage/distribution-packaging/releases/download/minlog-1.3.1-fedora2/installed-check.log
+
+Rpmlint report:
+https://github.com/normlanguage/distribution-packaging/releases/download/minlog-1.3.1-fedora2/rpmlint.log
+
+Packaging repository:
+https://github.com/normlanguage/distribution-packaging/tree/main/minlog/fedora
