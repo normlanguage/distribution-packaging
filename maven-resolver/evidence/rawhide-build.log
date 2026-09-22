@@ -1,0 +1,1300 @@
+Mock Version: 6.8
+Using nspawn with args ['--capability=cap_ipc_lock', '--hostname=localhost', '--bind=/dev/btrfs-control', '--bind=/dev/mapper/control', '--bind=/dev/fuse', '--bind=/dev/loop-control', '--bind=/dev/loop0', '--bind=/dev/loop1', '--bind=/dev/loop2', '--bind=/dev/loop3', '--bind=/dev/loop4', '--bind=/dev/loop5', '--bind=/dev/loop6', '--bind=/dev/loop7', '--bind=/dev/loop8', '--bind=/dev/loop9', '--bind=/dev/loop10', '--bind=/dev/loop11', '--resolv-conf=off']
+Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '1c8e10980cba4631b808ddfbcee3686a', '-D', '/var/lib/mock/fedora-rawhide-x86_64/root', '-a', '-u', 'mockbuild', '--capability=cap_ipc_lock', '--hostname=localhost', '--bind=/dev/btrfs-control', '--bind=/dev/mapper/control', '--bind=/dev/fuse', '--bind=/dev/loop-control', '--bind=/dev/loop0', '--bind=/dev/loop1', '--bind=/dev/loop2', '--bind=/dev/loop3', '--bind=/dev/loop4', '--bind=/dev/loop5', '--bind=/dev/loop6', '--bind=/dev/loop7', '--bind=/dev/loop8', '--bind=/dev/loop9', '--bind=/dev/loop10', '--bind=/dev/loop11', '--resolv-conf=off', '--console=pipe', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=C.UTF-8', 'bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/maven-resolver.spec'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
+Building target platforms: x86_64
+Building for target x86_64
+setting SOURCE_DATE_EPOCH=1790035200
+Wrote: /builddir/build/SRPMS/maven-resolver-2.0.21-1.fc46.src.rpm
+Child return code was: 0
+Using nspawn with args ['--capability=cap_ipc_lock', '--hostname=localhost', '--bind=/dev/btrfs-control', '--bind=/dev/mapper/control', '--bind=/dev/fuse', '--bind=/dev/loop-control', '--bind=/dev/loop0', '--bind=/dev/loop1', '--bind=/dev/loop2', '--bind=/dev/loop3', '--bind=/dev/loop4', '--bind=/dev/loop5', '--bind=/dev/loop6', '--bind=/dev/loop7', '--bind=/dev/loop8', '--bind=/dev/loop9', '--bind=/dev/loop10', '--bind=/dev/loop11', '--resolv-conf=off']
+Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'fea2016ef3404f9f9b0b90c4d83d9508', '-D', '/var/lib/mock/fedora-rawhide-x86_64/root', '-a', '-u', 'mockbuild', '--capability=cap_ipc_lock', '--hostname=localhost', '--bind=/dev/btrfs-control', '--bind=/dev/mapper/control', '--bind=/dev/fuse', '--bind=/dev/loop-control', '--bind=/dev/loop0', '--bind=/dev/loop1', '--bind=/dev/loop2', '--bind=/dev/loop3', '--bind=/dev/loop4', '--bind=/dev/loop5', '--bind=/dev/loop6', '--bind=/dev/loop7', '--bind=/dev/loop8', '--bind=/dev/loop9', '--bind=/dev/loop10', '--bind=/dev/loop11', '--resolv-conf=off', '--console=pipe', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=C.UTF-8', 'bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/maven-resolver.spec'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
+Building target platforms: x86_64
+Building for target x86_64
+setting SOURCE_DATE_EPOCH=1790035200
+Wrote: /builddir/build/SRPMS/maven-resolver-2.0.21-1.fc46.src.rpm
+Child return code was: 0
+Using nspawn with args ['--capability=cap_ipc_lock', '--hostname=localhost', '--bind=/dev/btrfs-control', '--bind=/dev/mapper/control', '--bind=/dev/fuse', '--bind=/dev/loop-control', '--bind=/dev/loop0', '--bind=/dev/loop1', '--bind=/dev/loop2', '--bind=/dev/loop3', '--bind=/dev/loop4', '--bind=/dev/loop5', '--bind=/dev/loop6', '--bind=/dev/loop7', '--bind=/dev/loop8', '--bind=/dev/loop9', '--bind=/dev/loop10', '--bind=/dev/loop11', '--resolv-conf=off']
+Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'af2beb102c8d444b9af57366428ec8a2', '-D', '/var/lib/mock/fedora-rawhide-x86_64/root', '-a', '-u', 'mockbuild', '--capability=cap_ipc_lock', '--hostname=localhost', '--bind=/dev/btrfs-control', '--bind=/dev/mapper/control', '--bind=/dev/fuse', '--bind=/dev/loop-control', '--bind=/dev/loop0', '--bind=/dev/loop1', '--bind=/dev/loop2', '--bind=/dev/loop3', '--bind=/dev/loop4', '--bind=/dev/loop5', '--bind=/dev/loop6', '--bind=/dev/loop7', '--bind=/dev/loop8', '--bind=/dev/loop9', '--bind=/dev/loop10', '--bind=/dev/loop11', '--resolv-conf=off', '--console=pipe', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=C.UTF-8', 'bash', '--login', '-c', '/usr/bin/rpmbuild -bb --target x86_64 --nodeps /builddir/build/SPECS/maven-resolver.spec'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
+Building target platforms: x86_64
+Building for target x86_64
+setting SOURCE_DATE_EPOCH=1790035200
+Executing(mkbuilddir): /bin/sh -e /var/tmp/rpm-tmp.Hal1bd
+Creating(rpmbuild.env): /builddir/build/BUILD/maven-resolver-2.0.21-build/rpmbuild.env
+  RPM_SOURCE_DIR="/builddir/build/SOURCES"
+  RPM_BUILD_DIR="/builddir/build/BUILD/maven-resolver-2.0.21-build"
+  RPM_OPT_FLAGS="-O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Wno-complain-wrong-lang -Werror=format-security -Wp,-U_FORTIFY_SOURCE,-D_FORTIFY_SOURCE=3 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -m64 -march=x86-64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -mtls-dialect=gnu2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer"
+  RPM_LD_FLAGS="-Wl,-z,relro -Wl,--as-needed  -Wl,-z,pack-relative-relocs -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld -specs=/usr/lib/rpm/redhat/redhat-hardened-ld-errors -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -Wl,--build-id=sha1 -specs=/usr/lib/rpm/redhat/redhat-package-notes  "
+  RPM_ARCH="x86_64"
+  RPM_OS="linux"
+  RPM_BUILD_NCPUS="1"
+  RPM_SPECPARTS_DIR="/builddir/build/BUILD/maven-resolver-2.0.21-build/SPECPARTS"
+  export RPM_SOURCE_DIR RPM_BUILD_DIR RPM_OPT_FLAGS RPM_ARCH RPM_OS RPM_BUILD_NCPUS RPM_SPECPARTS_DIR RPM_LD_FLAGS
+  RPM_DOC_DIR="/usr/share/doc"
+  export RPM_DOC_DIR
+  RPM_PACKAGE_NAME="maven-resolver"
+  RPM_PACKAGE_VERSION="2.0.21"
+  RPM_PACKAGE_RELEASE="1.fc46"
+  export RPM_PACKAGE_NAME RPM_PACKAGE_VERSION RPM_PACKAGE_RELEASE
+  LANG=C.UTF-8
+  export LANG
+  unset CDPATH DISPLAY ||:
+  unset DEBUGINFOD_URLS ||:
+  unset RPM_CONFIG_DIR ||:
+  RPM_BUILD_ROOT="/builddir/build/BUILD/maven-resolver-2.0.21-build/BUILDROOT"
+  export RPM_BUILD_ROOT
+
+  PKG_CONFIG_PATH="${PKG_CONFIG_PATH}:/usr/lib64/pkgconfig:/usr/share/pkgconfig"
+  export PKG_CONFIG_PATH
+  CONFIG_SITE=${CONFIG_SITE:-NONE}
+  export CONFIG_SITE
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.e6ioqm
++ umask 022
++ cd /builddir/build/BUILD/maven-resolver-2.0.21-build
++ cd /builddir/build/BUILD/maven-resolver-2.0.21-build
++ rm -rf maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7
++ /usr/bin/rpmuncompress -x /builddir/build/SOURCES/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7.tar.gz
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ rm maven-resolver-supplier-mvn3/src/test/java/org/eclipse/aether/supplier/RepositorySystemSupplierTest.java
++ rm maven-resolver-transport-apache/src/test/java/org/eclipse/aether/transport/apache/ApacheTransporterTest.java
++ /usr/bin/python3 /usr/share/java-utils/pom_editor.py pom_remove_dep :maven-resolver-test-http maven-resolver-transport-apache
++ /usr/bin/python3 /usr/share/java-utils/pom_editor.py pom_remove_dep org.eclipse.jetty:jetty-bom pom.xml
++ /usr/bin/python3 /usr/share/java-utils/pom_editor.py pom_remove_dep org.openjdk.jmh: maven-resolver-util
++ /usr/bin/python3 /usr/share/java-utils/pom_editor.py pom_remove_plugin :maven-compiler-plugin maven-resolver-util
++ rm -rf maven-resolver-util/src/jmh
++ rm maven-resolver-util/src/test/java/org/eclipse/aether/util/graph/transformer/ConflictResolverJMHBenchmark.java
+++ find . -name pom.xml -exec grep -l '<artifactId>bnd-maven-plugin</artifactId>' '{}' +
++ for pom in $(find . -name pom.xml -exec grep -l '<artifactId>bnd-maven-plugin</artifactId>' {} +)
++ /usr/bin/python3 /usr/share/java-utils/pom_editor.py pom_remove_plugin :bnd-maven-plugin ./pom.xml
+++ find . -name pom.xml -exec grep -l '<artifactId>animal-sniffer-maven-plugin</artifactId>' '{}' +
+++ find . -name pom.xml -exec grep -l '<artifactId>japicmp-maven-plugin</artifactId>' '{}' +
++ for pom in $(find . -name pom.xml -exec grep -l '<artifactId>japicmp-maven-plugin</artifactId>' {} +)
++ /usr/bin/python3 /usr/share/java-utils/pom_editor.py pom_remove_plugin :japicmp-maven-plugin ./maven-resolver-api/pom.xml
++ for pom in $(find . -name pom.xml -exec grep -l '<artifactId>japicmp-maven-plugin</artifactId>' {} +)
++ /usr/bin/python3 /usr/share/java-utils/pom_editor.py pom_remove_plugin :japicmp-maven-plugin ./maven-resolver-spi/pom.xml
++ for pom in $(find . -name pom.xml -exec grep -l '<artifactId>japicmp-maven-plugin</artifactId>' {} +)
++ /usr/bin/python3 /usr/share/java-utils/pom_editor.py pom_remove_plugin :japicmp-maven-plugin ./maven-resolver-util/pom.xml
++ for pom in $(find . -name pom.xml -exec grep -l '<artifactId>japicmp-maven-plugin</artifactId>' {} +)
++ /usr/bin/python3 /usr/share/java-utils/pom_editor.py pom_remove_plugin :japicmp-maven-plugin ./pom.xml
+++ find . -name pom.xml -exec grep -l '<artifactId>maven-enforcer-plugin</artifactId>' '{}' +
++ for pom in $(find . -name pom.xml -exec grep -l '<artifactId>maven-enforcer-plugin</artifactId>' {} +)
++ /usr/bin/python3 /usr/share/java-utils/pom_editor.py pom_remove_plugin :maven-enforcer-plugin ./maven-resolver-demos/maven-resolver-demo-snippets/pom.xml
++ for pom in $(find . -name pom.xml -exec grep -l '<artifactId>maven-enforcer-plugin</artifactId>' {} +)
++ /usr/bin/python3 /usr/share/java-utils/pom_editor.py pom_remove_plugin :maven-enforcer-plugin ./maven-resolver-supplier-mvn3/pom.xml
++ for pom in $(find . -name pom.xml -exec grep -l '<artifactId>maven-enforcer-plugin</artifactId>' {} +)
++ /usr/bin/python3 /usr/share/java-utils/pom_editor.py pom_remove_plugin :maven-enforcer-plugin ./maven-resolver-supplier-mvn4/pom.xml
++ for pom in $(find . -name pom.xml -exec grep -l '<artifactId>maven-enforcer-plugin</artifactId>' {} +)
++ /usr/bin/python3 /usr/share/java-utils/pom_editor.py pom_remove_plugin :maven-enforcer-plugin ./maven-resolver-tools/pom.xml
++ for pom in $(find . -name pom.xml -exec grep -l '<artifactId>maven-enforcer-plugin</artifactId>' {} +)
++ /usr/bin/python3 /usr/share/java-utils/pom_editor.py pom_remove_plugin :maven-enforcer-plugin ./maven-resolver-transport-jdk-parent/maven-resolver-transport-jdk/pom.xml
++ for pom in $(find . -name pom.xml -exec grep -l '<artifactId>maven-enforcer-plugin</artifactId>' {} +)
++ /usr/bin/python3 /usr/share/java-utils/pom_editor.py pom_remove_plugin :maven-enforcer-plugin ./maven-resolver-transport-jetty/pom.xml
++ for pom in $(find . -name pom.xml -exec grep -l '<artifactId>maven-enforcer-plugin</artifactId>' {} +)
++ /usr/bin/python3 /usr/share/java-utils/pom_editor.py pom_remove_plugin :maven-enforcer-plugin ./pom.xml
++ /usr/bin/python3 /usr/share/java-utils/pom_editor.py pom_disable_module maven-resolver-demos
++ /usr/bin/python3 /usr/share/java-utils/pom_editor.py pom_disable_module maven-resolver-generator-gnupg
++ /usr/bin/python3 /usr/share/java-utils/pom_editor.py pom_disable_module maven-resolver-generator-sigstore
++ /usr/bin/python3 /usr/share/java-utils/pom_editor.py pom_disable_module maven-resolver-named-locks-hazelcast
++ /usr/bin/python3 /usr/share/java-utils/pom_editor.py pom_disable_module maven-resolver-named-locks-ipc
++ /usr/bin/python3 /usr/share/java-utils/pom_editor.py pom_disable_module maven-resolver-named-locks-redisson
++ /usr/bin/python3 /usr/share/java-utils/pom_editor.py pom_disable_module maven-resolver-supplier-mvn4
++ /usr/bin/python3 /usr/share/java-utils/pom_editor.py pom_disable_module maven-resolver-test-http
++ /usr/bin/python3 /usr/share/java-utils/pom_editor.py pom_disable_module maven-resolver-tools
++ /usr/bin/python3 /usr/share/java-utils/pom_editor.py pom_disable_module maven-resolver-transport-classpath
++ /usr/bin/python3 /usr/share/java-utils/pom_editor.py pom_disable_module maven-resolver-transport-jdk-parent
++ /usr/bin/python3 /usr/share/java-utils/pom_editor.py pom_disable_module maven-resolver-transport-jetty
++ /usr/bin/python3 /usr/share/java-utils/pom_editor.py pom_disable_module maven-resolver-transport-minio
++ /usr/bin/python3 /usr/share/java-utils/pom_editor.py pom_disable_module maven-resolver-transport-url
++ /usr/bin/python3 /usr/share/java-utils/pom_editor.py pom_disable_module maven-resolver-transport-wagon
++ /usr/bin/python3 /usr/share/java-utils/mvn_package.py :maven-resolver-test-util __noinstall
++ for module in api connector-basic impl named-locks spi supplier-mvn3 test-util transport-apache transport-file util
++ pom=maven-resolver-api/pom.xml
++ case "$module" in
++ module_name=org.apache.maven.resolver
++ /usr/bin/python3 /usr/share/java-utils/pom_editor.py pom_add_plugin org.apache.felix:maven-bundle-plugin maven-resolver-api/pom.xml $'<configuration>\n    <instructions>\n      <Bundle-SymbolicName>org.apache.maven.resolver</Bundle-SymbolicName>\n      <Automatic-Module-Name>org.apache.maven.resolver</Automatic-Module-Name>\n      <Export-Package>!org.eclipse.aether.internal*,org.eclipse.aether*</Export-Package>\n      <_nouses>true</_nouses>\n    </instructions>\n  </configuration>\n  <executions>\n    <execution>\n      <id>create-manifest</id>\n      <phase>process-classes</phase>\n      <goals><goal>manifest</goal></goals>\n    </execution>\n  </executions>'
++ for module in api connector-basic impl named-locks spi supplier-mvn3 test-util transport-apache transport-file util
++ pom=maven-resolver-connector-basic/pom.xml
++ case "$module" in
++ module_name=org.apache.maven.resolver.connector.basic
++ /usr/bin/python3 /usr/share/java-utils/pom_editor.py pom_add_plugin org.apache.felix:maven-bundle-plugin maven-resolver-connector-basic/pom.xml $'<configuration>\n    <instructions>\n      <Bundle-SymbolicName>org.apache.maven.resolver.connector.basic</Bundle-SymbolicName>\n      <Automatic-Module-Name>org.apache.maven.resolver.connector.basic</Automatic-Module-Name>\n      <Export-Package>!org.eclipse.aether.internal*,org.eclipse.aether*</Export-Package>\n      <_nouses>true</_nouses>\n    </instructions>\n  </configuration>\n  <executions>\n    <execution>\n      <id>create-manifest</id>\n      <phase>process-classes</phase>\n      <goals><goal>manifest</goal></goals>\n    </execution>\n  </executions>'
++ for module in api connector-basic impl named-locks spi supplier-mvn3 test-util transport-apache transport-file util
++ pom=maven-resolver-impl/pom.xml
++ case "$module" in
++ module_name=org.apache.maven.resolver.impl
++ /usr/bin/python3 /usr/share/java-utils/pom_editor.py pom_add_plugin org.apache.felix:maven-bundle-plugin maven-resolver-impl/pom.xml $'<configuration>\n    <instructions>\n      <Bundle-SymbolicName>org.apache.maven.resolver.impl</Bundle-SymbolicName>\n      <Automatic-Module-Name>org.apache.maven.resolver.impl</Automatic-Module-Name>\n      <Export-Package>!org.eclipse.aether.internal*,org.eclipse.aether*</Export-Package>\n      <_nouses>true</_nouses>\n    </instructions>\n  </configuration>\n  <executions>\n    <execution>\n      <id>create-manifest</id>\n      <phase>process-classes</phase>\n      <goals><goal>manifest</goal></goals>\n    </execution>\n  </executions>'
++ for module in api connector-basic impl named-locks spi supplier-mvn3 test-util transport-apache transport-file util
++ pom=maven-resolver-named-locks/pom.xml
++ case "$module" in
++ module_name=org.apache.maven.resolver.named.locks
++ /usr/bin/python3 /usr/share/java-utils/pom_editor.py pom_add_plugin org.apache.felix:maven-bundle-plugin maven-resolver-named-locks/pom.xml $'<configuration>\n    <instructions>\n      <Bundle-SymbolicName>org.apache.maven.resolver.named.locks</Bundle-SymbolicName>\n      <Automatic-Module-Name>org.apache.maven.resolver.named.locks</Automatic-Module-Name>\n      <Export-Package>!org.eclipse.aether.internal*,org.eclipse.aether*</Export-Package>\n      <_nouses>true</_nouses>\n    </instructions>\n  </configuration>\n  <executions>\n    <execution>\n      <id>create-manifest</id>\n      <phase>process-classes</phase>\n      <goals><goal>manifest</goal></goals>\n    </execution>\n  </executions>'
++ for module in api connector-basic impl named-locks spi supplier-mvn3 test-util transport-apache transport-file util
++ pom=maven-resolver-spi/pom.xml
++ case "$module" in
++ module_name=org.apache.maven.resolver.spi
++ /usr/bin/python3 /usr/share/java-utils/pom_editor.py pom_add_plugin org.apache.felix:maven-bundle-plugin maven-resolver-spi/pom.xml $'<configuration>\n    <instructions>\n      <Bundle-SymbolicName>org.apache.maven.resolver.spi</Bundle-SymbolicName>\n      <Automatic-Module-Name>org.apache.maven.resolver.spi</Automatic-Module-Name>\n      <Export-Package>!org.eclipse.aether.internal*,org.eclipse.aether*</Export-Package>\n      <_nouses>true</_nouses>\n    </instructions>\n  </configuration>\n  <executions>\n    <execution>\n      <id>create-manifest</id>\n      <phase>process-classes</phase>\n      <goals><goal>manifest</goal></goals>\n    </execution>\n  </executions>'
++ for module in api connector-basic impl named-locks spi supplier-mvn3 test-util transport-apache transport-file util
++ pom=maven-resolver-supplier-mvn3/pom.xml
++ case "$module" in
++ module_name=org.apache.maven.resolver.supplier
++ /usr/bin/python3 /usr/share/java-utils/pom_editor.py pom_add_plugin org.apache.felix:maven-bundle-plugin maven-resolver-supplier-mvn3/pom.xml $'<configuration>\n    <instructions>\n      <Bundle-SymbolicName>org.apache.maven.resolver.supplier</Bundle-SymbolicName>\n      <Automatic-Module-Name>org.apache.maven.resolver.supplier</Automatic-Module-Name>\n      <Export-Package>!org.eclipse.aether.internal*,org.eclipse.aether*</Export-Package>\n      <_nouses>true</_nouses>\n    </instructions>\n  </configuration>\n  <executions>\n    <execution>\n      <id>create-manifest</id>\n      <phase>process-classes</phase>\n      <goals><goal>manifest</goal></goals>\n    </execution>\n  </executions>'
++ for module in api connector-basic impl named-locks spi supplier-mvn3 test-util transport-apache transport-file util
++ pom=maven-resolver-test-util/pom.xml
++ case "$module" in
++ module_name=org.apache.maven.resolver.test.util
++ /usr/bin/python3 /usr/share/java-utils/pom_editor.py pom_add_plugin org.apache.felix:maven-bundle-plugin maven-resolver-test-util/pom.xml $'<configuration>\n    <instructions>\n      <Bundle-SymbolicName>org.apache.maven.resolver.test.util</Bundle-SymbolicName>\n      <Automatic-Module-Name>org.apache.maven.resolver.test.util</Automatic-Module-Name>\n      <Export-Package>!org.eclipse.aether.internal*,org.eclipse.aether*</Export-Package>\n      <_nouses>true</_nouses>\n    </instructions>\n  </configuration>\n  <executions>\n    <execution>\n      <id>create-manifest</id>\n      <phase>process-classes</phase>\n      <goals><goal>manifest</goal></goals>\n    </execution>\n  </executions>'
++ for module in api connector-basic impl named-locks spi supplier-mvn3 test-util transport-apache transport-file util
++ pom=maven-resolver-transport-apache/pom.xml
++ case "$module" in
++ module_name=org.apache.maven.resolver.transport.apache
++ /usr/bin/python3 /usr/share/java-utils/pom_editor.py pom_add_plugin org.apache.felix:maven-bundle-plugin maven-resolver-transport-apache/pom.xml $'<configuration>\n    <instructions>\n      <Bundle-SymbolicName>org.apache.maven.resolver.transport.apache</Bundle-SymbolicName>\n      <Automatic-Module-Name>org.apache.maven.resolver.transport.apache</Automatic-Module-Name>\n      <Export-Package>!org.eclipse.aether.internal*,org.eclipse.aether*</Export-Package>\n      <_nouses>true</_nouses>\n    </instructions>\n  </configuration>\n  <executions>\n    <execution>\n      <id>create-manifest</id>\n      <phase>process-classes</phase>\n      <goals><goal>manifest</goal></goals>\n    </execution>\n  </executions>'
++ for module in api connector-basic impl named-locks spi supplier-mvn3 test-util transport-apache transport-file util
++ pom=maven-resolver-transport-file/pom.xml
++ case "$module" in
++ module_name=org.apache.maven.resolver.transport.file
++ /usr/bin/python3 /usr/share/java-utils/pom_editor.py pom_add_plugin org.apache.felix:maven-bundle-plugin maven-resolver-transport-file/pom.xml $'<configuration>\n    <instructions>\n      <Bundle-SymbolicName>org.apache.maven.resolver.transport.file</Bundle-SymbolicName>\n      <Automatic-Module-Name>org.apache.maven.resolver.transport.file</Automatic-Module-Name>\n      <Export-Package>!org.eclipse.aether.internal*,org.eclipse.aether*</Export-Package>\n      <_nouses>true</_nouses>\n    </instructions>\n  </configuration>\n  <executions>\n    <execution>\n      <id>create-manifest</id>\n      <phase>process-classes</phase>\n      <goals><goal>manifest</goal></goals>\n    </execution>\n  </executions>'
++ for module in api connector-basic impl named-locks spi supplier-mvn3 test-util transport-apache transport-file util
++ pom=maven-resolver-util/pom.xml
++ case "$module" in
++ module_name=org.apache.maven.resolver.util
++ /usr/bin/python3 /usr/share/java-utils/pom_editor.py pom_add_plugin org.apache.felix:maven-bundle-plugin maven-resolver-util/pom.xml $'<configuration>\n    <instructions>\n      <Bundle-SymbolicName>org.apache.maven.resolver.util</Bundle-SymbolicName>\n      <Automatic-Module-Name>org.apache.maven.resolver.util</Automatic-Module-Name>\n      <Export-Package>!org.eclipse.aether.internal*,org.eclipse.aether*</Export-Package>\n      <_nouses>true</_nouses>\n    </instructions>\n  </configuration>\n  <executions>\n    <execution>\n      <id>create-manifest</id>\n      <phase>process-classes</phase>\n      <goals><goal>manifest</goal></goals>\n    </execution>\n  </executions>'
++ /usr/bin/python3 /usr/share/java-utils/pom_editor.py pom_add_plugin org.apache.maven.plugins:maven-jar-plugin pom.xml $'<configuration>\n  <archive>\n    <manifestFile>${project.build.outputDirectory}/META-INF/MANIFEST.MF</manifestFile>\n  </archive>\n</configuration>'
++ /usr/bin/python3 /usr/share/java-utils/mvn_alias.py 'org.apache.maven.resolver:maven-resolver{*}' org.eclipse.aether:aether@1
++ /usr/bin/python3 /usr/share/java-utils/mvn_alias.py org.apache.maven.resolver:maven-resolver-transport-wagon org.eclipse.aether:aether-connector-wagon
++ /usr/bin/python3 /usr/share/java-utils/mvn_file.py ':maven-resolver{*}' maven-resolver/maven-resolver@1 aether/aether@1
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.Fs6Zj2
++ umask 022
++ cd /builddir/build/BUILD/maven-resolver-2.0.21-build
++ CFLAGS='-O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-U_FORTIFY_SOURCE,-D_FORTIFY_SOURCE=3 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -m64 -march=x86-64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -mtls-dialect=gnu2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer  '
++ export CFLAGS
++ CXXFLAGS='-O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-U_FORTIFY_SOURCE,-D_FORTIFY_SOURCE=3 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -m64 -march=x86-64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -mtls-dialect=gnu2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer  '
++ export CXXFLAGS
++ FFLAGS='-O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Wp,-U_FORTIFY_SOURCE,-D_FORTIFY_SOURCE=3 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -m64 -march=x86-64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -mtls-dialect=gnu2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -I/usr/lib64/gfortran/modules  '
++ export FFLAGS
++ FCFLAGS='-O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Wp,-U_FORTIFY_SOURCE,-D_FORTIFY_SOURCE=3 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -m64 -march=x86-64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -mtls-dialect=gnu2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -I/usr/lib64/gfortran/modules  '
++ export FCFLAGS
++ VALAFLAGS=-g
++ export VALAFLAGS
++ RUSTFLAGS='-Copt-level=3 -Cdebuginfo=2 -Ccodegen-units=1 -Cstrip=none -Cforce-frame-pointers=yes -Clink-arg=-specs=/usr/lib/rpm/redhat/redhat-package-notes --cap-lints=warn'
++ export RUSTFLAGS
++ LDFLAGS='-Wl,-z,relro -Wl,--as-needed  -Wl,-z,pack-relative-relocs -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld -specs=/usr/lib/rpm/redhat/redhat-hardened-ld-errors -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -Wl,--build-id=sha1 -specs=/usr/lib/rpm/redhat/redhat-package-notes  '
++ export LDFLAGS
++ LT_SYS_LIBRARY_PATH=/usr/lib64:
++ export LT_SYS_LIBRARY_PATH
++ CC=gcc
++ export CC
++ CXX=g++
++ export CXX
++ cd maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7
++ /usr/bin/python3 /usr/share/java-utils/mvn_build.py --xmvn-javadoc -j
+Executing: xmvn --batch-mode --offline verify org.fedoraproject.xmvn:xmvn-mojo:install org.fedoraproject.xmvn:xmvn-mojo:builddep
+['xmvn', '--batch-mode', '--offline', 'verify', 'org.fedoraproject.xmvn:xmvn-mojo:install', 'org.fedoraproject.xmvn:xmvn-mojo:builddep']
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::staticFieldBase has been called by com.google.inject.internal.aop.HiddenClassDefiner (file:/usr/share/xmvn/lib/guice-5.1.0-classes.jar)
+WARNING: Please consider reporting this to the maintainers of class com.google.inject.internal.aop.HiddenClassDefiner
+WARNING: sun.misc.Unsafe::staticFieldBase will be removed in a future release
+[INFO] Scanning for projects...
+[WARNING] Ignoring metadata for artifact velocity:velocity:pom:SYSTEM as it has duplicate metadata
+[WARNING] Ignoring metadata for artifact org.apache.velocity:velocity:pom:SYSTEM as it has duplicate metadata
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO]
+[INFO] Maven Artifact Resolver                                            [pom]
+[INFO] Maven Artifact Resolver API                                        [jar]
+[INFO] Maven Artifact Resolver SPI                                        [jar]
+[INFO] Maven Artifact Resolver Test Utilities                             [jar]
+[INFO] Maven Artifact Resolver Utilities                                  [jar]
+[INFO] Maven Artifact Resolver Named Locks                                [jar]
+[INFO] Maven Artifact Resolver Implementation                             [jar]
+[INFO] Maven Artifact Resolver Connector Basic                            [jar]
+[INFO] Maven Artifact Resolver Transport Apache                           [jar]
+[INFO] Maven Artifact Resolver Transport File                             [jar]
+[INFO] Maven Artifact Resolver Instance Supplier Maven3                   [jar]
+[INFO]
+[INFO] --------------< org.apache.maven.resolver:maven-resolver >--------------
+[INFO] Building Maven Artifact Resolver 2.0.21                           [1/11]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO]
+[INFO] --- remote-resources:3.3.0:process (process-resource-bundles) @ maven-resolver ---
+[INFO] Preparing remote bundle org.apache.apache.resources:apache-jar-resource-bundle:1.8
+[INFO] Copying 3 resources from 1 bundle.
+[INFO]
+[INFO] --- sisu:1.0.0:main-index (index-project) @ maven-resolver ---
+[INFO]
+[INFO] --- sisu:1.0.0:test-index (index-project) @ maven-resolver ---
+[INFO]
+[INFO] ------------< org.apache.maven.resolver:maven-resolver-api >------------
+[INFO] Building Maven Artifact Resolver API 2.0.21                       [2/11]
+[INFO]   from maven-resolver-api/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- remote-resources:3.3.0:process (process-resource-bundles) @ maven-resolver-api ---
+[INFO] Preparing remote bundle org.apache.apache.resources:apache-jar-resource-bundle:1.8
+[INFO] Copying 3 resources from 1 bundle.
+[INFO]
+[INFO] --- resources:3.3.1:resources (default-resources) @ maven-resolver-api ---
+[INFO] skip non existing resourceDirectory /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-api/src/main/resources
+[INFO] Copying 3 resources from target/maven-shared-archive-resources to target/classes
+[INFO]
+[INFO] --- compiler:3.12.1:compile (default-compile) @ maven-resolver-api ---
+[INFO] Toolchain in maven-compiler-plugin: JDK[/usr/lib/jvm/java-25-openjdk]
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 136 source files with javac [forked debug deprecation release 8] to target/classes
+[WARNING] [options] source value 8 is obsolete and will be removed in a future release
+[WARNING] [options] target value 8 is obsolete and will be removed in a future release
+[WARNING] [options] To suppress warnings about obsolete options, use -Xlint:-options.
+[WARNING] /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-api/src/main/java/org/eclipse/aether/artifact/AbstractArtifact.java:[104,20] [deprecation] getFile() in Artifact has been deprecated
+[INFO]
+[INFO] --- sisu:1.0.0:main-index (index-project) @ maven-resolver-api ---
+[INFO]
+[INFO] --- bundle:5.1.9:manifest (create-manifest) @ maven-resolver-api ---
+[INFO] No MANIFEST.MF file found, generating manifest.
+[INFO] Writing manifest: /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-api/target/classes/META-INF/MANIFEST.MF
+[INFO]
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ maven-resolver-api ---
+[INFO] skip non existing resourceDirectory /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-api/src/test/resources
+[INFO] Copying 3 resources from target/maven-shared-archive-resources to target/test-classes
+[INFO]
+[INFO] --- compiler:3.12.1:testCompile (default-testCompile) @ maven-resolver-api ---
+[INFO] Toolchain in maven-compiler-plugin: JDK[/usr/lib/jvm/java-25-openjdk]
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 18 source files with javac [forked debug deprecation release 8] to target/test-classes
+[WARNING] [options] source value 8 is obsolete and will be removed in a future release
+[WARNING] [options] target value 8 is obsolete and will be removed in a future release
+[WARNING] [options] To suppress warnings about obsolete options, use -Xlint:-options.
+[WARNING] unknown enum constant Status.STABLE
+[INFO]
+[INFO] --- sisu:1.0.0:test-index (index-project) @ maven-resolver-api ---
+[INFO]
+[INFO] --- surefire:3.2.2:test (default-test) @ maven-resolver-api ---
+[INFO] Toolchain in maven-surefire-plugin: JDK[/usr/lib/jvm/java-25-openjdk]
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO]
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.eclipse.aether.AbstractForwardingRepositorySystemSessionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.173 s -- in org.eclipse.aether.AbstractForwardingRepositorySystemSessionTest
+[INFO] Running org.eclipse.aether.AbstractRepositoryListenerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 s -- in org.eclipse.aether.AbstractRepositoryListenerTest
+[INFO] Running org.eclipse.aether.DefaultRepositoryCacheTest
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by net.bytebuddy.dynamic.loading.ClassInjector$UsingUnsafe$Dispatcher$CreationAction (file:/usr/share/java/byte-buddy/byte-buddy-dep.jar)
+WARNING: Please consider reporting this to the maintainers of class net.bytebuddy.dynamic.loading.ClassInjector$UsingUnsafe$Dispatcher$CreationAction
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.317 s -- in org.eclipse.aether.DefaultRepositoryCacheTest
+[INFO] Running org.eclipse.aether.DefaultRepositorySystemSessionTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.071 s -- in org.eclipse.aether.DefaultRepositorySystemSessionTest
+[INFO] Running org.eclipse.aether.DefaultSessionDataTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.097 s -- in org.eclipse.aether.DefaultSessionDataTest
+[INFO] Running org.eclipse.aether.KeysTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 s -- in org.eclipse.aether.KeysTest
+[INFO] Running org.eclipse.aether.RepositoryExceptionTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.213 s -- in org.eclipse.aether.RepositoryExceptionTest
+[INFO] Running org.eclipse.aether.RequestTraceTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s -- in org.eclipse.aether.RequestTraceTest
+[INFO] Running org.eclipse.aether.artifact.DefaultArtifactTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.192 s -- in org.eclipse.aether.artifact.DefaultArtifactTest
+[INFO] Running org.eclipse.aether.graph.DefaultDependencyNodeTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.121 s -- in org.eclipse.aether.graph.DefaultDependencyNodeTest
+[INFO] Running org.eclipse.aether.graph.DependencyTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.097 s -- in org.eclipse.aether.graph.DependencyTest
+[INFO] Running org.eclipse.aether.repository.AuthenticationContextTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.132 s -- in org.eclipse.aether.repository.AuthenticationContextTest
+[INFO] Running org.eclipse.aether.repository.AuthenticationDigestTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 s -- in org.eclipse.aether.repository.AuthenticationDigestTest
+[INFO] Running org.eclipse.aether.repository.LocalRepositoryTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 s -- in org.eclipse.aether.repository.LocalRepositoryTest
+[INFO] Running org.eclipse.aether.repository.RemoteRepositoryBuilderTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 s -- in org.eclipse.aether.repository.RemoteRepositoryBuilderTest
+[INFO] Running org.eclipse.aether.repository.RemoteRepositoryTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s -- in org.eclipse.aether.repository.RemoteRepositoryTest
+[INFO] Running org.eclipse.aether.transfer.AbstractTransferListenerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s -- in org.eclipse.aether.transfer.AbstractTransferListenerTest
+[INFO] Running org.eclipse.aether.transfer.TransferEventTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 s -- in org.eclipse.aether.transfer.TransferEventTest
+[INFO]
+[INFO] Results:
+[INFO]
+[INFO] Tests run: 87, Failures: 0, Errors: 0, Skipped: 0
+[INFO]
+[INFO]
+[INFO] --- jar:3.3.0:jar (default-jar) @ maven-resolver-api ---
+[INFO] Building jar: /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-api/target/maven-resolver-api-2.0.21.jar
+[INFO]
+[INFO] ------------< org.apache.maven.resolver:maven-resolver-spi >------------
+[INFO] Building Maven Artifact Resolver SPI 2.0.21                       [3/11]
+[INFO]   from maven-resolver-spi/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- remote-resources:3.3.0:process (process-resource-bundles) @ maven-resolver-spi ---
+[INFO] Preparing remote bundle org.apache.apache.resources:apache-jar-resource-bundle:1.8
+[INFO] Copying 3 resources from 1 bundle.
+[INFO]
+[INFO] --- resources:3.3.1:resources (default-resources) @ maven-resolver-spi ---
+[INFO] skip non existing resourceDirectory /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-spi/src/main/resources
+[INFO] Copying 3 resources from target/maven-shared-archive-resources to target/classes
+[INFO]
+[INFO] --- compiler:3.12.1:compile (default-compile) @ maven-resolver-spi ---
+[INFO] Toolchain in maven-compiler-plugin: JDK[/usr/lib/jvm/java-25-openjdk]
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 76 source files with javac [forked debug deprecation release 8] to target/classes
+[WARNING] [options] source value 8 is obsolete and will be removed in a future release
+[WARNING] [options] target value 8 is obsolete and will be removed in a future release
+[WARNING] [options] To suppress warnings about obsolete options, use -Xlint:-options.
+[INFO]
+[INFO] --- sisu:1.0.0:main-index (index-project) @ maven-resolver-spi ---
+[INFO]
+[INFO] --- bundle:5.1.9:manifest (create-manifest) @ maven-resolver-spi ---
+[INFO] No MANIFEST.MF file found, generating manifest.
+[INFO] Writing manifest: /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-spi/target/classes/META-INF/MANIFEST.MF
+[INFO]
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ maven-resolver-spi ---
+[INFO] skip non existing resourceDirectory /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-spi/src/test/resources
+[INFO] Copying 3 resources from target/maven-shared-archive-resources to target/test-classes
+[INFO]
+[INFO] --- compiler:3.12.1:testCompile (default-testCompile) @ maven-resolver-spi ---
+[INFO] Toolchain in maven-compiler-plugin: JDK[/usr/lib/jvm/java-25-openjdk]
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 5 source files with javac [forked debug deprecation release 8] to target/test-classes
+[WARNING] [options] source value 8 is obsolete and will be removed in a future release
+[WARNING] [options] target value 8 is obsolete and will be removed in a future release
+[WARNING] [options] To suppress warnings about obsolete options, use -Xlint:-options.
+[WARNING] unknown enum constant Status.STABLE
+[INFO]
+[INFO] --- sisu:1.0.0:test-index (index-project) @ maven-resolver-spi ---
+[INFO]
+[INFO] --- surefire:3.2.2:test (default-test) @ maven-resolver-spi ---
+[INFO] Toolchain in maven-surefire-plugin: JDK[/usr/lib/jvm/java-25-openjdk]
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO]
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.eclipse.aether.spi.connector.layout.ChecksumLocationTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.149 s -- in org.eclipse.aether.spi.connector.layout.ChecksumLocationTest
+[INFO] Running org.eclipse.aether.spi.connector.transport.AbstractTransporterTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.060 s -- in org.eclipse.aether.spi.connector.transport.AbstractTransporterTest
+[INFO] Running org.eclipse.aether.spi.connector.transport.TransportListenerNotifyingInputStreamTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.085 s -- in org.eclipse.aether.spi.connector.transport.TransportListenerNotifyingInputStreamTest
+[INFO] Running org.eclipse.aether.spi.connector.transport.http.RFC9457.RFC9457ParserTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.082 s -- in org.eclipse.aether.spi.connector.transport.http.RFC9457.RFC9457ParserTest
+[INFO] Running org.eclipse.aether.spi.connector.transport.http.RFC9457.RFC9457ReporterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 s -- in org.eclipse.aether.spi.connector.transport.http.RFC9457.RFC9457ReporterTest
+[INFO]
+[INFO] Results:
+[INFO]
+[INFO] Tests run: 21, Failures: 0, Errors: 0, Skipped: 0
+[INFO]
+[INFO]
+[INFO] --- jar:3.3.0:jar (default-jar) @ maven-resolver-spi ---
+[INFO] Building jar: /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-spi/target/maven-resolver-spi-2.0.21.jar
+[INFO]
+[INFO] ---------< org.apache.maven.resolver:maven-resolver-test-util >---------
+[INFO] Building Maven Artifact Resolver Test Utilities 2.0.21            [4/11]
+[INFO]   from maven-resolver-test-util/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- remote-resources:3.3.0:process (process-resource-bundles) @ maven-resolver-test-util ---
+[INFO] Preparing remote bundle org.apache.apache.resources:apache-jar-resource-bundle:1.8
+[INFO] Copying 3 resources from 1 bundle.
+[INFO]
+[INFO] --- resources:3.3.1:resources (default-resources) @ maven-resolver-test-util ---
+[INFO] skip non existing resourceDirectory /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-test-util/src/main/resources
+[INFO] Copying 3 resources from target/maven-shared-archive-resources to target/classes
+[INFO]
+[INFO] --- compiler:3.12.1:compile (default-compile) @ maven-resolver-test-util ---
+[INFO] Toolchain in maven-compiler-plugin: JDK[/usr/lib/jvm/java-25-openjdk]
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 21 source files with javac [forked debug deprecation release 8] to target/classes
+[WARNING] [options] source value 8 is obsolete and will be removed in a future release
+[WARNING] [options] target value 8 is obsolete and will be removed in a future release
+[WARNING] [options] To suppress warnings about obsolete options, use -Xlint:-options.
+[WARNING] /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-test-util/src/main/java/org/eclipse/aether/internal/test/util/TestFileProcessor.java:[33,32] [deprecation] FileProcessor in org.eclipse.aether.spi.io has been deprecated
+[WARNING] /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-test-util/src/main/java/org/eclipse/aether/internal/test/util/TestFileProcessor.java:[38,42] [deprecation] FileProcessor in org.eclipse.aether.spi.io has been deprecated
+[WARNING] /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-test-util/src/main/java/org/eclipse/aether/internal/test/util/TestLocalRepositoryManager.java:[100,18] [deprecation] getPathForRemoteMetadata(Metadata,RemoteRepository,String) in LocalRepositoryManager has been deprecated
+[WARNING] /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-test-util/src/main/java/org/eclipse/aether/internal/test/util/TestLocalRepositoryManager.java:[91,18] [deprecation] getPathForLocalMetadata(Metadata) in LocalRepositoryManager has been deprecated
+[WARNING] /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-test-util/src/main/java/org/eclipse/aether/internal/test/util/TestLocalRepositoryManager.java:[84,18] [deprecation] getPathForRemoteArtifact(Artifact,RemoteRepository,String) in LocalRepositoryManager has been deprecated
+[WARNING] /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-test-util/src/main/java/org/eclipse/aether/internal/test/util/TestLocalRepositoryManager.java:[70,18] [deprecation] getPathForLocalArtifact(Artifact) in LocalRepositoryManager has been deprecated
+[WARNING] /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-test-util/src/main/java/org/eclipse/aether/internal/test/util/TestLocalRepositoryManager.java:[114,44] [deprecation] getBasedir() in LocalRepository has been deprecated
+[WARNING] /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-test-util/src/main/java/org/eclipse/aether/internal/test/util/TestLocalRepositoryManager.java:[115,14] [deprecation] setFile(File) in LocalArtifactResult has been deprecated
+[WARNING] /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-test-util/src/main/java/org/eclipse/aether/internal/test/util/TestLocalRepositoryManager.java:[135,44] [deprecation] getBasedir() in LocalRepository has been deprecated
+[WARNING] /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-test-util/src/main/java/org/eclipse/aether/internal/test/util/TestLocalRepositoryManager.java:[136,14] [deprecation] setFile(File) in LocalMetadataResult has been deprecated
+[INFO]
+[INFO] --- sisu:1.0.0:main-index (index-project) @ maven-resolver-test-util ---
+[INFO]
+[INFO] --- bundle:5.1.9:manifest (create-manifest) @ maven-resolver-test-util ---
+[INFO] No MANIFEST.MF file found, generating manifest.
+[WARNING] Manifest org.apache.maven.resolver:maven-resolver-test-util:jar:2.0.21 : Unused Export-Package instructions: [org.eclipse.aether*]
+[INFO] Writing manifest: /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-test-util/target/classes/META-INF/MANIFEST.MF
+[INFO]
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ maven-resolver-test-util ---
+[INFO] Copying 4 resources from src/test/resources to target/test-classes
+[INFO] Copying 3 resources from target/maven-shared-archive-resources to target/test-classes
+[INFO]
+[INFO] --- compiler:3.12.1:testCompile (default-testCompile) @ maven-resolver-test-util ---
+[INFO] Toolchain in maven-compiler-plugin: JDK[/usr/lib/jvm/java-25-openjdk]
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 4 source files with javac [forked debug deprecation release 8] to target/test-classes
+[WARNING] [options] source value 8 is obsolete and will be removed in a future release
+[WARNING] [options] target value 8 is obsolete and will be removed in a future release
+[WARNING] [options] To suppress warnings about obsolete options, use -Xlint:-options.
+[WARNING] unknown enum constant Status.STABLE
+[INFO]
+[INFO] --- sisu:1.0.0:test-index (index-project) @ maven-resolver-test-util ---
+[INFO]
+[INFO] --- surefire:3.2.2:test (default-test) @ maven-resolver-test-util ---
+[INFO] Toolchain in maven-surefire-plugin: JDK[/usr/lib/jvm/java-25-openjdk]
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO]
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.eclipse.aether.internal.test.util.DependencyGraphParserTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.275 s -- in org.eclipse.aether.internal.test.util.DependencyGraphParserTest
+[INFO] Running org.eclipse.aether.internal.test.util.IniArtifactDataReaderTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.040 s -- in org.eclipse.aether.internal.test.util.IniArtifactDataReaderTest
+[INFO] Running org.eclipse.aether.internal.test.util.IniArtifactDescriptorReaderTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.087 s -- in org.eclipse.aether.internal.test.util.IniArtifactDescriptorReaderTest
+[INFO] Running org.eclipse.aether.internal.test.util.NodeDefinitionTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.030 s -- in org.eclipse.aether.internal.test.util.NodeDefinitionTest
+[INFO]
+[INFO] Results:
+[INFO]
+[INFO] Tests run: 23, Failures: 0, Errors: 0, Skipped: 0
+[INFO]
+[INFO]
+[INFO] --- jar:3.3.0:jar (default-jar) @ maven-resolver-test-util ---
+[INFO] Building jar: /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-test-util/target/maven-resolver-test-util-2.0.21.jar
+[INFO]
+[INFO] -----------< org.apache.maven.resolver:maven-resolver-util >------------
+[INFO] Building Maven Artifact Resolver Utilities 2.0.21                 [5/11]
+[INFO]   from maven-resolver-util/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- remote-resources:3.3.0:process (process-resource-bundles) @ maven-resolver-util ---
+[INFO] Preparing remote bundle org.apache.apache.resources:apache-jar-resource-bundle:1.8
+[INFO] Copying 3 resources from 1 bundle.
+[INFO]
+[INFO] --- resources:3.3.1:resources (default-resources) @ maven-resolver-util ---
+[INFO] skip non existing resourceDirectory /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-util/src/main/resources
+[INFO] Copying 3 resources from target/maven-shared-archive-resources to target/classes
+[INFO]
+[INFO] --- compiler:3.12.1:compile (default-compile) @ maven-resolver-util ---
+[INFO] Toolchain in maven-compiler-plugin: JDK[/usr/lib/jvm/java-25-openjdk]
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 125 source files with javac [forked debug deprecation release 8] to target/classes
+[WARNING] [options] source value 8 is obsolete and will be removed in a future release
+[WARNING] [options] target value 8 is obsolete and will be removed in a future release
+[WARNING] [options] To suppress warnings about obsolete options, use -Xlint:-options.
+[WARNING] /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-util/src/main/java/org/eclipse/aether/util/repository/ChainedLocalRepositoryManager.java:[178,18] [deprecation] getPathForRemoteMetadata(Metadata,RemoteRepository,String) in LocalRepositoryManager has been deprecated
+[WARNING] /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-util/src/main/java/org/eclipse/aether/util/repository/ChainedLocalRepositoryManager.java:[173,18] [deprecation] getPathForLocalMetadata(Metadata) in LocalRepositoryManager has been deprecated
+[WARNING] /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-util/src/main/java/org/eclipse/aether/util/repository/ChainedLocalRepositoryManager.java:[168,18] [deprecation] getPathForRemoteArtifact(Artifact,RemoteRepository,String) in LocalRepositoryManager has been deprecated
+[WARNING] /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-util/src/main/java/org/eclipse/aether/util/repository/ChainedLocalRepositoryManager.java:[163,18] [deprecation] getPathForLocalArtifact(Artifact) in LocalRepositoryManager has been deprecated
+[WARNING] /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-util/src/main/java/org/eclipse/aether/util/repository/ChainedLocalRepositoryManager.java:[164,33] [deprecation] getPathForLocalArtifact(Artifact) in LocalRepositoryManager has been deprecated
+[WARNING] /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-util/src/main/java/org/eclipse/aether/util/repository/ChainedLocalRepositoryManager.java:[169,31] [deprecation] getPathForRemoteArtifact(Artifact,RemoteRepository,String) in LocalRepositoryManager has been deprecated
+[WARNING] /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-util/src/main/java/org/eclipse/aether/util/repository/ChainedLocalRepositoryManager.java:[174,33] [deprecation] getPathForLocalMetadata(Metadata) in LocalRepositoryManager has been deprecated
+[WARNING] /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-util/src/main/java/org/eclipse/aether/util/repository/ChainedLocalRepositoryManager.java:[179,31] [deprecation] getPathForRemoteMetadata(Metadata,RemoteRepository,String) in LocalRepositoryManager has been deprecated
+[INFO]
+[INFO] --- sisu:1.0.0:main-index (index-project) @ maven-resolver-util ---
+[INFO]
+[INFO] --- bundle:5.1.9:manifest (create-manifest) @ maven-resolver-util ---
+[INFO] No MANIFEST.MF file found, generating manifest.
+[INFO] Writing manifest: /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-util/target/classes/META-INF/MANIFEST.MF
+[INFO]
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ maven-resolver-util ---
+[INFO] Copying 54 resources from src/test/resources to target/test-classes
+[INFO] Copying 3 resources from target/maven-shared-archive-resources to target/test-classes
+[INFO]
+[INFO] --- compiler:3.12.1:testCompile (default-testCompile) @ maven-resolver-util ---
+[INFO] Toolchain in maven-compiler-plugin: JDK[/usr/lib/jvm/java-25-openjdk]
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 71 source files with javac [forked debug deprecation release 8] to target/test-classes
+[WARNING] [options] source value 8 is obsolete and will be removed in a future release
+[WARNING] [options] target value 8 is obsolete and will be removed in a future release
+[WARNING] [options] To suppress warnings about obsolete options, use -Xlint:-options.
+[WARNING] unknown enum constant Status.STABLE
+[INFO]
+[INFO] --- sisu:1.0.0:test-index (index-project) @ maven-resolver-util ---
+[INFO]
+[INFO] --- surefire:3.2.2:test (default-test) @ maven-resolver-util ---
+[INFO] Toolchain in maven-surefire-plugin: JDK[/usr/lib/jvm/java-25-openjdk]
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO]
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.eclipse.aether.util.ConfigUtilsTest
+[INFO] Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.237 s -- in org.eclipse.aether.util.ConfigUtilsTest
+[INFO] Running org.eclipse.aether.util.DirectoryUtilsTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.108 s -- in org.eclipse.aether.util.DirectoryUtilsTest
+[INFO] Running org.eclipse.aether.util.FileUtilsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.076 s -- in org.eclipse.aether.util.FileUtilsTest
+[INFO] Running org.eclipse.aether.util.PathUtilsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 s -- in org.eclipse.aether.util.PathUtilsTest
+[INFO] Running org.eclipse.aether.util.StringDigestUtilTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.216 s -- in org.eclipse.aether.util.StringDigestUtilTest
+[INFO] Running org.eclipse.aether.util.artifact.ArtifactIdUtilsTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 s -- in org.eclipse.aether.util.artifact.ArtifactIdUtilsTest
+[INFO] Running org.eclipse.aether.util.artifact.SubArtifactTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.060 s -- in org.eclipse.aether.util.artifact.SubArtifactTest
+[INFO] Running org.eclipse.aether.util.connector.transport.http.HttpTransporterUtilsTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.094 s -- in org.eclipse.aether.util.connector.transport.http.HttpTransporterUtilsTest
+[INFO] Running org.eclipse.aether.util.filter.AndDependencyFilterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s -- in org.eclipse.aether.util.filter.AndDependencyFilterTest
+[INFO] Running org.eclipse.aether.util.filter.DependencyFilterUtilsTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 s -- in org.eclipse.aether.util.filter.DependencyFilterUtilsTest
+[INFO] Running org.eclipse.aether.util.filter.ExclusionDependencyFilterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s -- in org.eclipse.aether.util.filter.ExclusionDependencyFilterTest
+[INFO] Running org.eclipse.aether.util.filter.OrDependencyFilterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s -- in org.eclipse.aether.util.filter.OrDependencyFilterTest
+[INFO] Running org.eclipse.aether.util.filter.PatternExclusionsDependencyFilterTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 s -- in org.eclipse.aether.util.filter.PatternExclusionsDependencyFilterTest
+[INFO] Running org.eclipse.aether.util.filter.PatternInclusionsDependencyFilterTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 s -- in org.eclipse.aether.util.filter.PatternInclusionsDependencyFilterTest
+[INFO] Running org.eclipse.aether.util.filter.ScopeDependencyFilterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in org.eclipse.aether.util.filter.ScopeDependencyFilterTest
+[INFO] Running org.eclipse.aether.util.graph.manager.DependencyManagerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 s -- in org.eclipse.aether.util.graph.manager.DependencyManagerTest
+[INFO] Running org.eclipse.aether.util.graph.selector.AndDependencySelectorTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s -- in org.eclipse.aether.util.graph.selector.AndDependencySelectorTest
+[INFO] Running org.eclipse.aether.util.graph.selector.ExclusionDependencySelectorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in org.eclipse.aether.util.graph.selector.ExclusionDependencySelectorTest
+[INFO] Running org.eclipse.aether.util.graph.selector.OptionalDependencySelectorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 s -- in org.eclipse.aether.util.graph.selector.OptionalDependencySelectorTest
+[INFO] Running org.eclipse.aether.util.graph.selector.ScopeDependencySelectorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s -- in org.eclipse.aether.util.graph.selector.ScopeDependencySelectorTest
+[INFO] Running org.eclipse.aether.util.graph.selector.StaticDependencySelectorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s -- in org.eclipse.aether.util.graph.selector.StaticDependencySelectorTest
+[INFO] Running org.eclipse.aether.util.graph.transformer.ConfigurableVersionSelectorStrategiesTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.522 s -- in org.eclipse.aether.util.graph.transformer.ConfigurableVersionSelectorStrategiesTest
+[INFO] Running org.eclipse.aether.util.graph.transformer.ConfigurableVersionSelectorTest
+[INFO] Tests run: 34, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.443 s -- in org.eclipse.aether.util.graph.transformer.ConfigurableVersionSelectorTest
+[INFO] Running org.eclipse.aether.util.graph.transformer.ConflictIdSorterTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.050 s -- in org.eclipse.aether.util.graph.transformer.ConflictIdSorterTest
+[INFO] Running org.eclipse.aether.util.graph.transformer.ConflictMarkerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 s -- in org.eclipse.aether.util.graph.transformer.ConflictMarkerTest
+[INFO] Running org.eclipse.aether.util.graph.transformer.ConflictResolverTest
+[INFO] Tests run: 45, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.456 s -- in org.eclipse.aether.util.graph.transformer.ConflictResolverTest
+[INFO] Running org.eclipse.aether.util.graph.transformer.JavaDependencyContextRefinerTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s -- in org.eclipse.aether.util.graph.transformer.JavaDependencyContextRefinerTest
+[INFO] Running org.eclipse.aether.util.graph.transformer.JavaScopeSelectorTest
+[INFO] Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.222 s -- in org.eclipse.aether.util.graph.transformer.JavaScopeSelectorTest
+[INFO] Running org.eclipse.aether.util.graph.transformer.NearestVersionSelectorTest
+[INFO] Tests run: 32, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.266 s -- in org.eclipse.aether.util.graph.transformer.NearestVersionSelectorTest
+[INFO] Running org.eclipse.aether.util.graph.transformer.RootQueueTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s -- in org.eclipse.aether.util.graph.transformer.RootQueueTest
+[INFO] Running org.eclipse.aether.util.graph.transformer.SimpleOptionalitySelectorTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 s -- in org.eclipse.aether.util.graph.transformer.SimpleOptionalitySelectorTest
+[INFO] Running org.eclipse.aether.util.graph.traverser.AndDependencyTraverserTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 s -- in org.eclipse.aether.util.graph.traverser.AndDependencyTraverserTest
+[INFO] Running org.eclipse.aether.util.graph.traverser.FatArtifactTraverserTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s -- in org.eclipse.aether.util.graph.traverser.FatArtifactTraverserTest
+[INFO] Running org.eclipse.aether.util.graph.traverser.StaticDependencyTraverserTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.040 s -- in org.eclipse.aether.util.graph.traverser.StaticDependencyTraverserTest
+[INFO] Running org.eclipse.aether.util.graph.version.ArtifactPredicateVersionFilterTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.030 s -- in org.eclipse.aether.util.graph.version.ArtifactPredicateVersionFilterTest
+[INFO] Running org.eclipse.aether.util.graph.version.ChainedVersionFilterTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 s -- in org.eclipse.aether.util.graph.version.ChainedVersionFilterTest
+[INFO] Running org.eclipse.aether.util.graph.version.ContextualSnapshotVersionFilterTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s -- in org.eclipse.aether.util.graph.version.ContextualSnapshotVersionFilterTest
+[INFO] Running org.eclipse.aether.util.graph.version.GenericQualifiersVersionFilterTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 s -- in org.eclipse.aether.util.graph.version.GenericQualifiersVersionFilterTest
+[INFO] Running org.eclipse.aether.util.graph.version.HighestVersionFilterTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 s -- in org.eclipse.aether.util.graph.version.HighestVersionFilterTest
+[INFO] Running org.eclipse.aether.util.graph.version.LowestVersionFilterTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s -- in org.eclipse.aether.util.graph.version.LowestVersionFilterTest
+[INFO] Running org.eclipse.aether.util.graph.version.PredicateVersionFilterTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 s -- in org.eclipse.aether.util.graph.version.PredicateVersionFilterTest
+[INFO] Running org.eclipse.aether.util.graph.version.ReleaseVersionFilterTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 s -- in org.eclipse.aether.util.graph.version.ReleaseVersionFilterTest
+[INFO] Running org.eclipse.aether.util.graph.version.SnapshotVersionFilterTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s -- in org.eclipse.aether.util.graph.version.SnapshotVersionFilterTest
+[INFO] Running org.eclipse.aether.util.graph.visitor.DependencyGraphDumperTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 s -- in org.eclipse.aether.util.graph.visitor.DependencyGraphDumperTest
+[INFO] Running org.eclipse.aether.util.graph.visitor.FilteringDependencyVisitorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s -- in org.eclipse.aether.util.graph.visitor.FilteringDependencyVisitorTest
+[INFO] Running org.eclipse.aether.util.graph.visitor.NodeListGeneratorTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 s -- in org.eclipse.aether.util.graph.visitor.NodeListGeneratorTest
+[INFO] Running org.eclipse.aether.util.graph.visitor.PathRecordingDependencyVisitorTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 s -- in org.eclipse.aether.util.graph.visitor.PathRecordingDependencyVisitorTest
+[INFO] Running org.eclipse.aether.util.graph.visitor.PostorderNodeListGeneratorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s -- in org.eclipse.aether.util.graph.visitor.PostorderNodeListGeneratorTest
+[INFO] Running org.eclipse.aether.util.graph.visitor.PreorderNodeListGeneratorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 s -- in org.eclipse.aether.util.graph.visitor.PreorderNodeListGeneratorTest
+[INFO] Running org.eclipse.aether.util.graph.visitor.TreeDependencyVisitorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s -- in org.eclipse.aether.util.graph.visitor.TreeDependencyVisitorTest
+[INFO] Running org.eclipse.aether.util.listener.ChainedRepositoryListenerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s -- in org.eclipse.aether.util.listener.ChainedRepositoryListenerTest
+[INFO] Running org.eclipse.aether.util.listener.ChainedTransferListenerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 s -- in org.eclipse.aether.util.listener.ChainedTransferListenerTest
+[INFO] Running org.eclipse.aether.util.repository.ChainedWorkspaceReaderTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.098 s -- in org.eclipse.aether.util.repository.ChainedWorkspaceReaderTest
+[INFO] Running org.eclipse.aether.util.repository.ComponentAuthenticationTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s -- in org.eclipse.aether.util.repository.ComponentAuthenticationTest
+[INFO] Running org.eclipse.aether.util.repository.DefaultProxySelectorTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s -- in org.eclipse.aether.util.repository.DefaultProxySelectorTest
+[INFO] Running org.eclipse.aether.util.repository.JreProxySelectorTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.074 s -- in org.eclipse.aether.util.repository.JreProxySelectorTest
+[INFO] Running org.eclipse.aether.util.repository.RepositoryIdHelperTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.030 s -- in org.eclipse.aether.util.repository.RepositoryIdHelperTest
+[INFO] Running org.eclipse.aether.util.repository.SecretAuthenticationTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s -- in org.eclipse.aether.util.repository.SecretAuthenticationTest
+[INFO] Running org.eclipse.aether.util.repository.StringAuthenticationTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s -- in org.eclipse.aether.util.repository.StringAuthenticationTest
+[INFO] Running org.eclipse.aether.util.version.GenericQualifiersTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 s -- in org.eclipse.aether.util.version.GenericQualifiersTest
+[INFO] Running org.eclipse.aether.util.version.GenericVersionRangeTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 s -- in org.eclipse.aether.util.version.GenericVersionRangeTest
+[INFO] Running org.eclipse.aether.util.version.GenericVersionSchemeCachingPerformanceTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.253 s -- in org.eclipse.aether.util.version.GenericVersionSchemeCachingPerformanceTest
+[INFO] Running org.eclipse.aether.util.version.GenericVersionSchemeTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 s -- in org.eclipse.aether.util.version.GenericVersionSchemeTest
+[INFO] Running org.eclipse.aether.util.version.GenericVersionTest
+[INFO] Tests run: 42, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.207 s -- in org.eclipse.aether.util.version.GenericVersionTest
+[INFO] Running org.eclipse.aether.util.version.UnionVersionRangeTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 s -- in org.eclipse.aether.util.version.UnionVersionRangeTest
+[INFO]
+[INFO] Results:
+[INFO]
+[INFO] Tests run: 446, Failures: 0, Errors: 0, Skipped: 0
+[INFO]
+[INFO]
+[INFO] --- jar:3.3.0:jar (default-jar) @ maven-resolver-util ---
+[INFO] Building jar: /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-util/target/maven-resolver-util-2.0.21.jar
+[INFO]
+[INFO] --------< org.apache.maven.resolver:maven-resolver-named-locks >--------
+[INFO] Building Maven Artifact Resolver Named Locks 2.0.21               [6/11]
+[INFO]   from maven-resolver-named-locks/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- remote-resources:3.3.0:process (process-resource-bundles) @ maven-resolver-named-locks ---
+[INFO] Preparing remote bundle org.apache.apache.resources:apache-jar-resource-bundle:1.8
+[INFO] Copying 3 resources from 1 bundle.
+[INFO]
+[INFO] --- resources:3.3.1:resources (default-resources) @ maven-resolver-named-locks ---
+[INFO] skip non existing resourceDirectory /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-named-locks/src/main/resources
+[INFO] Copying 3 resources from target/maven-shared-archive-resources to target/classes
+[INFO]
+[INFO] --- compiler:3.12.1:compile (default-compile) @ maven-resolver-named-locks ---
+[INFO] Toolchain in maven-compiler-plugin: JDK[/usr/lib/jvm/java-25-openjdk]
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 15 source files with javac [forked debug deprecation release 8] to target/classes
+[WARNING] [options] source value 8 is obsolete and will be removed in a future release
+[WARNING] [options] target value 8 is obsolete and will be removed in a future release
+[WARNING] [options] To suppress warnings about obsolete options, use -Xlint:-options.
+[INFO]
+[INFO] --- bundle:5.1.9:manifest (create-manifest) @ maven-resolver-named-locks ---
+[INFO] No MANIFEST.MF file found, generating manifest.
+[INFO] Writing manifest: /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-named-locks/target/classes/META-INF/MANIFEST.MF
+[INFO]
+[INFO] --- sisu:1.0.0:main-index (index-project) @ maven-resolver-named-locks ---
+[INFO]
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ maven-resolver-named-locks ---
+[INFO] skip non existing resourceDirectory /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-named-locks/src/test/resources
+[INFO] Copying 3 resources from target/maven-shared-archive-resources to target/test-classes
+[INFO]
+[INFO] --- compiler:3.12.1:testCompile (default-testCompile) @ maven-resolver-named-locks ---
+[INFO] Toolchain in maven-compiler-plugin: JDK[/usr/lib/jvm/java-25-openjdk]
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 5 source files with javac [forked debug deprecation release 8] to target/test-classes
+[WARNING] [options] source value 8 is obsolete and will be removed in a future release
+[WARNING] [options] target value 8 is obsolete and will be removed in a future release
+[WARNING] [options] To suppress warnings about obsolete options, use -Xlint:-options.
+[WARNING] unknown enum constant Status.STABLE
+[INFO]
+[INFO] --- sisu:1.0.0:test-index (index-project) @ maven-resolver-named-locks ---
+[INFO]
+[INFO] --- surefire:3.2.2:test (default-test) @ maven-resolver-named-locks ---
+[INFO] Toolchain in maven-surefire-plugin: JDK[/usr/lib/jvm/java-25-openjdk]
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO]
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.eclipse.aether.named.FileLockNamedLockFactorySupportTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.529 s -- in org.eclipse.aether.named.FileLockNamedLockFactorySupportTest
+[INFO] Running org.eclipse.aether.named.LocalReadWriteLockNamedLockFactoryTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.170 s -- in org.eclipse.aether.named.LocalReadWriteLockNamedLockFactoryTest
+[INFO] Running org.eclipse.aether.named.LocalSemaphoreNamedLockFactoryTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.145 s -- in org.eclipse.aether.named.LocalSemaphoreNamedLockFactoryTest
+[INFO] Running org.eclipse.aether.named.RetryTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.043 s -- in org.eclipse.aether.named.RetryTest
+[INFO]
+[INFO] Results:
+[INFO]
+[INFO] Tests run: 42, Failures: 0, Errors: 0, Skipped: 0
+[INFO]
+[INFO]
+[INFO] --- jar:3.3.0:jar (default-jar) @ maven-resolver-named-locks ---
+[INFO] Building jar: /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-named-locks/target/maven-resolver-named-locks-2.0.21.jar
+[INFO]
+[INFO] -----------< org.apache.maven.resolver:maven-resolver-impl >------------
+[INFO] Building Maven Artifact Resolver Implementation 2.0.21            [7/11]
+[INFO]   from maven-resolver-impl/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- remote-resources:3.3.0:process (process-resource-bundles) @ maven-resolver-impl ---
+[INFO] Preparing remote bundle org.apache.apache.resources:apache-jar-resource-bundle:1.8
+[INFO] Copying 3 resources from 1 bundle.
+[INFO]
+[INFO] --- resources:3.3.1:resources (default-resources) @ maven-resolver-impl ---
+[INFO] skip non existing resourceDirectory /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-impl/src/main/resources
+[INFO] Copying 3 resources from target/maven-shared-archive-resources to target/classes
+[INFO]
+[INFO] --- compiler:3.12.1:compile (default-compile) @ maven-resolver-impl ---
+[INFO] Toolchain in maven-compiler-plugin: JDK[/usr/lib/jvm/java-25-openjdk]
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 159 source files with javac [forked debug deprecation release 8] to target/classes
+[WARNING] [options] source value 8 is obsolete and will be removed in a future release
+[WARNING] [options] target value 8 is obsolete and will be removed in a future release
+[WARNING] [options] To suppress warnings about obsolete options, use -Xlint:-options.
+[WARNING] /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-impl/src/main/java/org/eclipse/aether/internal/impl/DefaultFileProcessor.java:[38,32] [deprecation] FileProcessor in org.eclipse.aether.spi.io has been deprecated
+[WARNING] /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-impl/src/main/java/org/eclipse/aether/internal/impl/DefaultFileProcessor.java:[39,30] [deprecation] FileUtils in org.eclipse.aether.util has been deprecated
+[WARNING] /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-impl/src/main/java/org/eclipse/aether/internal/impl/SimpleLocalRepositoryManager.java:[88,18] [deprecation] getPathForRemoteMetadata(Metadata,RemoteRepository,String) in LocalRepositoryManager has been deprecated
+[WARNING] /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-impl/src/main/java/org/eclipse/aether/internal/impl/SimpleLocalRepositoryManager.java:[82,18] [deprecation] getPathForLocalMetadata(Metadata) in LocalRepositoryManager has been deprecated
+[WARNING] /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-impl/src/main/java/org/eclipse/aether/internal/impl/SimpleLocalRepositoryManager.java:[75,18] [deprecation] getPathForRemoteArtifact(Artifact,RemoteRepository,String) in LocalRepositoryManager has been deprecated
+[WARNING] /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-impl/src/main/java/org/eclipse/aether/internal/impl/SimpleLocalRepositoryManager.java:[69,18] [deprecation] getPathForLocalArtifact(Artifact) in LocalRepositoryManager has been deprecated
+[WARNING] /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-impl/src/main/java/org/eclipse/aether/internal/impl/named/DefaultNamedLockFactorySelector.java:[115,50] [deprecation] CONFIG_PROP_FACTORY_KEY in NamedLockFactoryAdapterFactoryImpl has been deprecated
+[WARNING] /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-impl/src/main/java/org/eclipse/aether/internal/impl/named/DefaultNamedLockFactorySelector.java:[131,39] [deprecation] CONFIG_PROP_TIME in NamedLockFactoryAdapter has been deprecated
+[WARNING] /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-impl/src/main/java/org/eclipse/aether/internal/impl/named/DefaultNamedLockFactorySelector.java:[145,39] [deprecation] CONFIG_PROP_TIME_UNIT in NamedLockFactoryAdapter has been deprecated
+[INFO]
+[INFO] --- bundle:5.1.9:manifest (create-manifest) @ maven-resolver-impl ---
+[INFO] No MANIFEST.MF file found, generating manifest.
+[INFO] Writing manifest: /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-impl/target/classes/META-INF/MANIFEST.MF
+[INFO]
+[INFO] --- sisu:1.0.0:main-index (index-project) @ maven-resolver-impl ---
+[INFO]
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ maven-resolver-impl ---
+[INFO] Copying 625 resources from src/test/resources to target/test-classes
+[INFO] Copying 3 resources from target/maven-shared-archive-resources to target/test-classes
+[INFO]
+[INFO] --- compiler:3.12.1:testCompile (default-testCompile) @ maven-resolver-impl ---
+[INFO] Toolchain in maven-compiler-plugin: JDK[/usr/lib/jvm/java-25-openjdk]
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 74 source files with javac [forked debug deprecation release 8] to target/test-classes
+[WARNING] [options] source value 8 is obsolete and will be removed in a future release
+[WARNING] [options] target value 8 is obsolete and will be removed in a future release
+[WARNING] [options] To suppress warnings about obsolete options, use -Xlint:-options.
+[WARNING] /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-impl/src/test/java/org/eclipse/aether/internal/impl/DefaultFileProcessorTest.java:[29,32] [deprecation] FileProcessor in org.eclipse.aether.spi.io has been deprecated
+[WARNING] /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-impl/src/test/java/org/eclipse/aether/internal/impl/DefaultFileProcessorTest.java:[29,32] [deprecation] FileProcessor in org.eclipse.aether.spi.io has been deprecated
+[WARNING] /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-impl/src/test/java/org/eclipse/aether/internal/impl/collect/DependencyCollectorDelegateTestSupport.java:[57,48] [deprecation] NearestVersionSelector in org.eclipse.aether.util.graph.transformer has been deprecated
+[WARNING] unknown enum constant Status.STABLE
+[INFO]
+[INFO] --- sisu:1.0.0:test-index (index-project) @ maven-resolver-impl ---
+[INFO]
+[INFO] --- surefire:3.2.2:test (default-test) @ maven-resolver-impl ---
+[INFO] Toolchain in maven-surefire-plugin: JDK[/usr/lib/jvm/java-25-openjdk]
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO]
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.eclipse.aether.internal.impl.DefaultArtifactResolverTest
+[INFO] Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.652 s -- in org.eclipse.aether.internal.impl.DefaultArtifactResolverTest
+[INFO] Running org.eclipse.aether.internal.impl.DefaultChecksumPolicyProviderTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 s -- in org.eclipse.aether.internal.impl.DefaultChecksumPolicyProviderTest
+[INFO] Running org.eclipse.aether.internal.impl.DefaultDeployerTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.109 s -- in org.eclipse.aether.internal.impl.DefaultDeployerTest
+[INFO] Running org.eclipse.aether.internal.impl.DefaultFileProcessorTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.168 s -- in org.eclipse.aether.internal.impl.DefaultFileProcessorTest
+[INFO] Running org.eclipse.aether.internal.impl.DefaultInstallerTest
+[WARNING] Tests run: 17, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.187 s -- in org.eclipse.aether.internal.impl.DefaultInstallerTest
+[INFO] Running org.eclipse.aether.internal.impl.DefaultLocalPathComposerTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 s -- in org.eclipse.aether.internal.impl.DefaultLocalPathComposerTest
+[INFO] Running org.eclipse.aether.internal.impl.DefaultLocalPathPrefixComposerFactoryTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 s -- in org.eclipse.aether.internal.impl.DefaultLocalPathPrefixComposerFactoryTest
+[INFO] Running org.eclipse.aether.internal.impl.DefaultMetadataResolverTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.112 s -- in org.eclipse.aether.internal.impl.DefaultMetadataResolverTest
+[INFO] Running org.eclipse.aether.internal.impl.DefaultOfflineControllerTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s -- in org.eclipse.aether.internal.impl.DefaultOfflineControllerTest
+[INFO] Running org.eclipse.aether.internal.impl.DefaultRemoteRepositoryManagerTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.150 s -- in org.eclipse.aether.internal.impl.DefaultRemoteRepositoryManagerTest
+[INFO] Running org.eclipse.aether.internal.impl.DefaultRepositoryEventDispatcherTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 s -- in org.eclipse.aether.internal.impl.DefaultRepositoryEventDispatcherTest
+[INFO] Running org.eclipse.aether.internal.impl.DefaultRepositorySystemReentrancyTest
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by net.bytebuddy.dynamic.loading.ClassInjector$UsingUnsafe$Dispatcher$CreationAction (file:/usr/share/java/byte-buddy/byte-buddy-dep.jar)
+WARNING: Please consider reporting this to the maintainers of class net.bytebuddy.dynamic.loading.ClassInjector$UsingUnsafe$Dispatcher$CreationAction
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.674 s -- in org.eclipse.aether.internal.impl.DefaultRepositorySystemReentrancyTest
+[INFO] Running org.eclipse.aether.internal.impl.DefaultRepositorySystemTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 s -- in org.eclipse.aether.internal.impl.DefaultRepositorySystemTest
+[INFO] Running org.eclipse.aether.internal.impl.DefaultUpdateCheckManagerTest
+[INFO] Tests run: 34, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.410 s -- in org.eclipse.aether.internal.impl.DefaultUpdateCheckManagerTest
+[INFO] Running org.eclipse.aether.internal.impl.DefaultUpdatePolicyAnalyzerTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s -- in org.eclipse.aether.internal.impl.DefaultUpdatePolicyAnalyzerTest
+[INFO] Running org.eclipse.aether.internal.impl.EnhancedLocalRepositoryManagerTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.174 s -- in org.eclipse.aether.internal.impl.EnhancedLocalRepositoryManagerTest
+[INFO] Running org.eclipse.aether.internal.impl.EnhancedSplitLocalRepositoryManagerTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.152 s -- in org.eclipse.aether.internal.impl.EnhancedSplitLocalRepositoryManagerTest
+[INFO] Running org.eclipse.aether.internal.impl.FailChecksumPolicyTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 s -- in org.eclipse.aether.internal.impl.FailChecksumPolicyTest
+[INFO] Running org.eclipse.aether.internal.impl.LegacyTrackingFileManagerTest
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.362 s -- in org.eclipse.aether.internal.impl.LegacyTrackingFileManagerTest
+[INFO] Running org.eclipse.aether.internal.impl.checksum.SparseDirectoryTrustedChecksumsSourceTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 s -- in org.eclipse.aether.internal.impl.checksum.SparseDirectoryTrustedChecksumsSourceTest
+[INFO] Running org.eclipse.aether.internal.impl.checksum.SummaryFileTrustedChecksumsSourceTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 s -- in org.eclipse.aether.internal.impl.checksum.SummaryFileTrustedChecksumsSourceTest
+[INFO] Running org.eclipse.aether.internal.impl.checksum.TrustedToProvidedChecksumsSourceAdapterTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.192 s -- in org.eclipse.aether.internal.impl.checksum.TrustedToProvidedChecksumsSourceAdapterTest
+[INFO] Running org.eclipse.aether.internal.impl.Maven2RepositoryLayoutFactoryTest
+[INFO] Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.278 s -- in org.eclipse.aether.internal.impl.Maven2RepositoryLayoutFactoryTest
+[INFO] Running org.eclipse.aether.internal.impl.NamedLocksTrackingFileManagerTest
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.331 s -- in org.eclipse.aether.internal.impl.NamedLocksTrackingFileManagerTest
+[INFO] Running org.eclipse.aether.internal.impl.PrioritizedComponentTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s -- in org.eclipse.aether.internal.impl.PrioritizedComponentTest
+[INFO] Running org.eclipse.aether.internal.impl.PrioritizedComponentsTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 s -- in org.eclipse.aether.internal.impl.PrioritizedComponentsTest
+[INFO] Running org.eclipse.aether.internal.impl.SafeTransferListenerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s -- in org.eclipse.aether.internal.impl.SafeTransferListenerTest
+[INFO] Running org.eclipse.aether.internal.impl.SimpleLocalRepositoryManagerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.063 s -- in org.eclipse.aether.internal.impl.SimpleLocalRepositoryManagerTest
+[INFO] Running org.eclipse.aether.internal.impl.WarnChecksumPolicyTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 s -- in org.eclipse.aether.internal.impl.WarnChecksumPolicyTest
+[INFO] Running org.eclipse.aether.internal.impl.collect.DataPoolTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s -- in org.eclipse.aether.internal.impl.collect.DataPoolTest
+[INFO] Running org.eclipse.aether.internal.impl.collect.DefaultDependencyCycleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s -- in org.eclipse.aether.internal.impl.collect.DefaultDependencyCycleTest
+[INFO] Running org.eclipse.aether.internal.impl.collect.DefaultVersionFilterBuilderTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.093 s -- in org.eclipse.aether.internal.impl.collect.DefaultVersionFilterBuilderTest
+[INFO] Running org.eclipse.aether.internal.impl.collect.DefaultVersionFilterContextTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.030 s -- in org.eclipse.aether.internal.impl.collect.DefaultVersionFilterContextTest
+[INFO] Running org.eclipse.aether.internal.impl.collect.bf.BfWithSkipperDependencyCollectorTest
+[INFO] Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.814 s -- in org.eclipse.aether.internal.impl.collect.bf.BfWithSkipperDependencyCollectorTest
+[INFO] Running org.eclipse.aether.internal.impl.collect.bf.BfWithoutSkipperDependencyCollectorTest
+[INFO] Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.413 s -- in org.eclipse.aether.internal.impl.collect.bf.BfWithoutSkipperDependencyCollectorTest
+[INFO] Running org.eclipse.aether.internal.impl.collect.bf.DependencyResolutionSkipperTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 s -- in org.eclipse.aether.internal.impl.collect.bf.DependencyResolutionSkipperTest
+[INFO] Running org.eclipse.aether.internal.impl.collect.df.DfDependencyCollectorTest
+[INFO] Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.271 s -- in org.eclipse.aether.internal.impl.collect.df.DfDependencyCollectorTest
+[INFO] Running org.eclipse.aether.internal.impl.filter.GroupIdRemoteRepositoryFilterSourceTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 s -- in org.eclipse.aether.internal.impl.filter.GroupIdRemoteRepositoryFilterSourceTest
+[INFO] Running org.eclipse.aether.internal.impl.filter.PrefixesRemoteRepositoryFilterSourceTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.123 s -- in org.eclipse.aether.internal.impl.filter.PrefixesRemoteRepositoryFilterSourceTest
+[INFO] Running org.eclipse.aether.internal.impl.filter.PrefixesRemoteRepositoryFilterSourceVerifyDeniedTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.196 s -- in org.eclipse.aether.internal.impl.filter.PrefixesRemoteRepositoryFilterSourceVerifyDeniedTest
+[INFO] Running org.eclipse.aether.internal.impl.filter.prefixes.PrefixesSourceTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s -- in org.eclipse.aether.internal.impl.filter.prefixes.PrefixesSourceTest
+[INFO] Running org.eclipse.aether.internal.impl.filter.ruletree.GroupTreeTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.020 s -- in org.eclipse.aether.internal.impl.filter.ruletree.GroupTreeTest
+[INFO] Running org.eclipse.aether.internal.impl.filter.ruletree.PrefixTreeTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in org.eclipse.aether.internal.impl.filter.ruletree.PrefixTreeTest
+[INFO] Running org.eclipse.aether.internal.impl.resolution.TrustedChecksumsArtifactResolverPostProcessorTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 s -- in org.eclipse.aether.internal.impl.resolution.TrustedChecksumsArtifactResolverPostProcessorTest
+[INFO] Running org.eclipse.aether.internal.impl.synccontext.FileLockAdapterTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.084 s -- in org.eclipse.aether.internal.impl.synccontext.FileLockAdapterTest
+[INFO] Running org.eclipse.aether.internal.impl.synccontext.LocalReadWriteLockAdapterTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.927 s -- in org.eclipse.aether.internal.impl.synccontext.LocalReadWriteLockAdapterTest
+[INFO] Running org.eclipse.aether.internal.impl.synccontext.LocalSemaphoreAdapterTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.938 s -- in org.eclipse.aether.internal.impl.synccontext.LocalSemaphoreAdapterTest
+[INFO] Running org.eclipse.aether.internal.impl.synccontext.named.BasedirHashingNameMapperTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 s -- in org.eclipse.aether.internal.impl.synccontext.named.BasedirHashingNameMapperTest
+[INFO] Running org.eclipse.aether.internal.impl.synccontext.named.BasedirNameMapperTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 s -- in org.eclipse.aether.internal.impl.synccontext.named.BasedirNameMapperTest
+[INFO] Running org.eclipse.aether.internal.impl.synccontext.named.GAVNameMapperTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 s -- in org.eclipse.aether.internal.impl.synccontext.named.GAVNameMapperTest
+[INFO] Running org.eclipse.aether.internal.impl.synccontext.named.HashingNameMapperTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s -- in org.eclipse.aether.internal.impl.synccontext.named.HashingNameMapperTest
+[INFO] Running org.eclipse.aether.internal.impl.synccontext.named.InhibitingNameMapperTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 s -- in org.eclipse.aether.internal.impl.synccontext.named.InhibitingNameMapperTest
+[INFO]
+[INFO] Results:
+[INFO]
+[WARNING] Tests run: 462, Failures: 0, Errors: 0, Skipped: 1
+[INFO]
+[INFO]
+[INFO] --- jar:3.3.0:jar (default-jar) @ maven-resolver-impl ---
+[INFO] Building jar: /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-impl/target/maven-resolver-impl-2.0.21.jar
+[INFO]
+[INFO] ------< org.apache.maven.resolver:maven-resolver-connector-basic >------
+[INFO] Building Maven Artifact Resolver Connector Basic 2.0.21           [8/11]
+[INFO]   from maven-resolver-connector-basic/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- remote-resources:3.3.0:process (process-resource-bundles) @ maven-resolver-connector-basic ---
+[INFO] Preparing remote bundle org.apache.apache.resources:apache-jar-resource-bundle:1.8
+[INFO] Copying 3 resources from 1 bundle.
+[INFO]
+[INFO] --- resources:3.3.1:resources (default-resources) @ maven-resolver-connector-basic ---
+[INFO] skip non existing resourceDirectory /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-connector-basic/src/main/resources
+[INFO] Copying 3 resources from target/maven-shared-archive-resources to target/classes
+[INFO]
+[INFO] --- compiler:3.12.1:compile (default-compile) @ maven-resolver-connector-basic ---
+[INFO] Toolchain in maven-compiler-plugin: JDK[/usr/lib/jvm/java-25-openjdk]
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 9 source files with javac [forked debug deprecation release 8] to target/classes
+[WARNING] [options] source value 8 is obsolete and will be removed in a future release
+[WARNING] [options] target value 8 is obsolete and will be removed in a future release
+[WARNING] [options] To suppress warnings about obsolete options, use -Xlint:-options.
+[WARNING] /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-connector-basic/src/main/java/org/eclipse/aether/connector/basic/BasicRepositoryConnector.java:[157,16] [deprecation] CONFIG_PROP_THREADS in BasicRepositoryConnectorConfigurationKeys has been deprecated
+[WARNING] /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-connector-basic/src/main/java/org/eclipse/aether/connector/basic/BasicRepositoryConnector.java:[163,16] [deprecation] CONFIG_PROP_THREADS in BasicRepositoryConnectorConfigurationKeys has been deprecated
+[INFO]
+[INFO] --- bundle:5.1.9:manifest (create-manifest) @ maven-resolver-connector-basic ---
+[INFO] No MANIFEST.MF file found, generating manifest.
+[INFO] Writing manifest: /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-connector-basic/target/classes/META-INF/MANIFEST.MF
+[INFO]
+[INFO] --- sisu:1.0.0:main-index (index-project) @ maven-resolver-connector-basic ---
+[INFO]
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ maven-resolver-connector-basic ---
+[INFO] skip non existing resourceDirectory /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-connector-basic/src/test/resources
+[INFO] Copying 3 resources from target/maven-shared-archive-resources to target/test-classes
+[INFO]
+[INFO] --- compiler:3.12.1:testCompile (default-testCompile) @ maven-resolver-connector-basic ---
+[INFO] Toolchain in maven-compiler-plugin: JDK[/usr/lib/jvm/java-25-openjdk]
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 3 source files with javac [forked debug deprecation release 8] to target/test-classes
+[WARNING] [options] source value 8 is obsolete and will be removed in a future release
+[WARNING] [options] target value 8 is obsolete and will be removed in a future release
+[WARNING] [options] To suppress warnings about obsolete options, use -Xlint:-options.
+[WARNING] unknown enum constant Status.STABLE
+[INFO]
+[INFO] --- sisu:1.0.0:test-index (index-project) @ maven-resolver-connector-basic ---
+[INFO]
+[INFO] --- surefire:3.2.2:test (default-test) @ maven-resolver-connector-basic ---
+[INFO] Toolchain in maven-surefire-plugin: JDK[/usr/lib/jvm/java-25-openjdk]
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO]
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.eclipse.aether.connector.basic.ChecksumCalculatorTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.471 s -- in org.eclipse.aether.connector.basic.ChecksumCalculatorTest
+[INFO] Running org.eclipse.aether.connector.basic.ChecksumValidatorTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.180 s -- in org.eclipse.aether.connector.basic.ChecksumValidatorTest
+[INFO]
+[INFO] Results:
+[INFO]
+[INFO] Tests run: 23, Failures: 0, Errors: 0, Skipped: 0
+[INFO]
+[INFO]
+[INFO] --- jar:3.3.0:jar (default-jar) @ maven-resolver-connector-basic ---
+[INFO] Building jar: /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-connector-basic/target/maven-resolver-connector-basic-2.0.21.jar
+[INFO]
+[INFO] -----< org.apache.maven.resolver:maven-resolver-transport-apache >------
+[INFO] Building Maven Artifact Resolver Transport Apache 2.0.21          [9/11]
+[INFO]   from maven-resolver-transport-apache/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- remote-resources:3.3.0:process (process-resource-bundles) @ maven-resolver-transport-apache ---
+[INFO] Preparing remote bundle org.apache.apache.resources:apache-jar-resource-bundle:1.8
+[INFO] Copying 3 resources from 1 bundle.
+[INFO]
+[INFO] --- resources:3.3.1:resources (default-resources) @ maven-resolver-transport-apache ---
+[INFO] skip non existing resourceDirectory /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-transport-apache/src/main/resources
+[INFO] Copying 3 resources from target/maven-shared-archive-resources to target/classes
+[INFO]
+[INFO] --- compiler:3.12.1:compile (default-compile) @ maven-resolver-transport-apache ---
+[INFO] Toolchain in maven-compiler-plugin: JDK[/usr/lib/jvm/java-25-openjdk]
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 13 source files with javac [forked debug deprecation release 8] to target/classes
+[WARNING] [options] source value 8 is obsolete and will be removed in a future release
+[WARNING] [options] target value 8 is obsolete and will be removed in a future release
+[WARNING] [options] To suppress warnings about obsolete options, use -Xlint:-options.
+[INFO]
+[INFO] --- bundle:5.1.9:manifest (create-manifest) @ maven-resolver-transport-apache ---
+[INFO] No MANIFEST.MF file found, generating manifest.
+[INFO] Writing manifest: /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-transport-apache/target/classes/META-INF/MANIFEST.MF
+[INFO]
+[INFO] --- sisu:1.0.0:main-index (index-project) @ maven-resolver-transport-apache ---
+[INFO]
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ maven-resolver-transport-apache ---
+[INFO] skip non existing resourceDirectory /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-transport-apache/src/test/resources
+[INFO] Copying 3 resources from target/maven-shared-archive-resources to target/test-classes
+[INFO]
+[INFO] --- compiler:3.12.1:testCompile (default-testCompile) @ maven-resolver-transport-apache ---
+[INFO] Toolchain in maven-compiler-plugin: JDK[/usr/lib/jvm/java-25-openjdk]
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [forked debug deprecation release 8] to target/test-classes
+[WARNING] [options] source value 8 is obsolete and will be removed in a future release
+[WARNING] [options] target value 8 is obsolete and will be removed in a future release
+[WARNING] [options] To suppress warnings about obsolete options, use -Xlint:-options.
+[WARNING] unknown enum constant Status.STABLE
+[INFO]
+[INFO] --- sisu:1.0.0:test-index (index-project) @ maven-resolver-transport-apache ---
+[INFO]
+[INFO] --- surefire:3.2.2:test (default-test) @ maven-resolver-transport-apache ---
+[INFO] Toolchain in maven-surefire-plugin: JDK[/usr/lib/jvm/java-25-openjdk]
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO]
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.eclipse.aether.transport.apache.UriUtilsTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.346 s -- in org.eclipse.aether.transport.apache.UriUtilsTest
+[INFO]
+[INFO] Results:
+[INFO]
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0
+[INFO]
+[INFO]
+[INFO] --- jar:3.3.0:jar (default-jar) @ maven-resolver-transport-apache ---
+[INFO] Building jar: /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-transport-apache/target/maven-resolver-transport-apache-2.0.21.jar
+[INFO]
+[INFO] ------< org.apache.maven.resolver:maven-resolver-transport-file >-------
+[INFO] Building Maven Artifact Resolver Transport File 2.0.21           [10/11]
+[INFO]   from maven-resolver-transport-file/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- remote-resources:3.3.0:process (process-resource-bundles) @ maven-resolver-transport-file ---
+[INFO] Preparing remote bundle org.apache.apache.resources:apache-jar-resource-bundle:1.8
+[INFO] Copying 3 resources from 1 bundle.
+[INFO]
+[INFO] --- resources:3.3.1:resources (default-resources) @ maven-resolver-transport-file ---
+[INFO] skip non existing resourceDirectory /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-transport-file/src/main/resources
+[INFO] Copying 3 resources from target/maven-shared-archive-resources to target/classes
+[INFO]
+[INFO] --- compiler:3.12.1:compile (default-compile) @ maven-resolver-transport-file ---
+[INFO] Toolchain in maven-compiler-plugin: JDK[/usr/lib/jvm/java-25-openjdk]
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 4 source files with javac [forked debug deprecation release 8] to target/classes
+[WARNING] [options] source value 8 is obsolete and will be removed in a future release
+[WARNING] [options] target value 8 is obsolete and will be removed in a future release
+[WARNING] [options] To suppress warnings about obsolete options, use -Xlint:-options.
+[INFO]
+[INFO] --- bundle:5.1.9:manifest (create-manifest) @ maven-resolver-transport-file ---
+[INFO] No MANIFEST.MF file found, generating manifest.
+[INFO] Writing manifest: /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-transport-file/target/classes/META-INF/MANIFEST.MF
+[INFO]
+[INFO] --- sisu:1.0.0:main-index (index-project) @ maven-resolver-transport-file ---
+[INFO]
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ maven-resolver-transport-file ---
+[INFO] skip non existing resourceDirectory /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-transport-file/src/test/resources
+[INFO] Copying 3 resources from target/maven-shared-archive-resources to target/test-classes
+[INFO]
+[INFO] --- compiler:3.12.1:testCompile (default-testCompile) @ maven-resolver-transport-file ---
+[INFO] Toolchain in maven-compiler-plugin: JDK[/usr/lib/jvm/java-25-openjdk]
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 2 source files with javac [forked debug deprecation release 8] to target/test-classes
+[WARNING] [options] source value 8 is obsolete and will be removed in a future release
+[WARNING] [options] target value 8 is obsolete and will be removed in a future release
+[WARNING] [options] To suppress warnings about obsolete options, use -Xlint:-options.
+[WARNING] unknown enum constant Status.STABLE
+[INFO]
+[INFO] --- sisu:1.0.0:test-index (index-project) @ maven-resolver-transport-file ---
+[INFO]
+[INFO] --- surefire:3.2.2:test (default-test) @ maven-resolver-transport-file ---
+[INFO] Toolchain in maven-surefire-plugin: JDK[/usr/lib/jvm/java-25-openjdk]
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO]
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.eclipse.aether.transport.file.FileTransporterTest
+[WARNING] Tests run: 183, Failures: 0, Errors: 0, Skipped: 9, Time elapsed: 3.450 s -- in org.eclipse.aether.transport.file.FileTransporterTest
+[INFO]
+[INFO] Results:
+[INFO]
+[WARNING] Tests run: 183, Failures: 0, Errors: 0, Skipped: 9
+[INFO]
+[INFO]
+[INFO] --- jar:3.3.0:jar (default-jar) @ maven-resolver-transport-file ---
+[INFO] Building jar: /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-transport-file/target/maven-resolver-transport-file-2.0.21.jar
+[INFO]
+[INFO] -------< org.apache.maven.resolver:maven-resolver-supplier-mvn3 >-------
+[INFO] Building Maven Artifact Resolver Instance Supplier Maven3 2.0.21 [11/11]
+[INFO]   from maven-resolver-supplier-mvn3/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- remote-resources:3.3.0:process (process-resource-bundles) @ maven-resolver-supplier-mvn3 ---
+[INFO] Preparing remote bundle org.apache.apache.resources:apache-jar-resource-bundle:1.8
+[INFO] Copying 3 resources from 1 bundle.
+[INFO]
+[INFO] --- resources:3.3.1:resources (default-resources) @ maven-resolver-supplier-mvn3 ---
+[INFO] skip non existing resourceDirectory /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-supplier-mvn3/src/main/resources
+[INFO] Copying 3 resources from target/maven-shared-archive-resources to target/classes
+[INFO]
+[INFO] --- compiler:3.12.1:compile (default-compile) @ maven-resolver-supplier-mvn3 ---
+[INFO] Toolchain in maven-compiler-plugin: JDK[/usr/lib/jvm/java-25-openjdk]
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 5 source files with javac [forked debug deprecation release 8] to target/classes
+[WARNING] [options] source value 8 is obsolete and will be removed in a future release
+[WARNING] [options] target value 8 is obsolete and will be removed in a future release
+[WARNING] [options] To suppress warnings about obsolete options, use -Xlint:-options.
+[INFO]
+[INFO] --- sisu:1.0.0:main-index (index-project) @ maven-resolver-supplier-mvn3 ---
+[INFO]
+[INFO] --- bundle:5.1.9:manifest (create-manifest) @ maven-resolver-supplier-mvn3 ---
+[INFO] No MANIFEST.MF file found, generating manifest.
+[INFO] Writing manifest: /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-supplier-mvn3/target/classes/META-INF/MANIFEST.MF
+[INFO]
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ maven-resolver-supplier-mvn3 ---
+[INFO] skip non existing resourceDirectory /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-supplier-mvn3/src/test/resources
+[INFO] Copying 3 resources from target/maven-shared-archive-resources to target/test-classes
+[INFO]
+[INFO] --- compiler:3.12.1:testCompile (default-testCompile) @ maven-resolver-supplier-mvn3 ---
+[INFO] Toolchain in maven-compiler-plugin: JDK[/usr/lib/jvm/java-25-openjdk]
+[INFO] Recompiling the module because of changed dependency.
+[INFO]
+[INFO] --- sisu:1.0.0:test-index (index-project) @ maven-resolver-supplier-mvn3 ---
+[INFO]
+[INFO] --- surefire:3.2.2:test (default-test) @ maven-resolver-supplier-mvn3 ---
+[INFO] Toolchain in maven-surefire-plugin: JDK[/usr/lib/jvm/java-25-openjdk]
+[INFO]
+[INFO] --- jar:3.3.0:jar (default-jar) @ maven-resolver-supplier-mvn3 ---
+[INFO] Building jar: /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/maven-resolver-supplier-mvn3/target/maven-resolver-supplier-mvn3-2.0.21.jar
+[INFO]
+[INFO] --------------< org.apache.maven.resolver:maven-resolver >--------------
+[INFO] Building Maven Artifact Resolver 2.0.21                          [12/11]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO]
+[INFO] --- xmvn-mojo:4.3.0:install (default-cli) @ maven-resolver ---
+[INFO]
+[INFO] --- xmvn-mojo:4.3.0:builddep (default-cli) @ maven-resolver ---
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Maven Artifact Resolver 2.0.21:
+[INFO]
+[INFO] Maven Artifact Resolver ............................ SUCCESS [  0.487 s]
+[INFO] Maven Artifact Resolver API ........................ SUCCESS [ 22.537 s]
+[INFO] Maven Artifact Resolver SPI ........................ SUCCESS [  9.746 s]
+[INFO] Maven Artifact Resolver Test Utilities ............. SUCCESS [  9.658 s]
+[INFO] Maven Artifact Resolver Utilities .................. SUCCESS [ 22.160 s]
+[INFO] Maven Artifact Resolver Named Locks ................ SUCCESS [ 21.474 s]
+[INFO] Maven Artifact Resolver Implementation ............. SUCCESS [ 55.638 s]
+[INFO] Maven Artifact Resolver Connector Basic ............ SUCCESS [  9.792 s]
+[INFO] Maven Artifact Resolver Transport Apache ........... SUCCESS [  8.691 s]
+[INFO] Maven Artifact Resolver Transport File ............. SUCCESS [ 11.281 s]
+[INFO] Maven Artifact Resolver Instance Supplier Maven3 ... SUCCESS [  4.182 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  02:58 min
+[INFO] Finished at: 2026-09-22T12:48:54Z
+[INFO] ------------------------------------------------------------------------
+-----BEGIN MAVEN BUILD DEPENDENCIES-----
+H4sIAAAAAAAC/72WwW7DIAyG73sK1jvpJu2YpdJuO+y+KyVO5gwwAhK1bz9oOjWtJlo1XS9RsH/p
+MwbblKuNVmwA55HM6+K5eFqwVfVQPnLO3npUNavBgqnBSATPWjDgRICarbfs82MwjPOonmqqB8YO
+hm1aRkPrqLfvdUWuLYQV8gsKLQYw5fLXM+qEC9gIGaJh5+dWODChXE4coxI2AUyKurKky+VhmfjL
+4wDy8YBUaD0UHn2fiSe5+T4o1bdoToO6nNqJQWwKNB3IkCEey66FTVLegMLN2ZSve1MrmL3JxO16
+gyF+LQZwuZ0mHd/ruLA4D6tJfmOg3E5HBZfk4HqWJF20RK2CQlINRespd6NH9/3zGWtIaD+P7FXz
+0uWqI/nnn9xlGI/aKphHurDqT6Wzy3FyZ842gLZHCX/0PqmE99gguGr3C/FwJ7Zr4+lQNz53q0b/
+DRrRVwg2gi2Z2NxzyJ1Q4R8j4A7cub1Bk/E8NQaZIZ3o/rN4Oqk4xVnP98IbJPSyIe7Ak0pg62jA
+OrWuu7F1zKuKMy2+Zc5xJ6vdQ+YHUIx1dh0JAAA=
+-----END MAVEN BUILD DEPENDENCIES-----
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.ajQOcp
++ umask 022
++ cd /builddir/build/BUILD/maven-resolver-2.0.21-build
++ '[' /builddir/build/BUILD/maven-resolver-2.0.21-build/BUILDROOT '!=' / ']'
++ rm -rf /builddir/build/BUILD/maven-resolver-2.0.21-build/BUILDROOT
+++ dirname /builddir/build/BUILD/maven-resolver-2.0.21-build/BUILDROOT
++ mkdir -p /builddir/build/BUILD/maven-resolver-2.0.21-build
++ mkdir /builddir/build/BUILD/maven-resolver-2.0.21-build/BUILDROOT
++ CFLAGS='-O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-U_FORTIFY_SOURCE,-D_FORTIFY_SOURCE=3 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -m64 -march=x86-64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -mtls-dialect=gnu2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer  '
++ export CFLAGS
++ CXXFLAGS='-O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-U_FORTIFY_SOURCE,-D_FORTIFY_SOURCE=3 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -m64 -march=x86-64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -mtls-dialect=gnu2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer  '
++ export CXXFLAGS
++ FFLAGS='-O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Wp,-U_FORTIFY_SOURCE,-D_FORTIFY_SOURCE=3 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -m64 -march=x86-64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -mtls-dialect=gnu2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -I/usr/lib64/gfortran/modules  '
++ export FFLAGS
++ FCFLAGS='-O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Wp,-U_FORTIFY_SOURCE,-D_FORTIFY_SOURCE=3 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -m64 -march=x86-64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -mtls-dialect=gnu2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -I/usr/lib64/gfortran/modules  '
++ export FCFLAGS
++ VALAFLAGS=-g
++ export VALAFLAGS
++ RUSTFLAGS='-Copt-level=3 -Cdebuginfo=2 -Ccodegen-units=1 -Cstrip=none -Cforce-frame-pointers=yes -Clink-arg=-specs=/usr/lib/rpm/redhat/redhat-package-notes --cap-lints=warn'
++ export RUSTFLAGS
++ LDFLAGS='-Wl,-z,relro -Wl,--as-needed  -Wl,-z,pack-relative-relocs -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld -specs=/usr/lib/rpm/redhat/redhat-hardened-ld-errors -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -Wl,--build-id=sha1 -specs=/usr/lib/rpm/redhat/redhat-package-notes  '
++ export LDFLAGS
++ LT_SYS_LIBRARY_PATH=/usr/lib64:
++ export LT_SYS_LIBRARY_PATH
++ CC=gcc
++ export CC
++ CXX=g++
++ export CXX
++ cd maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7
++ xmvn-install -R .xmvn-reactor -n maven-resolver -d /builddir/build/BUILD/maven-resolver-2.0.21-build/BUILDROOT
+[INFO] Installing artifact org.apache.maven.resolver:maven-resolver:pom:2.0.21
+[INFO] Installing artifact org.apache.maven.resolver:maven-resolver-api:jar:2.0.21
+[INFO] Installing artifact org.apache.maven.resolver:maven-resolver-api:pom:2.0.21
+[INFO] Installing artifact org.apache.maven.resolver:maven-resolver-spi:jar:2.0.21
+[INFO] Installing artifact org.apache.maven.resolver:maven-resolver-spi:pom:2.0.21
+[INFO] Installing artifact org.apache.maven.resolver:maven-resolver-util:jar:2.0.21
+[INFO] Installing artifact org.apache.maven.resolver:maven-resolver-util:pom:2.0.21
+[INFO] Installing artifact org.apache.maven.resolver:maven-resolver-named-locks:jar:2.0.21
+[INFO] Installing artifact org.apache.maven.resolver:maven-resolver-named-locks:pom:2.0.21
+[INFO] Installing artifact org.apache.maven.resolver:maven-resolver-impl:jar:2.0.21
+[INFO] Installing artifact org.apache.maven.resolver:maven-resolver-impl:pom:2.0.21
+[INFO] Installing artifact org.apache.maven.resolver:maven-resolver-connector-basic:jar:2.0.21
+[INFO] Installing artifact org.apache.maven.resolver:maven-resolver-connector-basic:pom:2.0.21
+[INFO] Installing artifact org.apache.maven.resolver:maven-resolver-transport-apache:jar:2.0.21
+[INFO] Installing artifact org.apache.maven.resolver:maven-resolver-transport-apache:pom:2.0.21
+[INFO] Installing artifact org.apache.maven.resolver:maven-resolver-transport-file:jar:2.0.21
+[INFO] Installing artifact org.apache.maven.resolver:maven-resolver-transport-file:pom:2.0.21
+[INFO] Installing artifact org.apache.maven.resolver:maven-resolver-supplier-mvn3:jar:2.0.21
+[INFO] Installing artifact org.apache.maven.resolver:maven-resolver-supplier-mvn3:pom:2.0.21
+WARNING: Ignoring metadata for artifact velocity:velocity:pom:SYSTEM as it has duplicate metadata
+WARNING: Ignoring metadata for artifact org.apache.velocity:velocity:pom:SYSTEM as it has duplicate metadata
+[INFO] Installation successful
++ jdir=target/site/apidocs
++ '[' -d .xmvn/apidocs ']'
++ /usr/bin/mkdir -p /builddir/build/BUILD/maven-resolver-2.0.21-build/BUILDROOT/usr/share/licenses
++ '[' -d target/site/apidocs ']'
++ /usr/lib/rpm/check-buildroot
++ /usr/lib/jvm/java-25-openjdk/bin/java -cp /usr/share/java/xmvn-generator.jar org.fedoraproject.xmvn.generator.callback.CallbackEntry /tmp/xmvngen-13654216168381933141/socket
++ /usr/lib/rpm/redhat/brp-ldconfig
++ COMPRESS='gzip -9 -n'
++ COMPRESS_EXT=.gz
++ /usr/lib/rpm/brp-compress
++ /usr/lib/rpm/brp-strip /usr/bin/strip
++ /usr/lib/rpm/brp-strip-comment-note /usr/bin/strip /usr/bin/objdump
++ /usr/lib/rpm/redhat/brp-strip-lto /usr/bin/strip
++ /usr/lib/rpm/check-rpaths
++ /usr/lib/rpm/redhat/brp-mangle-shebangs
++ /usr/lib/rpm/brp-remove-la-files
++ /usr/lib/rpm/redhat/brp-python-rpm-in-distinfo
++ env /usr/lib/rpm/redhat/brp-python-bytecompile '' 1 0 -j1
++ /usr/lib/rpm/redhat/brp-python-hardlink
++ /usr/bin/add-det --brp -j1 /builddir/build/BUILD/maven-resolver-2.0.21-build/BUILDROOT
+/builddir/build/BUILD/maven-resolver-2.0.21-build/BUILDROOT/usr/share/java/maven-resolver/maven-resolver-api.jar: replacing with normalized version
+/builddir/build/BUILD/maven-resolver-2.0.21-build/BUILDROOT/usr/share/java/maven-resolver/maven-resolver-spi.jar: replacing with normalized version
+/builddir/build/BUILD/maven-resolver-2.0.21-build/BUILDROOT/usr/share/java/maven-resolver/maven-resolver-util.jar: replacing with normalized version
+/builddir/build/BUILD/maven-resolver-2.0.21-build/BUILDROOT/usr/share/java/maven-resolver/maven-resolver-named-locks.jar: replacing with normalized version
+/builddir/build/BUILD/maven-resolver-2.0.21-build/BUILDROOT/usr/share/java/maven-resolver/maven-resolver-impl.jar: replacing with normalized version
+/builddir/build/BUILD/maven-resolver-2.0.21-build/BUILDROOT/usr/share/java/maven-resolver/maven-resolver-connector-basic.jar: replacing with normalized version
+/builddir/build/BUILD/maven-resolver-2.0.21-build/BUILDROOT/usr/share/java/maven-resolver/maven-resolver-transport-apache.jar: replacing with normalized version
+/builddir/build/BUILD/maven-resolver-2.0.21-build/BUILDROOT/usr/share/java/maven-resolver/maven-resolver-transport-file.jar: replacing with normalized version
+/builddir/build/BUILD/maven-resolver-2.0.21-build/BUILDROOT/usr/share/java/maven-resolver/maven-resolver-supplier-mvn3.jar: replacing with normalized version
+Scanned 11 directories and 39 files,
+    processed 9 inodes,
+    9 modified (9 replaced + 0 rewritten),
+    0 unsupported format, 0 errors
++ /usr/bin/linkdupes --brp /builddir/build/BUILD/maven-resolver-2.0.21-build/BUILDROOT/usr
+Scanned 10 directories and 39 files,
+    considered 20 files, read 0 files, linked 0 files, 0 errors
+    sum of sizes of linked files: 0 bytes
+Processing files: maven-resolver-2.0.21-1.fc46.noarch
+Executing(%license): /bin/sh -e /var/tmp/rpm-tmp.uh5Lr0
++ umask 022
++ cd /builddir/build/BUILD/maven-resolver-2.0.21-build
++ cd maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7
++ LICENSEDIR=/builddir/build/BUILD/maven-resolver-2.0.21-build/BUILDROOT/usr/share/licenses/maven-resolver
++ export LC_ALL=C.UTF-8
++ LC_ALL=C.UTF-8
++ export LICENSEDIR
++ /usr/bin/mkdir -p /builddir/build/BUILD/maven-resolver-2.0.21-build/BUILDROOT/usr/share/licenses/maven-resolver
++ cp -pr /builddir/build/BUILD/maven-resolver-2.0.21-build/maven-resolver-fe81fc370ef85def8513f9691a25e572083128c7/LICENSE /builddir/build/BUILD/maven-resolver-2.0.21-build/BUILDROOT/usr/share/licenses/maven-resolver
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Provides: jpms(org.apache.maven.resolver) jpms(org.apache.maven.resolver.connector.basic) jpms(org.apache.maven.resolver.impl) jpms(org.apache.maven.resolver.named.locks) jpms(org.apache.maven.resolver.spi) jpms(org.apache.maven.resolver.supplier) jpms(org.apache.maven.resolver.transport.apache) jpms(org.apache.maven.resolver.transport.file) jpms(org.apache.maven.resolver.util) maven-resolver = 1:2.0.21-1.fc46 mvn(org.apache.maven.resolver:maven-resolver-api) = 2.0.21 mvn(org.apache.maven.resolver:maven-resolver-api:pom:) = 2.0.21 mvn(org.apache.maven.resolver:maven-resolver-connector-basic) = 2.0.21 mvn(org.apache.maven.resolver:maven-resolver-connector-basic:pom:) = 2.0.21 mvn(org.apache.maven.resolver:maven-resolver-impl) = 2.0.21 mvn(org.apache.maven.resolver:maven-resolver-impl:pom:) = 2.0.21 mvn(org.apache.maven.resolver:maven-resolver-named-locks) = 2.0.21 mvn(org.apache.maven.resolver:maven-resolver-named-locks:pom:) = 2.0.21 mvn(org.apache.maven.resolver:maven-resolver-spi) = 2.0.21 mvn(org.apache.maven.resolver:maven-resolver-spi:pom:) = 2.0.21 mvn(org.apache.maven.resolver:maven-resolver-supplier-mvn3) = 2.0.21 mvn(org.apache.maven.resolver:maven-resolver-supplier-mvn3:pom:) = 2.0.21 mvn(org.apache.maven.resolver:maven-resolver-transport-apache) = 2.0.21 mvn(org.apache.maven.resolver:maven-resolver-transport-apache:pom:) = 2.0.21 mvn(org.apache.maven.resolver:maven-resolver-transport-file) = 2.0.21 mvn(org.apache.maven.resolver:maven-resolver-transport-file:pom:) = 2.0.21 mvn(org.apache.maven.resolver:maven-resolver-util) = 2.0.21 mvn(org.apache.maven.resolver:maven-resolver-util:pom:) = 2.0.21 mvn(org.apache.maven.resolver:maven-resolver:pom:) = 2.0.21 mvn(org.eclipse.aether:aether-api) = 2.0.21 mvn(org.eclipse.aether:aether-api:pom:) = 2.0.21 mvn(org.eclipse.aether:aether-connector-basic) = 2.0.21 mvn(org.eclipse.aether:aether-connector-basic:pom:) = 2.0.21 mvn(org.eclipse.aether:aether-impl) = 2.0.21 mvn(org.eclipse.aether:aether-impl:pom:) = 2.0.21 mvn(org.eclipse.aether:aether-named-locks) = 2.0.21 mvn(org.eclipse.aether:aether-named-locks:pom:) = 2.0.21 mvn(org.eclipse.aether:aether-spi) = 2.0.21 mvn(org.eclipse.aether:aether-spi:pom:) = 2.0.21 mvn(org.eclipse.aether:aether-supplier-mvn3) = 2.0.21 mvn(org.eclipse.aether:aether-supplier-mvn3:pom:) = 2.0.21 mvn(org.eclipse.aether:aether-transport-apache) = 2.0.21 mvn(org.eclipse.aether:aether-transport-apache:pom:) = 2.0.21 mvn(org.eclipse.aether:aether-transport-file) = 2.0.21 mvn(org.eclipse.aether:aether-transport-file:pom:) = 2.0.21 mvn(org.eclipse.aether:aether-util) = 2.0.21 mvn(org.eclipse.aether:aether-util:pom:) = 2.0.21 mvn(org.eclipse.aether:aether:pom:) = 2.0.21
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires: javapackages-filesystem mvn(com.google.code.gson:gson) mvn(commons-codec:commons-codec) mvn(org.apache.httpcomponents:httpclient) mvn(org.apache.httpcomponents:httpcore) mvn(org.apache.maven:maven-model-builder) mvn(org.apache.maven:maven-resolver-provider) mvn(org.slf4j:jcl-over-slf4j) mvn(org.slf4j:slf4j-api)
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /builddir/build/BUILD/maven-resolver-2.0.21-build/BUILDROOT
+Wrote: /builddir/build/RPMS/maven-resolver-2.0.21-1.fc46.noarch.rpm
+Executing(rmbuild): /bin/sh -e /var/tmp/rpm-tmp.cTkwRt
++ umask 022
++ cd /builddir/build/BUILD/maven-resolver-2.0.21-build
++ test -d /builddir/build/BUILD/maven-resolver-2.0.21-build
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w /builddir/build/BUILD/maven-resolver-2.0.21-build
++ rm -rf /builddir/build/BUILD/maven-resolver-2.0.21-build
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Child return code was: 0

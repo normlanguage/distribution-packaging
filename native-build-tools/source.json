@@ -1,0 +1,7 @@
+{
+  "repository": "https://github.com/graalvm/native-build-tools",
+  "tag": "1.1.12",
+  "commit": "b043a90d792645869b7fc4dfc60e67fac38347a0",
+  "url": "https://codeload.github.com/graalvm/native-build-tools/tar.gz/b043a90d792645869b7fc4dfc60e67fac38347a0",
+  "sha256": "44a0ecff0a25b3e61e468af361589f8b20b52a5affe6418592a1673265b20589"
+}

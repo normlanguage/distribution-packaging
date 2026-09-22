@@ -1,0 +1,37 @@
+{
+  "repository": "https://github.com/eclipse-lsp4j/lsp4j",
+  "tag": "v1.0.0",
+  "commit": "1eb88b3cdc163a0de1bfba1bc3ace816e1d94097",
+  "files": [
+    {
+      "path": "build.gradle",
+      "gitBlob": "26b91452579f17108bad8dbca959afc4cd78fc46",
+      "url": "https://github.com/eclipse-lsp4j/lsp4j/blob/1eb88b3cdc163a0de1bfba1bc3ace816e1d94097/build.gradle"
+    },
+    {
+      "path": "settings.gradle",
+      "gitBlob": "16fb4dceee465ce89e94e95986b9c1fc033c3f33",
+      "url": "https://github.com/eclipse-lsp4j/lsp4j/blob/1eb88b3cdc163a0de1bfba1bc3ace816e1d94097/settings.gradle"
+    },
+    {
+      "path": "gradle/versions.gradle",
+      "gitBlob": "dc2878fd8c418194bdf075830d5004b902fba01a",
+      "url": "https://github.com/eclipse-lsp4j/lsp4j/blob/1eb88b3cdc163a0de1bfba1bc3ace816e1d94097/gradle/versions.gradle"
+    },
+    {
+      "path": "gradle/wrapper/gradle-wrapper.properties",
+      "gitBlob": "a80b22ce5cffec8b48ee79b11c67945e91f99d5f",
+      "url": "https://github.com/eclipse-lsp4j/lsp4j/blob/1eb88b3cdc163a0de1bfba1bc3ace816e1d94097/gradle/wrapper/gradle-wrapper.properties"
+    },
+    {
+      "path": "org.eclipse.lsp4j/build.gradle",
+      "gitBlob": "df008fb7c82baf2cfa6bdd215421a1dc329dd46d",
+      "url": "https://github.com/eclipse-lsp4j/lsp4j/blob/1eb88b3cdc163a0de1bfba1bc3ace816e1d94097/org.eclipse.lsp4j/build.gradle"
+    },
+    {
+      "path": "org.eclipse.lsp4j.jsonrpc/build.gradle",
+      "gitBlob": "9b5094b2fc9ae2ccdbf0de31d1794ef66fe571e4",
+      "url": "https://github.com/eclipse-lsp4j/lsp4j/blob/1eb88b3cdc163a0de1bfba1bc3ace816e1d94097/org.eclipse.lsp4j.jsonrpc/build.gradle"
+    }
+  ]
+}

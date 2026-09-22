@@ -20,6 +20,9 @@ Distribution-native packaging for dependencies required by [Norm](https://github
 | Kryo 5 | [Debian](kryo/debian/), [Fedora](kryo/fedora/) | [Source](kryo/source.json), [repacked archive](kryo/repack.json) |
 | ReflectASM | [Fedora](reflectasm/fedora/reflectasm.spec) | [Source](reflectasm/source.json), [patch notes](reflectasm/fedora/README.md) |
 | MinLog | [Fedora](minlog/fedora/minlog.spec) | [Source](minlog/source.json) |
+| LSP4J | [Fedora](lsp4j/) | [Source](lsp4j/source.json) |
+| GraalVM Native Build Tools | [Fedora](native-build-tools/) | [Source](native-build-tools/source.json) |
+| Maven Resolver 2 | [Fedora](maven-resolver/) | [Source](maven-resolver/source.json) |
 
 Debian source and binary artifacts are published as prerelease assets for review. The `.dsc` and its referenced archives are sufficient to extract the source with `dpkg-source -x`; use `sbuild` for an isolated build. Installed-package tests are defined in [debian/tests](kryo/debian/tests/).
 
@@ -31,6 +34,6 @@ Norm's own compiler and release definitions remain in the [upstream repository](
 
 Build-tool prerequisites are tracked separately in the [Gradle source-build investigation](gradle/).
 
-The [GraalVM SDK/Truffle source-build preparation](graal/) records the runtime toolchain investigation and remaining packaging work.
+The [GraalVM SDK/Truffle candidate](graal/) records the source build, installed-package checks and runtime toolchain validation.
 
 [Plexus Testing](plexus-testing/) maintains a source update for the Maven plugin test framework.

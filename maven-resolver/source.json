@@ -1,0 +1,7 @@
+{
+  "repository": "https://github.com/apache/maven-resolver",
+  "tag": "maven-resolver-2.0.21",
+  "commit": "fe81fc370ef85def8513f9691a25e572083128c7",
+  "url": "https://codeload.github.com/apache/maven-resolver/tar.gz/fe81fc370ef85def8513f9691a25e572083128c7",
+  "sha256": "c61010a440f8e7a4a20f3a19730dc1b1f709fa458660a701c029c5b32eda226d"
+}

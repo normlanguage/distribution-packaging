@@ -1,0 +1,13 @@
+{
+  "url": "https://codeload.github.com/eclipse-lsp4j/lsp4j/tar.gz/1eb88b3cdc163a0de1bfba1bc3ace816e1d94097",
+  "sha256": "753a502347cc7ac348b578265ccae46c2aa23304b7d17501799696a5415b8900",
+  "bytes": 313393,
+  "fileCounts": {
+    ".java": 185,
+    ".xtend": 17,
+    ".jar": 1
+  },
+  "bundledJars": [
+    "lsp4j-1eb88b3cdc163a0de1bfba1bc3ace816e1d94097/gradle/wrapper/gradle-wrapper.jar"
+  ]
+}

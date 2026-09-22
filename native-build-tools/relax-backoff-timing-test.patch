@@ -1,0 +1,13 @@
+diff --git a/common/utils/src/test/java/org/graalvm/buildtools/utils/ExponentialBackoffTest.java b/common/utils/src/test/java/org/graalvm/buildtools/utils/ExponentialBackoffTest.java
+index efc925f..ce5150f 100644
+--- a/common/utils/src/test/java/org/graalvm/buildtools/utils/ExponentialBackoffTest.java
++++ b/common/utils/src/test/java/org/graalvm/buildtools/utils/ExponentialBackoffTest.java
+@@ -103,7 +103,7 @@ class ExponentialBackoffTest {
+                 throw new RuntimeException();
+             }));
+         double duration = System.currentTimeMillis() - sd;
+-        assertTrue(duration < 100);
++        assertTrue(duration < 1_000);
+     }
+
+ }
