@@ -1,0 +1,39 @@
+To: submit@bugs.debian.org
+Subject: ITP: libkryo5-java -- fast Java serialization library, major version 5
+
+Package: wnpp
+Severity: wishlist
+Owner: w0fv1 <wofbi1@outlook.com>
+
+* Package name    : libkryo5-java
+  Version         : 5.6.2
+  Upstream Contact: Nathan Sweet and the Kryo contributors
+* URL             : https://github.com/EsotericSoftware/kryo
+* License         : BSD-3-Clause (code); CC-BY-4.0 (Contributor Covenant text)
+  Programming Lang: Java
+  Description     : fast Java serialization library, major version 5
+
+Kryo provides fast and efficient serialization of Java objects.
+
+I intend to package the primary, unshaded Kryo 5 artifact
+(com.esotericsoftware:kryo) as libkryo5-java. This is needed for the
+Norm toolchain packaging effort tracked in ITP #1147751.
+
+Debian currently provides the older Kryo 2 API. The proposed package uses
+/usr/share/java/kryo5.jar and the upstream Kryo 5 Maven coordinates,
+so the existing Kryo 2 package can remain available for its consumers.
+This does not relocate Java packages or promise both APIs can be used
+in the same class loader.
+
+A 5.6.2+ds source package excluding bundled JARs has been prepared using
+maven-debian-helper and distribution-provided Java dependencies. It has
+built successfully with sbuild in Debian unstable, including 304 Java
+tests. An installed-package autopkgtest checks serialization round trips
+and shared-reference identity. Upstream optional Kotlin tests are not run.
+
+I would welcome coordination with the Debian Java team, packaging review
+and an upload sponsor. I am open to adjusting the package naming or
+maintenance arrangement to fit the team's conventions.
+
+Packaging: https://github.com/normlanguage/distribution-packaging
+Review artifacts: https://github.com/normlanguage/distribution-packaging/releases/tag/kryo-5.6.2-debian1
